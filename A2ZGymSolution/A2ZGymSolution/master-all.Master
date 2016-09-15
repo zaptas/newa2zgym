@@ -7,7 +7,8 @@
 <head runat="server">
     <title></title>
     <link href="plugin/bootstrap/css/bootstrap.css" rel="stylesheet" />
-
+     
+ <link rel="stylesheet" href="css/app.css" />	
 
     <!-- Custom Theme files -->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -23,8 +24,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
-
 
         <!-- header-starts -->
         <div class="page-header">
@@ -56,11 +55,6 @@
             </div>
         </div>
         <!-- header-ends -->
-
-
-
-
-
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>

@@ -220,8 +220,7 @@ button[type="button"] {
 }
 
 #cboxTitle {
-    font-size: 25px!important;
-    font-size: 25px !important /16pxrem;
+    font-size: 25px !important /16pxrem !important;
     font-weight: 700;
     font-family: "oswald_regularregular"!important;
     top: 20px!important;
@@ -901,9 +900,8 @@ select {
     }
 
         .app-footer .app-button-con .download-now, .app-footer .app-button-con .not-right-now, .app-footer .app-button-con .install {
-            font-size: 11px!important;
-            font-size: 11px !important /16pxrem;
-        }
+            font-size: 11px !important /16pxrem !important;
+            }
 
         .app-footer .app-button-con .download-now {
             width: 35%;
