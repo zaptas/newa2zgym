@@ -94,6 +94,7 @@
       <DependentUpon>style.scss</DependentUpon>
     </Content>
     <Content Include="css\style.scss" />
+    <Content Include="css\user.css" />
     <Content Include="data.aspx" />
     <Content Include="details.html" />
     <Content Include="Global.asax" />
@@ -1789,6 +1790,7 @@
     <Content Include="plugin\ThemePlugin\responsiveslides.min.js" />
     <Content Include="search.aspx" />
     <Content Include="Templete\ConfigurationMail.html" />
+    <Content Include="userdashboard.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -1921,6 +1923,13 @@
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userdashboard.aspx.cs">
+      <DependentUpon>userdashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userdashboard.aspx.designer.cs">
+      <DependentUpon>userdashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
