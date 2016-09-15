@@ -44,7 +44,7 @@
                 <div class="col-md-3 how-it-works">
                     <div><i class="fa fa-hand-o-up" aria-hidden="true"></i></div>
                     <br />
-                    <h5>Choose your plan</h5>
+                    <h5> Choose your plan</h5>
                 </div>
                 <div class="col-md-3 how-it-works">
                     <div><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
