@@ -25,3 +25,12 @@ D:\temp\A2ZGymSolution 14 sep\DAL\bin\Debug\DTO.pdb
 D:\temp\A2ZGymSolution 14 sep\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\temp\A2ZGymSolution 14 sep\DAL\obj\Debug\DAL.dll
 D:\temp\A2ZGymSolution 14 sep\DAL\obj\Debug\DAL.pdb
+C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DAL\bin\Debug\DAL.dll
+C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DAL\bin\Debug\DAL.pdb
+C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DAL\bin\Debug\CommonUtility.dll
+C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DAL\bin\Debug\DTO.dll
+C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DAL\bin\Debug\CommonUtility.pdb
+C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DAL\bin\Debug\DTO.pdb
+C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DAL\obj\Debug\DAL.dll
+C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DAL\obj\Debug\DAL.pdb
