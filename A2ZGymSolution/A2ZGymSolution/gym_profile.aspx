@@ -10,7 +10,7 @@
       
       
     </div>
-    <div> <img src="../<%= gymcover %>" style="width:100%; height:300px; margin-top: 65px;" />
+    <div> <img src="../<%= gymcover %>" style="width:100%; height:300px; margin-top: -1px;" />
     <!-- Studio Profilse Header -->
     <section class="studio-profile-banner">		
         <div class="wrapper">

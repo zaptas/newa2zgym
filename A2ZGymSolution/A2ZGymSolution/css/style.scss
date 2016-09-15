@@ -84,14 +84,14 @@ label {
 
 .header-info-head {
   h1 {
-    color: azure;
+    color: #BC2323;
     font-size: 6.5em;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
   }
   h2 {
- color: $shade-3;
+ color: #BC2323;
   }
   a {
     text-decoration: none;
@@ -103,7 +103,7 @@ label {
 }
 
 .header-info-head h2 {
-  color: azure;
+  color: #BC2323;
   font-size: 5em;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
@@ -557,7 +557,7 @@ i.location {
   .footer-box
   {
 	 padding:30px;
-	
+	    text-align: center;
 	 ul
 	 {
 		 list-style:none;
@@ -565,10 +565,15 @@ i.location {
 		 {
 			a
 			{
-				 color:black;
+				 color:$shade-1;
 			}
 			 color:black;
 		 }
+	 }
+	 h4 
+	 {
+		     font-size: 27px;
+				color: #FF7B3D;
 	 }
   }
 }

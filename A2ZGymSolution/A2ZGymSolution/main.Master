@@ -105,13 +105,13 @@
                     <div class="cd-form">
                         <p class="fieldset">
                             <label class="image-replace cd-email" for="signin-email">E-mail</label>
-                            <input class="full-width has-padding has-border" id="signinemail" type="email" placeholder="E-mail" runat="server">
-                            <span class="cd-error-message">Error message here!</span>
+                            <input class="full-width has-padding has-border" id="signinemail" type="text" placeholder="E-mail" runat="server">
+                            <%--<span class="cd-error-message">Error message here!</span>--%>
                         </p>
 
                         <p class="fieldset">
                             <label class="image-replace cd-password" for="signin-password">Password</label>
-                            <input class="full-width has-padding has-border" id="signinpassword" type="text" placeholder="Password" runat="server">
+                            <input class="full-width has-padding has-border" id="signinpassword" type="password" placeholder="Password" autocomplete="off" runat="server">
                             <a href="#0" class="hide-password">Hide</a>
                             <span class="cd-error-message">Error message here!</span>
                         </p>
@@ -238,7 +238,7 @@
                     <div class="Li"><a href="index.aspx" class="menu-active">Home</a></div>
                     <div class="Li"><a href="#">GYM</a></div>
                     <div class="Li"><a href="#">Gallery</a></div>
-                    <div class="Li"><a href="#">About</a></div>
+                    <div class="Li"><a href="Aboutus.aspx">About</a></div>
                     <div class="Li"><a href="contact.aspx">Contact</a></div>
                     <div class=" main-nav Li"><a class="cd-signin">Login</a></div>
                 </div>

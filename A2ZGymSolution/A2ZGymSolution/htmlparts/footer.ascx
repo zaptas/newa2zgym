@@ -3,7 +3,7 @@
 
 <div class="footer container-fluid ">
     <div class="row">
-        <div class="col-md-4 footer-box">
+        <div class="col-md-6 footer-box">
             <h4>Learn More</h4>
             <br />
             <ul>
@@ -14,7 +14,7 @@
                 <li><a>Contact</a></li>
             </ul>
         </div>
-        <div class="col-md-4 footer-box">
+       <%-- <div class="col-md-4 footer-box">
             <h4>People</h4>
             <br />
             <ul>
@@ -24,16 +24,15 @@
                 <li><a>Offers</a></li>
                 <li><a>Contact</a></li>
             </ul>
-        </div>
-        <div class="col-md-4 footer-box">
+        </div>--%>
+        <div class="col-md-6 footer-box">
             <h4>Contact</h4>
             <br />
             <ul>
-                <li><a>About</a></li>
-                <li><a>Privacy Policy</a></li>
-                <li><a>Products</a></li>
-                <li><a>Offers</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="../Aboutus.aspx">About</a></li>
+                <li><a href="../Privacy_Policy.aspx">Privacy Policy</a></li>
+                <li><a href="../Term_Condition.aspx">Terms & Conditions</a></li>
+                <li><a href="../contact.aspx">Contact Us</a></li>
             </ul>
         </div>
         <div class="col-md-3"></div>

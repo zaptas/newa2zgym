@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="page-header-info">
                     <div class="page-header-info-head text-center">
-                        <a href="index.aspx">
+                        <a href="Home">
                             <h1>A2Z GYM</h1>
                         </a>
                     </div>
@@ -37,14 +37,15 @@
                         <a class="toggleMenu" href="#">Menu</a>
                       
                         <ul class="nav p-nav" style="width:100%;"> 
-                            <li class="active"  style="width:116px;"><a href="index.aspx">HOME</a></li>
-                            <li style="width:116px;"><a href="#" style="font-size:12px;">About</a></li>
-                            <li><a href="#" class="root">Destinations</a></li>
-                            <li><a href="#">Contact</a></li> 
-                            <li><a href="#">Dashboard</a></li> 
+                            <li class="active"  style="width:116px;"><a href="Home">HOME</a></li>
+                            <%--<li style="width:116px;"><a href="#" style="font-size:12px;">About</a></li>
+                            <li><a href="#" class="root">Destinations</a></li>--%>
+                            
+                            <li><a href="UserDashboard">Dashboard</a></li> 
                             <li><a href="#">Workout</a></li> 
                             <li><a href="UserProfile.aspx">Account Setting </a></li> 
-                            <li><a href="#">Logout</a></li> 
+                            <li><a href="contact.aspx">Contact</a></li> 
+                            <li><a href="Home">Logout</a></li> 
                        </ul>
                      </div>
                     <!-- end h_menu4 -->

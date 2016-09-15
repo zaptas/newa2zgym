@@ -72,13 +72,13 @@ label {
   min-height: 1100px; }
 
 .header-info-head h1 {
-  color: azure;
+  color: #BC2323;
   font-size: 6.5em;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-weight: 700; }
 .header-info-head h2 {
-  color: #2854A1; }
+  color: #BC2323; }
 .header-info-head a {
   text-decoration: none; }
 
@@ -86,7 +86,7 @@ label {
   text-decoration: none; }
 
 .header-info-head h2 {
-  color: azure;
+  color: #BC2323;
   font-size: 5em;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
@@ -454,13 +454,17 @@ i.location {
 .footer {
   background: #444444; }
   .footer .footer-box {
-    padding: 30px; }
+    padding: 30px;
+    text-align: center; }
     .footer .footer-box ul {
       list-style: none; }
       .footer .footer-box ul li {
         color: black; }
         .footer .footer-box ul li a {
-          color: black; }
+          color: #ffffff; }
+    .footer .footer-box h4 {
+      font-size: 27px;
+      color: #FF7B3D; }
 
 .copy-rights p {
   color: #fff;

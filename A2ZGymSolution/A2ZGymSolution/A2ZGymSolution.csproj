@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Aboutus.aspx" />
     <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\custom.css" />
     <Content Include="assets\css\font-awesome.css" />
@@ -1790,8 +1791,10 @@
     <Content Include="plugin\ThemePlugin\nav.js" />
     <Content Include="plugin\ThemePlugin\responsiveslides.min.js" />
     <Content Include="Privacy_Policy.aspx" />
+    <Content Include="profile\profile.png" />
     <Content Include="search.aspx" />
     <Content Include="Templete\Mail.html" />
+    <Content Include="Term_Condition.aspx" />
     <Content Include="userdashboard.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config">
@@ -1800,6 +1803,13 @@
     <Content Include="GYM.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aboutus.aspx.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aboutus.aspx.designer.cs">
+      <DependentUpon>Aboutus.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1925,6 +1935,13 @@
     </Compile>
     <Compile Include="GYM.aspx.designer.cs">
       <DependentUpon>GYM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Term_Condition.aspx.cs">
+      <DependentUpon>Term_Condition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Term_Condition.aspx.designer.cs">
+      <DependentUpon>Term_Condition.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>

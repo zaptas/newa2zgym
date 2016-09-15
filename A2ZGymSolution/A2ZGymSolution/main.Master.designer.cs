@@ -37,7 +37,7 @@ namespace A2ZGymSolution {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl signinemail;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText signinemail;
         
         /// <summary>
         /// signinpassword control.
@@ -46,7 +46,7 @@ namespace A2ZGymSolution {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText signinpassword;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword signinpassword;
         
         /// <summary>
         /// btnLogin control.
