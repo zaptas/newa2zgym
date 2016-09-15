@@ -1,44 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="userdashboard.aspx.cs" Inherits="A2ZGymSolution.userdashboard" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title> 
-           <link rel="stylesheet" type="text/css" href="css/user.css" />
-
-</head>
-<body>
-    <form id="form1" runat="server">
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/User.Master" CodeBehind="userdashboard.aspx.cs" Inherits="A2ZGymSolution.userdashboard" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
    
-
+<link rel="stylesheet" type="text/css" href="css/user.css" />
 <div class="" style="clear: both">
     
-    <div class="post_loginhead">
+    <div runat="server" id="post_loginhead1" class="post_loginhead">
     <div class="content">
         <h1> Deepak  Kumar</h1>
     </div>
-    <div class="clear"></div>
-    <div class="links_contain">
-        <div class="fullpage">
-            <div class="links">
-                <ul>
-                    <li><a href="javascript:void(0)" class="active" id="tab-1" onclick="displayTab(this.id)">Upcoming</a></li>
-                    <li><a href="javascript:void(0)"  id="tab-2" onclick="displayTab(this.id)">Past</a></li>
-                    <li><a href="javascript:void(0)"  id="tab-3" onclick="displayTab(this.id)">Favourites</a></li>
-                    <li><a href="javascript:void(0)"  id="tab-4" onclick="displayTab(this.id)">Friends</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+   
 
 </div>
 <div class="post_login two_col">
     <div class="fullpage">
         <div class="colL">
             <div class="profile_pic">            
-                <div id="userPhotomessage" class="errorMessage"></div>               
-                                <span id="userPhoto"><img src="http://fitpass.co.in/upload/myprofile.jpg" alt="edit profile" class="img-responsive" style="width:180px;height:180px;"></span>
+                             
+                                <span id="userPhoto"><img src="http://fitpass.co.in/upload/myprofile.jpg" alt="edit profile" class="img-responsive" style="width:180px;height:160px;"></span>
 
                 <div id="uploadFile"><noscript><p>Please enable JavaScript to use file uploader.</p></noscript></div>            </div>
             <div class="profile_name">
@@ -127,143 +105,8 @@
         $("." + tabid).show();
     }
 
-    function cancelSchedule(scheduleid) {
-        jQuery.ajax({
-            'type': 'POST',
-            'url': "http://fitpass.co.in/FitpassCourses/cancelSchedule/",
-            'data': "scheduleid=" + scheduleid,
-            'beforeSend': function (jqXHR, settings) {
-                $("#classcancelation-" + scheduleid).show();
-                $(".classcancelation-" + scheduleid).hide();
-            },
-            'success': function (data) {
-                $("#upcomingclasslist").html(data);
-                $("#cancelClass h2").html("Your workout has been cancelled successfully.");
-                window.location = "#cancelClass";
-                $(".upcominginputtext").html($("#upcominginputtext").val() - 1);
-                $('#cancelClass').delay(9000, function () {
-                    $('#cancelClass h2').fadeOut()
-                });
-
-            },
-            'cache': false
-        });
-    }
+   
 </script></div>
 
 
-<div id="footer">
-    
-
-    <section class="fullpage mrgT10">
-
-        <div class="boxes">
-            <h4>LEARN MORE</h4>
-            <ul class="list1">
-                <li> <a href="/sweatiquette-faq/">Sweatiquette and FAQs</a></li>
-
-                                    <li> <a href="/privacy-policy/">Privacy Policy</a></li>
-                    <li><a href="/terms-and-conditions/">Terms and Conditions</a></li>
-                     <li><a href="/fitness-offers/">Offers</a></li>
-                    <li><a href="/products/">Products</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                            </ul>
-        </div>
-
-        <div class="boxes ">
-            <h4>PEOPLE </h4>
-            <ul class="list1 bottom_social">
-                <li><a href="/about/">About</a></li>
-                <li><a href="/partners/">Become a Partner</a></li>
-                <li><a href="/corporates/">Corporate</a></li>
-                <li><a href="/careers/">Careers</a></li>
-                <li><a href="/team/">Team</a></li>
-            </ul>
-        </div>
-        <div class="boxes">
-            <h4>CONNECT</h4>
-            <ul class="list1 bottom_social">        
-                <li> <a href="https://fitpass.co.in/blog/" target="blank">Blog</a></li>
-                <li> <a href="https://fitpass.co.in/rockthesaree" target="blank">#rockthesaree</a></li>  
-                
-            </ul>
-            <ul class=" list1 social_foot footerSocialicon"> 
-                <li><a href="https://www.facebook.com/fitpassindia" class="facebook sprite" target="blank">Facebook</a></li>
-                <li><a href="https://instagram.com/fitpassindia/" class="rss sprite" target="blank">Instagram</a></li>
-                <li><a href="https://twitter.com/FitpassIndia" class="twitter sprite" target="blank">Twitter</a></li>
-            </ul>
-            <ul> 
-                <li class="mrgT10 liactivephone"style="color: #fff!important">Email us at: care@fitpass.co.in<br/>
-                    Call us on: 011-46061468</li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-        <div class="clear"></div>
-        <div class="foot_copy">©2015 <a href="https://fitpass.co.in/">fitpass.co.in</a>  | All Rights Reserved</div>
-    </section>
-</div>
-
-
-<script src="/themes/front-end/js/jquery.meanmenu.js"></script>
-
-<script language="javascript">
-    var message = "";
-    ///////////////////////////////////
-    function clickIE() {
-        if (document.all) {
-            (message);
-            return false;
-        }
-    }
-
-    function clickNS(e) {
-        if (document.layers || (document.getElementById && !document.all)) {
-            if (e.which == 2 || e.which == 3) {
-                (message);
-                return false;
-            }
-        }
-    }
-    if (document.layers) {
-        document.captureEvents(Event.MOUSEDOWN);
-        document.onmousedown = clickNS;
-    } else {
-        document.onmouseup = clickNS;
-        document.oncontextmenu = clickIE;
-    }
-
-    document.oncontextmenu = new Function("return false")
-
-</script>
-<script>
-    jQuery(document).ready(function () {
-        jQuery('header nav').meanmenu();
-    });
-</script>
-</style>
-<script type="text/javascript">
-    /*<![CDATA[*/
-    jQuery(window).load(function () {
-        var FileUploader_uploadFile = new qq.FileUploader({
-            'element': document.getElementById("uploadFile"), 'debug': false, 'multiple': false, 'action': '/users/uploadphoto/id/37280/', 'allowedExtensions': ['jpg', 'jpeg', 'gif', 'png', 'JPG', 'JPEG', 'GIF', 'PNG'], 'sizeLimit': 2097152, 'minSizeLimit': 1024, 'onComplete': function (id, fileName, responseJSON) {
-                if (responseJSON.success) {
-                    $('#userPhoto').html('<img  style="width:180px;height:180px;" src="https://fitpass-images.s3.amazonaws.com/customer_img_' + responseJSON.filename + '" />');
-                    $('#userPhotomessage').text('photo changed successfully.');
-                    $('#userPhotomessage').delay(3000).fadeOut('slow');
-                }
-
-            }, 'params': { 'PHPSESSID': 'ct5m66hculhkccg355u8kvtuu5', 'YII_CSRF_TOKEN': 'c903c46a527c40e12e5cb93bee06588afbf2fcfc' }
-        });
-    });
-    /*]]>*/
-</script>
-</body>
-</html>
-
-
-
-
-    </div>
-    </form>
-</body>
-</html>
+    </asp:Content>

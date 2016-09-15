@@ -185,6 +185,7 @@
     <Content Include="img\about_img6.jpg" />
     <Content Include="img\about_img7.jpg" />
     <Content Include="img\banner11.jpg" />
+    <Content Include="img\bg.jpg" />
     <Content Include="img\blog_img.jpg" />
     <Content Include="img\blog_img1.jpg" />
     <Content Include="img\blog_img2.jpg" />
@@ -207,6 +208,7 @@
     <Content Include="img\class_img.jpg" />
     <Content Include="img\CrossSign.png" />
     <Content Include="img\GreenTick.png" />
+    <Content Include="img\header_postlogin.jpg" />
     <Content Include="img\img-sprite.png" />
     <Content Include="img\list_arrow.png" />
     <Content Include="img\logo.png" />
