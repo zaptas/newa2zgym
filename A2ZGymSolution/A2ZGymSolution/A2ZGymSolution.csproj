@@ -94,6 +94,8 @@
       <DependentUpon>style.scss</DependentUpon>
     </Content>
     <Content Include="css\style.scss" />
+    <Content Include="css\user.css" />
+    <Content Include="data.aspx" />
     <Content Include="details.html" />
     <Content Include="Global.asax" />
     <Content Include="GymActivity.aspx" />
@@ -1788,8 +1790,10 @@
     <Content Include="plugin\ThemePlugin\jquery.min.js" />
     <Content Include="plugin\ThemePlugin\nav.js" />
     <Content Include="plugin\ThemePlugin\responsiveslides.min.js" />
+    <Content Include="Privacy_Policy.aspx" />
     <Content Include="search.aspx" />
     <Content Include="Templete\Mail.html" />
+    <Content Include="userdashboard.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -1810,6 +1814,13 @@
     </Compile>
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="data.aspx.cs">
+      <DependentUpon>data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="data.aspx.designer.cs">
+      <DependentUpon>data.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1894,6 +1905,13 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Privacy_Policy.aspx.cs">
+      <DependentUpon>Privacy_Policy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Privacy_Policy.aspx.designer.cs">
+      <DependentUpon>Privacy_Policy.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="search.aspx.cs">
       <DependentUpon>search.aspx</DependentUpon>
@@ -1915,6 +1933,13 @@
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="userdashboard.aspx.cs">
+      <DependentUpon>userdashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userdashboard.aspx.designer.cs">
+      <DependentUpon>userdashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
@@ -3001,6 +3026,7 @@
     <Content Include="plugin\login-signup-popup\partials\_variables.scss" />
     <Content Include="plugin\login-signup-popup\readme.pdf" />
     <Content Include="plugin\login-signup-popup\scss\style.scss" />
+    <Content Include="css\menu.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

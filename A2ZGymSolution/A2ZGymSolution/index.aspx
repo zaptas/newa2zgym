@@ -25,7 +25,7 @@
                     </p>
                     <p class="end-q">
                         Jogging is very beneficial. It's good for your legs and your feet. It's also very good for the ground. If makes it feel needed.
- <img src="images/quot.png" alt="" />
+ <img src="images/quot.png" alt="#" />
 
                     </p>
                     <a href="#">Naura Allen</a>
