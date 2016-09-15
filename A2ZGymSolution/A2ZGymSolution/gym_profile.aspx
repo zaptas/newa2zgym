@@ -1,57 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="gym_profile.aspx.cs" Inherits="A2ZGymSolution.gym_profile" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
- 
-      <link rel="stylesheet" href="css/app.css" />	
-   
-</head>
-<body>
-    <form id="form1" runat="server">
+﻿<%@ Page Language="C#" AutoEventWireup="true"  MasterPageFile="~/master-all.Master" CodeBehind="gym_profile.aspx.cs" Inherits="A2ZGymSolution.gym_profile" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-      
-        <div class="container-fluid bgcolor-black stickyheader">
-            <header class="site-header clearfix">	
-                <div class="clearfix">
-                    <div class="col1">
-                        <h1 class="logo">
-                            LOGO
-                        </h1>
-                    </div>
-                    <div class="col2">
-                        <div class="search-bar1">
-                            <div id="jquery-script-menu">
-                                                                <select class="selected_city">
-                                    <option value="1" data-display-text="Delhi-NCR">Delhi-NCR</option>
-                                    <!--                                <option value="3">Bangalore</option>-->
-                                </select>
-                                <input type="text" placeholder="Search for gyms, studios or workouts in your locality"  name="location" id="autocomplete_search"/>
-                                <button type="button"  onclick="globalsearch()"><i class="fa fa-search"></i></button>
-    <!--                            <input  value="Search" type="Submit" class="submit_form"   />-->
-                                                            </div>
-                        </div>			
-                    </div>
-                     
-                    <div class="col3">
-                        <div class="nav-right1">
-                                                            <div class="mymenu"> 
-                                    <a href="javascript:void(0)"class="loginpopup sign-in basic-cta">Sign In</a>
-                                    <a href="https://fitpass.co.in/products/" class="sign-in basic-cta hiring-tab">FITSHOP</a>
-                                </div>
-                                                        <!--                        <button type="button" class="get-the-app">Get the app</button>
-                                                    <div class="ph-no-box">
-                                                        <button type="button" class="go-cta">Go</button>
-                                                        <input type="text" placeholder="Enter mob no." class="mobile-no"/>					
-                                                    </div>										-->
-
-                        </div>
-                    </div>
-                </div>		
-            </header>	
-        </div>
     </div>
     <div> <img src="../<%= gymcover %>" style="width:100%; height:300px; margin-top: 65px;" />
     <!-- Studio Profilse Header -->
@@ -223,8 +174,11 @@
 
     </div>
 </div>
-</form>
-</body>
-</html>
+    
+    </div>
+    
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ScriptSecton" runat="server">
+</asp:Content>
 
 
