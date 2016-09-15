@@ -94,6 +94,7 @@
       <DependentUpon>style.scss</DependentUpon>
     </Content>
     <Content Include="css\style.scss" />
+    <Content Include="data.aspx" />
     <Content Include="details.html" />
     <Content Include="Global.asax" />
     <Content Include="GymActivity.aspx" />
@@ -1808,6 +1809,13 @@
     </Compile>
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="data.aspx.cs">
+      <DependentUpon>data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="data.aspx.designer.cs">
+      <DependentUpon>data.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
