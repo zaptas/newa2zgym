@@ -1787,7 +1787,7 @@
     <Content Include="plugin\ThemePlugin\nav.js" />
     <Content Include="plugin\ThemePlugin\responsiveslides.min.js" />
     <Content Include="search.aspx" />
-    <Content Include="Templete\ConfigurationMail.html" />
+    <Content Include="Templete\Mail.html" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

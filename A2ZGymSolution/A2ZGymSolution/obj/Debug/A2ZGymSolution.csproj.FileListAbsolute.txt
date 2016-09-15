@@ -55,3 +55,16 @@ C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\DAL
 C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\obj\Debug\A2ZGymSolution.csprojResolveAssemblyReference.cache
 C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\obj\Debug\A2ZGymSolution.dll
 C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\obj\Debug\A2ZGymSolution.pdb
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\A2ZGymSolution.dll
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\A2ZGymSolution.pdb
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\BLL.dll
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\CommonUtility.dll
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\DTO.dll
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\DAL.dll
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\BLL.pdb
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\CommonUtility.pdb
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\DTO.pdb
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\bin\DAL.pdb
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\obj\Debug\A2ZGymSolution.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\obj\Debug\A2ZGymSolution.dll
+C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\A2ZGymSolution\obj\Debug\A2ZGymSolution.pdb

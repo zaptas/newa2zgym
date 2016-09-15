@@ -60,8 +60,12 @@ namespace DAL
            catch (Exception ex)
            {
                string description = ex.Message.ToString();
+               if (description.Contains("Violation of UNIQUE KEY"))
+               {
+                   throw new Exception("EmailId Already Registered!");
+               }
 
-               validate = "";
+              // validate = "";
            }
 
            return validate;
