@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="A2ZGymSolution.User" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs"  Inherits="A2ZGymSolution.User" %>
 
 <%@ Register TagPrefix="uc" TagName="Footer" Src="~/htmlparts/footer.ascx" %>
 <!DOCTYPE html>
