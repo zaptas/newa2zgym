@@ -1,0 +1,22 @@
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\bin\Debug\BLL.dll
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\bin\Debug\BLL.pdb
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\bin\Debug\DAL.dll
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\bin\Debug\DTO.dll
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\bin\Debug\CommonUtility.dll
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\bin\Debug\DAL.pdb
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\bin\Debug\DTO.pdb
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\bin\Debug\CommonUtility.pdb
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\obj\Debug\BLL.dll
+C:\Users\Sonia\Desktop\A2ZGymSolution\BLL\obj\Debug\BLL.pdb
+F:\A2ZGymSolution 14 sep\BLL\bin\Debug\BLL.dll
+F:\A2ZGymSolution 14 sep\BLL\bin\Debug\BLL.pdb
+F:\A2ZGymSolution 14 sep\BLL\bin\Debug\DAL.dll
+F:\A2ZGymSolution 14 sep\BLL\bin\Debug\DTO.dll
+F:\A2ZGymSolution 14 sep\BLL\bin\Debug\CommonUtility.dll
+F:\A2ZGymSolution 14 sep\BLL\bin\Debug\DAL.pdb
+F:\A2ZGymSolution 14 sep\BLL\bin\Debug\DTO.pdb
+F:\A2ZGymSolution 14 sep\BLL\bin\Debug\CommonUtility.pdb
+F:\A2ZGymSolution 14 sep\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\A2ZGymSolution 14 sep\BLL\obj\Debug\BLL.dll
+F:\A2ZGymSolution 14 sep\BLL\obj\Debug\BLL.pdb

@@ -1,0 +1,8 @@
+C:\Users\Sonia\Desktop\A2ZGymSolution\DTO\bin\Debug\DTO.dll
+C:\Users\Sonia\Desktop\A2ZGymSolution\DTO\bin\Debug\DTO.pdb
+C:\Users\Sonia\Desktop\A2ZGymSolution\DTO\obj\Debug\DTO.dll
+C:\Users\Sonia\Desktop\A2ZGymSolution\DTO\obj\Debug\DTO.pdb
+F:\A2ZGymSolution 14 sep\DTO\bin\Debug\DTO.dll
+F:\A2ZGymSolution 14 sep\DTO\bin\Debug\DTO.pdb
+F:\A2ZGymSolution 14 sep\DTO\obj\Debug\DTO.dll
+F:\A2ZGymSolution 14 sep\DTO\obj\Debug\DTO.pdb
