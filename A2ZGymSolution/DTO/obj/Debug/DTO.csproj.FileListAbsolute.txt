@@ -11,3 +11,8 @@ C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DTO\bin\Debug\DTO.pdb
 C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DTO\obj\Debug\DTO.dll
 C:\Users\Deepak\Documents\GitHub\newa2zgym\A2ZGymSolution\DTO\obj\Debug\DTO.pdb
+D:\github\newa2zgym\A2ZGymSolution\DTO\bin\Debug\DTO.dll
+D:\github\newa2zgym\A2ZGymSolution\DTO\bin\Debug\DTO.pdb
+D:\github\newa2zgym\A2ZGymSolution\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\github\newa2zgym\A2ZGymSolution\DTO\obj\Debug\DTO.dll
+D:\github\newa2zgym\A2ZGymSolution\DTO\obj\Debug\DTO.pdb

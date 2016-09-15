@@ -66,7 +66,7 @@
         </div>
         <div class="call-us text-center">
 
-            <h3><i class="phone"></i>Call Us : +91 120 437 0324 , +91 982 1699 248</h3>
+            <h3><i class="phone"></i>Call Us : +91 120 437 0324 , +91 982 1699 242</h3>
 
         </div>
 
