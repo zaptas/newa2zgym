@@ -264,7 +264,7 @@
                         <input type="text" class="text autosuggest" id="txtautocomplete" value="City or GYM name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City or GYM name';}">
                     </div>
                     <div class="dropdown-button">
-                        <asp:Button ID="Button1" CssClass="btn btn-primary top-search" runat="server" Text="Search" />
+                        <asp:Button ID="Button1" CssClass="btn btn-primary dropdown" runat="server" Text="Search" />
                     </div>
                     <div class="clearfix"></div>
                     <!-- start h_menu4 -->
