@@ -6,7 +6,7 @@
     
     <div runat="server" id="post_loginhead1" class="post_loginhead">
     <div class="content">
-        <h1> Deepak  Kumar</h1>
+        <h1> <%= username %></h1>
     </div>
    
 
@@ -16,15 +16,15 @@
         <div class="colL">
             <div class="profile_pic">            
                              
-                                <span id="userPhoto"><img src="http://fitpass.co.in/upload/myprofile.jpg" alt="edit profile" class="img-responsive" style="width:180px;height:160px;"></span>
+                                <span id="userPhoto"><img src="<%=picpath %>" alt="edit profile" class="img-responsive" style="width:180px;height:160px;"></span>
 
                 <div id="uploadFile"><noscript><p>Please enable JavaScript to use file uploader.</p></noscript></div>            </div>
             <div class="profile_name">
-                Deepak  Kumar<br /><br />
+                <%= username %><br /><br />
 
                 <span class="fnt-size14"></span><br />
                 <br />
-                <span class="fnt-size14">Membership Id: FITPASS-37478</span><br /><br />
+                <span class="fnt-size14">Membership Id: <%=userid %></span><br /><br />
                 <span class="fnt-size14"><a href="/checkout"><b>Extend Membership</b></a></span><br />
             </div>
             <div>

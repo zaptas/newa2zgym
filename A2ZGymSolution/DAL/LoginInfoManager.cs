@@ -18,7 +18,7 @@ namespace DAL
          string information = string.Empty;
          string UserId = string.Empty;
          string UserName = string.Empty;
-         //string MemberId = string.Empty;
+         string Picpath = string.Empty;
          //string MemberName = string.Empty;
 
 
@@ -39,11 +39,11 @@ namespace DAL
                  {
                      UserId = sqlDataReader.GetValue(0).ToString();
                      UserName = sqlDataReader.GetValue(1).ToString();
-
+                     Picpath = sqlDataReader.GetValue(2).ToString();
 
                  }
 
-                 information = UserId + ";" + UserName;
+                 information = UserId + ";" + UserName+";"+Picpath;
 
              }
          }

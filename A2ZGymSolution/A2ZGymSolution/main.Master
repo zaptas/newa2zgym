@@ -105,13 +105,13 @@
                     <div class="cd-form">
                         <p class="fieldset">
                             <label class="image-replace cd-email" for="signin-email">E-mail</label>
-                            <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                            <input class="full-width has-padding has-border" id="signinemail" type="email" placeholder="E-mail" runat="server">
                             <span class="cd-error-message">Error message here!</span>
                         </p>
 
                         <p class="fieldset">
                             <label class="image-replace cd-password" for="signin-password">Password</label>
-                            <input class="full-width has-padding has-border" id="signin-password" type="text" placeholder="Password">
+                            <input class="full-width has-padding has-border" id="signinpassword" type="text" placeholder="Password" runat="server">
                             <a href="#0" class="hide-password">Hide</a>
                             <span class="cd-error-message">Error message here!</span>
                         </p>
@@ -123,7 +123,7 @@
 
                         <p class="fieldset">
                             <%--<input class="full-width" type="submit" value="Login" >--%>
-                            <asp:Button runat="server" CssClass="btn full-width" Text="Login" ID="btnLogin" UseSubmitBehavior="False"></asp:Button>
+                            <asp:Button runat="server" CssClass="btn full-width" Text="Login" ID="btnLogin" UseSubmitBehavior="False" OnClick="btnLogin_Click"></asp:Button>
                         </p>
                     </div>
 
@@ -261,10 +261,10 @@
                         <h2 class="shade-1">Plan your Perfect Fitness</h2>
                     </div>
                     <div class="top-search">
-                        <input type="text" class="text autosuggest" id="txtautocomplete" value="City or GYM name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City or GYM name';}">
+                        <input type="text" class="text autosuggest" id="txtautocomplete" runat="server" value="City or GYM name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}"/>
                     </div>
                     <div class="dropdown-button">
-                        <asp:Button ID="Button1" CssClass="btn btn-primary dropdown" runat="server" Text="Search" />
+                        <asp:Button ID="Button1" CssClass="btn btn-primary dropdown" runat="server" Text="Search" OnClick="Button1_Click"/>
                     </div>
                     <div class="clearfix"></div>
                     <!-- start h_menu4 -->

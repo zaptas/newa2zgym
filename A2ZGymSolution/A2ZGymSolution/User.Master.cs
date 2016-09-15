@@ -11,7 +11,7 @@ namespace A2ZGymSolution
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

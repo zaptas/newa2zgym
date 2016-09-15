@@ -28,7 +28,12 @@ namespace A2ZGymSolution
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-
+            
+            if (Session["UserId"] != null )
+            {
+              string  URL = "UserDashboard";
+                Response.Redirect(URL);
+            }
             try
             {
                 conn.Open();
@@ -44,9 +49,10 @@ namespace A2ZGymSolution
                 {
                     Session["UserId"] = info[0].ToString();
                     Session["UserName"] = info[1].ToString();
+                    Session["pic"] = info[2].ToString();
                     // Session["GymEmail"] = info[2].ToString();
                     Session.Timeout = 60;
-                    URL = "~/UserProfile.aspx";
+                    URL = "UserDashboard";
                     Response.Redirect(URL);
 
 
@@ -210,6 +216,13 @@ namespace A2ZGymSolution
             htmlTemplate = htmlTemplate.Replace("{Password}", signuppassword.Value.ToString());
 
             return htmlTemplate;
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string city = txtautocomplete.Value;
+
+            Response.Redirect("Search/" + city);
         }
 
       

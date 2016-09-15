@@ -18,6 +18,7 @@ namespace A2ZGymSolution
             rote.MapPageRoute("Registration", "Registration", "~/register.aspx");
             rote.MapPageRoute("Gym Profile", "Gym/{name}/{id}", "~/gym_profile.aspx", true, new RouteValueDictionary { { "id", null } });
             rote.MapPageRoute("Gym Search", "Search/{loc}", "~/GYM.aspx");
+            rote.MapPageRoute("User", "UserDashboard", "~/userdashboard.aspx");
 
         }
 
