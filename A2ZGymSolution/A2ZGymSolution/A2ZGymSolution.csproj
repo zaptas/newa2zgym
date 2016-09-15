@@ -94,8 +94,6 @@
       <DependentUpon>style.scss</DependentUpon>
     </Content>
     <Content Include="css\style.scss" />
-    <Content Include="css\user.css" />
-    <Content Include="data.aspx" />
     <Content Include="details.html" />
     <Content Include="Global.asax" />
     <Content Include="GymActivity.aspx" />
@@ -1791,8 +1789,7 @@
     <Content Include="plugin\ThemePlugin\nav.js" />
     <Content Include="plugin\ThemePlugin\responsiveslides.min.js" />
     <Content Include="search.aspx" />
-    <Content Include="Templete\ConfigurationMail.html" />
-    <Content Include="userdashboard.aspx" />
+    <Content Include="Templete\Mail.html" />
     <Content Include="UserProfile.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -1813,13 +1810,6 @@
     </Compile>
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="data.aspx.cs">
-      <DependentUpon>data.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="data.aspx.designer.cs">
-      <DependentUpon>data.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -1925,13 +1915,6 @@
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
-    </Compile>
-    <Compile Include="userdashboard.aspx.cs">
-      <DependentUpon>userdashboard.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="userdashboard.aspx.designer.cs">
-      <DependentUpon>userdashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserProfile.aspx.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
