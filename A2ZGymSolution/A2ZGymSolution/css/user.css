@@ -3115,6 +3115,7 @@ div.account section .note {
             padding: 0 20px;
             text-align: center;
             height: 60px;
+            margin-top:-1px;
         }
 
     .class_list li .class_info {
