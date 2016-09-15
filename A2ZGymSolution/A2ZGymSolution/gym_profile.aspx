@@ -1,5 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="gym_profile.aspx.cs" Inherits="A2ZGymSolution.gym_profile" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="gym_profile.aspx.cs" MasterPageFile="~/master-all.Master" Inherits="A2ZGymSolution.gym_profile" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -228,3 +228,4 @@
 </html>
 
 
+    </asp:Content>
