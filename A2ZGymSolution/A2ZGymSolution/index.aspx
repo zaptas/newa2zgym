@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!-- content-section-starts -->
-    <div class="content-section">
+    <div class="content-section" >
         <div class="services-section">
             <div class="services-section-left">
                 <h3>WE VALUE YOUR NEED</h3>
