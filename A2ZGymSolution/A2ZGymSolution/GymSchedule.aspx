@@ -10,7 +10,7 @@
          $(document).ready(function () {
              
         
-             $("#timepicker1").timepicker({
+             $("#timepicker,#timepicker1").timepicker({
                  timeFormat: 'h:mm p',
                  interval: 60,
                  minTime: '10',
@@ -41,7 +41,7 @@
                     <td>Date:</td>
                     <td>&nbsp;</td>
                     <td>
-                        <input type="text" id="datepicker" runat="server" /></td>
+                        <input type="text" id="datepicker"  /></td>
                 </tr>
             </table>
         </div>
@@ -50,14 +50,14 @@
                 <tr>
                     <td>From</td>
                     <td>
-                        <input type="text" id="timepicker" runat="server" /></td>
+                        <input type="text" id="timepicker"  /></td>
                     <td>TO
                     </td>
                     <td>
-                        <input type="text" id="timepicker1" runat="server" /></td>
+                        <input type="text" id="timepicker1"/></td>
                     <td>Activity</td>
                     <td>
-                        <input type="text" id="txt_activity" runat="server" /></td>
+                        <input type="text" id="txt_activity" /></td>
                     <td>
                         <asp:Button ID="btn_add" runat="server" Text="Add" OnClick="btn_add_Click" /></td>
                 </tr>

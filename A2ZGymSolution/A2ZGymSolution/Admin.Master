@@ -18,8 +18,7 @@
    
      <%--   <link rel="stylesheet" href="/resources/demos/style.css"/>--%>
     <link href="css/jquery-ui.css" rel="stylesheet" />
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    
+ 
  
    
 
