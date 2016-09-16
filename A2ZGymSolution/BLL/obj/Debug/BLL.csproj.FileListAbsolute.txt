@@ -53,3 +53,14 @@ E:\sohelkhan\Github\newa2zgym\A2ZGymSolution\BLL\bin\Debug\CommonUtility.pdb
 E:\sohelkhan\Github\newa2zgym\A2ZGymSolution\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 E:\sohelkhan\Github\newa2zgym\A2ZGymSolution\BLL\obj\Debug\BLL.dll
 E:\sohelkhan\Github\newa2zgym\A2ZGymSolution\BLL\obj\Debug\BLL.pdb
+D:\github\newa2zgym\A2ZGymSolution\BLL\bin\Debug\BLL.dll
+D:\github\newa2zgym\A2ZGymSolution\BLL\bin\Debug\BLL.pdb
+D:\github\newa2zgym\A2ZGymSolution\BLL\bin\Debug\DAL.dll
+D:\github\newa2zgym\A2ZGymSolution\BLL\bin\Debug\DTO.dll
+D:\github\newa2zgym\A2ZGymSolution\BLL\bin\Debug\CommonUtility.dll
+D:\github\newa2zgym\A2ZGymSolution\BLL\bin\Debug\DAL.pdb
+D:\github\newa2zgym\A2ZGymSolution\BLL\bin\Debug\DTO.pdb
+D:\github\newa2zgym\A2ZGymSolution\BLL\bin\Debug\CommonUtility.pdb
+D:\github\newa2zgym\A2ZGymSolution\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+D:\github\newa2zgym\A2ZGymSolution\BLL\obj\Debug\BLL.dll
+D:\github\newa2zgym\A2ZGymSolution\BLL\obj\Debug\BLL.pdb

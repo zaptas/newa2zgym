@@ -52,6 +52,7 @@ namespace A2ZGymSolution
                     obj.creationdate = System.DateTime.Now.ToString();
                     GymActivityInfoService ob = new GymActivityInfoService();
                     ob.getInsertActivity(obj);
+                    lblactivity.Text = "Aactivities save Successfully";
                 }
             }
         }

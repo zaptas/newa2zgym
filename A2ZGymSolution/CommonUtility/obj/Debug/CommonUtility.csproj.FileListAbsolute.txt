@@ -16,3 +16,7 @@ C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\CommonUtility\bin\Debug
 C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.dll
 C:\Users\Admin\Documents\GitHub\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.pdb
+D:\github\newa2zgym\A2ZGymSolution\CommonUtility\bin\Debug\CommonUtility.dll
+D:\github\newa2zgym\A2ZGymSolution\CommonUtility\bin\Debug\CommonUtility.pdb
+D:\github\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.dll
+D:\github\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.pdb

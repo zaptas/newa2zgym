@@ -16,7 +16,8 @@ namespace A2ZGymSolution
         public string email = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            email = Request.Form["signinemail"].ToString();
+
+            email = Session["UserEmail"].ToString();
 
         }
 

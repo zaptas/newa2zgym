@@ -1,4 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master-all.Master" AutoEventWireup="true" CodeBehind="GymSchedule.aspx.cs" Inherits="A2ZGymSolution.GymSchedule" %>
+﻿<%@ Page Title="" Language="C#"  MasterPageFile="~/Admin.Master" AutoEventWireup="true" CodeBehind="GymSchedule.aspx.cs" Inherits="A2ZGymSolution.GymSchedule" %>
+
+
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css"/>
@@ -27,9 +30,10 @@
         }
     </style>     
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div style="text-align: center">GYM Schedule</div>
+    <div style="text-align: center"><h2>GYM Schedule</h2></div>
     <div style="margin-top: 30px">
         <div>
             <table align="center">
@@ -99,9 +103,6 @@
     <div align="center" style="margin-top: 20px">
 
         <asp:Button ID="btn_save" runat="server" Text="Save" OnClick="btn_save_Click" />
-
     </div>
+</asp:Content>
 
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ScriptSecton" runat="server">
-</asp:Content>
