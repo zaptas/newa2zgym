@@ -21,7 +21,7 @@
                 <div class="services-section-right-text">
                     <p>
                         <img src="images/quotes.png" alt="" />
-                        If I don't feel confident about my body, I'm not going to sit at home and feel sorry for myself and not do something about it. It's all about taking action and not being lazy. So you do the work, whether it's fitness or whatever. It's about getting up, motivating yourself and just doing it. 
+                        If I don't feel confident about my body, I am not going to sit at home and feel sorry for myself and not do something about it. It's all about taking action and not being lazy. So you do the work, whether it's fitness or whatever. It's about getting up, motivating yourself and just doing it. 
                     </p>
                     <p class="end-q">
                         Jogging is very beneficial. It's good for your legs and your feet. It's also very good for the ground. If makes it feel needed.
