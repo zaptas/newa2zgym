@@ -8,18 +8,28 @@
 <head runat="server">
 
     <title>Home</title>
-    <link href="plugin/bootstrap/css/bootstrap.css" rel="stylesheet"  />
-
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--webfont-->
+    <%-- Live cdn start --%>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300,300italic,100italic,100' rel='stylesheet' type='text/css'>
+    <%-- Live cdn End --%>
+
+
+    <%-- Local cdn start --%>
+    <%--<link href="plugin/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="plugin/Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet" />--%>
+    <%-- Local cdn end --%>
+
+
     <link href="../plugin/login-signup-popup/css/reset.css" rel="stylesheet" />
     <link href="../plugin/login-signup-popup/css/style.css" rel="stylesheet" />
-    <link href="plugin/Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    
+
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -261,10 +271,10 @@
                         <h2 class="shade-1">Plan your Perfect Fitness</h2>
                     </div>
                     <div class="top-search">
-                        <input type="text" class="text autosuggest" id="txtautocomplete" runat="server" value="City or GYM name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}"/>
+                        <input type="text" class="text autosuggest" id="txtautocomplete" runat="server" value="City or GYM name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" />
                     </div>
                     <div class="dropdown-button">
-                        <asp:Button ID="Button1" CssClass="btn btn-primary dropdown" runat="server" Text="Search" OnClick="Button1_Click"/>
+                        <asp:Button ID="Button1" CssClass="btn btn-primary dropdown" runat="server" Text="Search" OnClick="Button1_Click" />
                     </div>
                     <div class="clearfix"></div>
                     <!-- start h_menu4 -->
