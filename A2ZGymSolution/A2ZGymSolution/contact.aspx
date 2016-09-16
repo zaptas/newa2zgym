@@ -19,7 +19,7 @@
                         </div>
                         <div>
                         <div class="company_address">
-                            <h3>A2z GYM.COM</h3>
+                            <h3>A2Z GYM.COM</h3>
                             <p>504 Sec 2C Vasundhra,</p>
                             <p>Ghaziabad,</p>
                             <p>UP,India,201012</p>
