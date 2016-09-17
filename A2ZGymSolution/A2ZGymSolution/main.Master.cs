@@ -50,7 +50,7 @@ namespace A2ZGymSolution
                     Session["UserId"] = info[0].ToString();
                     Session["UserName"] = info[1].ToString();
                     Session["pic"] = info[2].ToString();
-                    // Session["GymEmail"] = info[2].ToString();
+                    Session["UserEmail"] = info[3].ToString();
                     Session.Timeout = 60;
                     URL = "UserDashboard";
                     Response.Redirect(URL);

@@ -18,8 +18,7 @@
    
      <%--   <link rel="stylesheet" href="/resources/demos/style.css"/>--%>
     <link href="css/jquery-ui.css" rel="stylesheet" />
-    <script src="assets/js/jquery-1.10.2.js"></script>
-    
+ 
  
    
 
@@ -40,6 +39,9 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="index.html" style="color:white">Admin Panel</a>
+
+                 <div style="color: white; padding: 15px 50px 5px 50px; float: left; font-size: 20px;">
+                     &nbsp; <asp:Label ID="lblgymName" runat="server" Text=""></asp:Label>
                 </div>
 
                 <div style="color: white; padding: 15px 50px 5px 50px; float: right; font-size: 16px;">
@@ -70,7 +72,7 @@
 
                             </li>
                             <li>
-                                <a href="category.aspx">Trainer<span class="fa arrow"></span></a>
+                                <a href="#">Trainer<span class="fa arrow"></span></a>
 
                             </li>
                         </ul>

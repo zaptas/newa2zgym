@@ -7,12 +7,12 @@
     <table align="center">
         
         <tr>
-            <td>User Name</td>
-            <td><asp:TextBox ID="txtuser" runat="server"></asp:TextBox></td>
+            <td>Gym Id: </td>
+            <td ><asp:TextBox ID="txtuser" runat="server" style="font-size:16px; font-family:Arial; border: 1px solid #6297BC; color:black;"></asp:TextBox></td>
         </tr>
         <tr>
-            <td>Password</td>
-            <td><asp:TextBox ID="txtpass" runat="server"></asp:TextBox></td>
+            <td>Password:</td>
+            <td><asp:TextBox ID="txtpass" type="password" runat="server"  style="font-size:16px; font-family:Arial; border: 1px solid #6297BC; color:black;"></asp:TextBox></td>
         </tr>
         <tr>
             <td><asp:Button id= "btnlogin" runat="server"  Text="Login" OnClick="btnlogin_Click"></asp:Button></td>

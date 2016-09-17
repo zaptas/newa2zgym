@@ -14,7 +14,7 @@ namespace A2ZGymSolution
         public string userid = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserName"] == "")
+            if (Session["UserName"].ToString() == "")
             {
                
             }

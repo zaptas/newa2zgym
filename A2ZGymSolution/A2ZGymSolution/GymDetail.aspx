@@ -21,7 +21,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <body>
     
-        <div style="text-align: CENTER">Additional Information</div>
+        <div style="text-align: CENTER"><h2>Additional Information</h2></div>
         <div style="width: 500px; margin-left: 400px">
             <table align="center" class="table" width="100%">
                 <tr>

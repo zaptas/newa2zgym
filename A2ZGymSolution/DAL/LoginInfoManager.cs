@@ -19,7 +19,7 @@ namespace DAL
          string UserId = string.Empty;
          string UserName = string.Empty;
          string Picpath = string.Empty;
-         //string MemberName = string.Empty;
+         string UserEmail = string.Empty;
 
 
          SqlCommand sqlCommand = new SqlCommand();
@@ -40,10 +40,11 @@ namespace DAL
                      UserId = sqlDataReader.GetValue(0).ToString();
                      UserName = sqlDataReader.GetValue(1).ToString();
                      Picpath = sqlDataReader.GetValue(2).ToString();
+                     UserEmail = sqlDataReader.GetValue(3).ToString();
 
                  }
 
-                 information = UserId + ";" + UserName+";"+Picpath;
+                 information = UserId + ";" + UserName+";"+Picpath + ";" + UserEmail;
 
              }
          }
