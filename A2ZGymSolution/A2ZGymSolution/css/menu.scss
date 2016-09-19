@@ -11,13 +11,13 @@ $small-menu-height: 50px;
 
 
 
-$main-logo-size:40 + ($main-menu-height * 3) ;
+$main-logo-size: 40 + ($main-menu-height * 3);
 
-$main-menu-active-backgruond-color:$shade-5;
-$main-menu-active-color:$shade-1;
+$main-menu-active-backgruond-color: $shade-5;
+$main-menu-active-color: $shade-1;
 
-$main-menu-background-color:$shade-1;
-$small-menu-background-color:$shade-6;
+$main-menu-background-color: $shade-1;
+$small-menu-background-color: $shade-6;
 
 
 
@@ -27,16 +27,16 @@ $small-menu-background-color:$shade-6;
     height: $main-menu-height;
     box-sizing: border-box;
     clear: both;
-    background:$main-menu-background-color;
+    background: $main-menu-background-color;
     display: flex;
-	position: relative;
+    position: relative;
     z-index: 2;
 
-	.menu-active
-	{
-		background-color:$main-menu-active-backgruond-color !important;
-		color: $main-menu-active-color !important;
-	}
+    .menu-active
+    {
+        background-color: $main-menu-active-backgruond-color !important;
+        color: $main-menu-active-color !important;
+    }
 
     .logo-wrapper
     {
@@ -82,7 +82,7 @@ $small-menu-background-color:$shade-6;
             display: flex;
             box-sizing: border-box;
             margin: 0 auto;
-            
+
 
             .Li
             {
@@ -97,27 +97,28 @@ $small-menu-background-color:$shade-6;
                     display: block;
                     text-decoration: none;
                     color: $shade-5;
+
                     &:hover
                     {
                         background-color: $shade-5;
                         color: $shade-1;
                     }
-					&:last-child 
-					{
-						 height: $main-menu-height;
-						     border-radius: initial;
-						padding: 0px;
-						height: $main-menu-height;
-						line-height: $main-menu-height;
-						border: none;
-					}
                 }
 
                 &:first-child
                 {
                     border: none;
                 }
-				
+
+                &:last-child a
+                {
+                    height: $main-menu-height;
+                    border-radius: initial;
+                    padding: 0px;
+                    height: $main-menu-height;
+                    line-height: $main-menu-height;
+                    border: none;
+                }
             }
         }
     }
@@ -130,34 +131,34 @@ $small-menu-background-color:$shade-6;
         float: right;
         cursor: pointer;
         text-align: center;
-		clear: both;
-		width:100%;
-		
-		.small-menu-logo
-			{
-				flex-grow:1;
-				img
-				{
-					min-width: 50px;
-					max-width: 70px;
-					position: relative;
-					top: 50%;
-					transform: translateY(-50%);
-					margin-left:10px;
-				}
-			}
-		
-		
+        clear: both;
+        width: 100%;
+
+        .small-menu-logo
+        {
+            flex-grow: 1;
+
+            img
+            {
+                min-width: 50px;
+                max-width: 70px;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                margin-left: 10px;
+            }
+        }
+
+
         span
         {
             font-size: 30px;
             line-height: $small-menu-height;
             font-size: 35px;
             color: $shade-4;
-			width:60px;
+            width: 60px;
         }
     }
-
 }
 
 
@@ -170,7 +171,7 @@ $small-menu-background-color:$shade-6;
     {
         display: inline-block;
         height: auto;
-		
+
         .logo-wrapper
         {
             width: 100%;
@@ -189,14 +190,11 @@ $small-menu-background-color:$shade-6;
                 {
                     border: none;
 
-				 &:last-child
-                {
-                    display:none;
+                    &:last-child
+                    {
+                        display: none;
+                    }
                 }
-                }
-				
-				 
-				
             }
         }
     }
@@ -208,10 +206,11 @@ $small-menu-background-color:$shade-6;
     #main-manu
     {
         height: $small-menu-height;
-		background: $small-menu-background-color;
+        background: $small-menu-background-color;
+
         .logo-wrapper
         {
-            display:none;
+            display: none;
         }
 
         .menu-wrapper
@@ -253,4 +252,3 @@ $small-menu-background-color:$shade-6;
     }
     /* Logo */
 }
-

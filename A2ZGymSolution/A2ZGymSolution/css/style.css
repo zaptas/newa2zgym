@@ -3086,14 +3086,14 @@ p.para {
           #main-manu .menu-wrapper .menu-container .Li a:hover {
             background-color: #444444;
             color: #ffffff; }
-          #main-manu .menu-wrapper .menu-container .Li a:last-child {
-            height: 80px;
-            border-radius: initial;
-            padding: 0px;
-            height: 80px;
-            line-height: 80px;
-            border: none; }
         #main-manu .menu-wrapper .menu-container .Li:first-child {
+          border: none; }
+        #main-manu .menu-wrapper .menu-container .Li:last-child a {
+          height: 80px;
+          border-radius: initial;
+          padding: 0px;
+          height: 80px;
+          line-height: 80px;
           border: none; }
   #main-manu .small-menu {
     display: none;

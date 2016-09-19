@@ -87,6 +87,9 @@
     <Content Include="contact.aspx" />
     <Content Include="css\app.css" />
     <Content Include="css\jquery-ui.css" />
+    <Content Include="css\menu.css">
+      <DependentUpon>menu.scss</DependentUpon>
+    </Content>
     <Content Include="css\responsive.scss" />
     <Content Include="css\style.css">
       <DependentUpon>style.scss</DependentUpon>
@@ -95,6 +98,7 @@
       <DependentUpon>style.scss</DependentUpon>
     </Content>
     <Content Include="css\style.scss" />
+    <Content Include="css\user.css" />
     <Content Include="data.aspx" />
     <Content Include="details.html" />
     <Content Include="Global.asax" />
@@ -3042,6 +3046,10 @@
     <Content Include="plugin\login-signup-popup\partials\_variables.scss" />
     <Content Include="plugin\login-signup-popup\readme.pdf" />
     <Content Include="plugin\login-signup-popup\scss\style.scss" />
+    <Content Include="css\menu.scss" />
+    <Content Include="css\menu.css.map">
+      <DependentUpon>menu.scss</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
