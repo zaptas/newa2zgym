@@ -3035,7 +3035,9 @@ p.para {
   box-sizing: border-box;
   clear: both;
   background: #ffffff;
-  display: flex; }
+  display: flex;
+  position: relative;
+  z-index: 2; }
   #main-manu .menu-active {
     background-color: #444444 !important;
     color: #ffffff !important; }
@@ -3130,7 +3132,9 @@ p.para {
       #main-manu .menu-wrapper .menu-container {
         width: 100%; }
         #main-manu .menu-wrapper .menu-container .Li {
-          border: none; } }
+          border: none; }
+          #main-manu .menu-wrapper .menu-container .Li:last-child {
+            display: none; } }
 @media (max-width: 768px) {
   #main-manu {
     height: 50px;
