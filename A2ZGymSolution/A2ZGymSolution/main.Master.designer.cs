@@ -76,24 +76,6 @@ namespace A2ZGymSolution {
         protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl signupemail;
         
         /// <summary>
-        /// signuppassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText signuppassword;
-        
-        /// <summary>
-        /// signupconfirmpassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText signupconfirmpassword;
-        
-        /// <summary>
         /// signupmobile control.
         /// </summary>
         /// <remarks>
@@ -110,6 +92,24 @@ namespace A2ZGymSolution {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText signuppincode;
+        
+        /// <summary>
+        /// signuppassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText signuppassword;
+        
+        /// <summary>
+        /// signupconfirmpassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText signupconfirmpassword;
         
         /// <summary>
         /// Chkuser control.
@@ -137,24 +137,6 @@ namespace A2ZGymSolution {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnNewUser;
-        
-        /// <summary>
-        /// txtautocomplete control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtautocomplete;
-        
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
         /// ContentPlaceHolder1 control.
