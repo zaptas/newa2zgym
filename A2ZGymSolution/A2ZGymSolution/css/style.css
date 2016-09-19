@@ -3031,7 +3031,7 @@ p.para {
 /*do not down main menu height you can up it  cause logo will not align properly */
 #main-manu {
   width: 100%;
-  height: 50px;
+  height: 80px;
   box-sizing: border-box;
   clear: both;
   background: #ffffff;
@@ -3044,12 +3044,12 @@ p.para {
   #main-manu .logo-wrapper {
     padding: 0px;
     width: 400px;
-    height: 50px;
+    height: 80px;
     box-sizing: border-box; }
     #main-manu .logo-wrapper .logo-container {
-      max-width: 190px;
+      max-width: 280px;
       width: 100%;
-      height: 50px;
+      height: 80px;
       margin: 0px auto; }
       #main-manu .logo-wrapper .logo-container img {
         min-width: 0px;
@@ -3060,7 +3060,7 @@ p.para {
         transform: translateY(-50%); }
   #main-manu .menu-wrapper {
     flex-grow: 1;
-    height: 50px;
+    height: 80px;
     width: auto;
     text-align: center;
     box-sizing: border-box; }
@@ -3068,7 +3068,7 @@ p.para {
       min-width: 600px;
       max-width: 700px;
       width: 100%;
-      height: 50px;
+      height: 80px;
       background-color: #ffffff;
       display: flex;
       box-sizing: border-box;
@@ -3078,7 +3078,7 @@ p.para {
         flex: 1;
         box-sizing: border-box;
         /*border-left: 1px solid black;*/
-        line-height: 50px; }
+        line-height: 80px; }
         #main-manu .menu-wrapper .menu-container .Li a {
           display: block;
           text-decoration: none;
@@ -3087,11 +3087,11 @@ p.para {
             background-color: #444444;
             color: #ffffff; }
           #main-manu .menu-wrapper .menu-container .Li a:last-child {
-            height: 50px;
+            height: 80px;
             border-radius: initial;
             padding: 0px;
-            height: 50px;
-            line-height: 50px;
+            height: 80px;
+            line-height: 80px;
             border: none; }
         #main-manu .menu-wrapper .menu-container .Li:first-child {
           border: none; }

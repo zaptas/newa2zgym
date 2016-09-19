@@ -1,1 +1,256 @@
 ﻿
+
+@import "theme";
+
+/* Menu start */
+
+/*do not down main menu height you can up it  cause logo will not align properly */
+$main-menu-height: 80px;
+
+$small-menu-height: 50px;
+
+
+
+$main-logo-size:40 + ($main-menu-height * 3) ;
+
+$main-menu-active-backgruond-color:$shade-5;
+$main-menu-active-color:$shade-1;
+
+$main-menu-background-color:$shade-1;
+$small-menu-background-color:$shade-6;
+
+
+
+#main-manu
+{
+    width: 100%;
+    height: $main-menu-height;
+    box-sizing: border-box;
+    clear: both;
+    background:$main-menu-background-color;
+    display: flex;
+	position: relative;
+    z-index: 2;
+
+	.menu-active
+	{
+		background-color:$main-menu-active-backgruond-color !important;
+		color: $main-menu-active-color !important;
+	}
+
+    .logo-wrapper
+    {
+        padding: 0px;
+        width: 400px;
+        height: $main-menu-height;
+        box-sizing: border-box;
+
+        .logo-container
+        {
+            max-width: $main-logo-size;
+            width: 100%;
+            height: $main-menu-height;
+            margin: 0px auto;
+
+            img
+            {
+                min-width: 0px;
+                max-width: inherit;
+                width: 100%;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .menu-wrapper
+    {
+        flex-grow: 1;
+        height: $main-menu-height;
+        width: auto;
+        text-align: center;
+        box-sizing: border-box;
+
+        .menu-container
+        {
+            min-width: 600px;
+            max-width: 700px;
+            width: 100%;
+            height: $main-menu-height;
+            background-color: $shade-1;
+            display: flex;
+            box-sizing: border-box;
+            margin: 0 auto;
+            
+
+            .Li
+            {
+                background-color: $shade-1;
+                flex: 1;
+                box-sizing: border-box;
+                /*border-left: 1px solid black;*/
+                line-height: $main-menu-height;
+
+                a
+                {
+                    display: block;
+                    text-decoration: none;
+                    color: $shade-5;
+                    &:hover
+                    {
+                        background-color: $shade-5;
+                        color: $shade-1;
+                    }
+					&:last-child 
+					{
+						 height: $main-menu-height;
+						     border-radius: initial;
+						padding: 0px;
+						height: $main-menu-height;
+						line-height: $main-menu-height;
+						border: none;
+					}
+                }
+
+                &:first-child
+                {
+                    border: none;
+                }
+				
+            }
+        }
+    }
+
+    .small-menu
+    {
+        display: none;
+        height: $small-menu-height;
+        background-color: $small-menu-background-color;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+		clear: both;
+		width:100%;
+		
+		.small-menu-logo
+			{
+				flex-grow:1;
+				img
+				{
+					min-width: 50px;
+					max-width: 70px;
+					position: relative;
+					top: 50%;
+					transform: translateY(-50%);
+					margin-left:10px;
+				}
+			}
+		
+		
+        span
+        {
+            font-size: 30px;
+            line-height: $small-menu-height;
+            font-size: 35px;
+            color: $shade-4;
+			width:60px;
+        }
+    }
+
+}
+
+
+
+
+
+@media (max-width: 992px)
+{
+    #main-manu
+    {
+        display: inline-block;
+        height: auto;
+		
+        .logo-wrapper
+        {
+            width: 100%;
+            clear: both;
+        }
+
+        .menu-wrapper
+        {
+            clear: both;
+
+            .menu-container
+            {
+                width: 100%;
+
+                .Li
+                {
+                    border: none;
+
+				 &:last-child
+                {
+                    display:none;
+                }
+                }
+				
+				 
+				
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px)
+{
+    #main-manu
+    {
+        height: $small-menu-height;
+		background: $small-menu-background-color;
+        .logo-wrapper
+        {
+            display:none;
+        }
+
+        .menu-wrapper
+        {
+            height: auto;
+            display: none;
+
+            .menu-container
+            {
+                display: inline-block;
+                max-width: 100%;
+                min-width: 100%;
+                height: auto;
+
+                .Li
+                {
+                    border: none;
+                    /*border-bottom: 1px solid black;*/
+                    height: $small-menu-height;
+                    line-height: $small-menu-height;
+
+                    &:first-child
+                    {
+                        /*border-bottom: 1px solid black;*/
+                    }
+
+                    &:last-child
+                    {
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        .small-menu
+        {
+            display: flex;
+        }
+    }
+    /* Logo */
+}
+
