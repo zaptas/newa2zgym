@@ -3036,8 +3036,10 @@ p.para {
   clear: both;
   background: #ffffff;
   display: flex;
-  position: relative;
-  z-index: 2; }
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 50; }
   #main-manu .menu-active {
     background-color: #444444 !important;
     color: #ffffff !important; }

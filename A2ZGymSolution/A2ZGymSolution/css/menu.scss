@@ -29,8 +29,10 @@ $small-menu-background-color: $shade-6;
     clear: both;
     background: $main-menu-background-color;
     display: flex;
-    position: relative;
-    z-index: 2;
+    top:0px;
+    left:0px;
+    position: absolute;
+    z-index: 50;
 
     .menu-active
     {

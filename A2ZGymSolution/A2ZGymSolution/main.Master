@@ -34,9 +34,9 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js" type="text/javascript"></script>
+  <%--  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js" type="text/javascript"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
-    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />
+    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />--%>
     <script type="text/javascript">
         $(document).ready(function () {
             SearchText();
@@ -291,21 +291,21 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <!-- Set the first background image using inline CSS below. -->
-                    <div class="fill" style="background-image: url('img/banner-13.png');"></div>
+                    <div class="fill" style="background-image: url('img/banner-18.jpg');"></div>
                     <div class="carousel-caption">
                         <h2>Caption 1</h2>
                     </div>
                 </div>
                 <div class="item">
                     <!-- Set the second background image using inline CSS below. -->
-                    <div class="fill" style="background-image: url('img/banner-14.jpg');"></div>
+                    <div class="fill" style="background-image: url('img/banner-20.jpg');"></div>
                     <div class="carousel-caption">
                         <h2>Caption 2</h2>
                     </div>
                 </div>
                 <div class="item">
                     <!-- Set the third background image using inline CSS below. -->
-                    <div class="fill" style="background-image: url('img/banner-15.png');"></div>
+                    <div class="fill" style="background-image: url('img/banner-26.jpg');"></div>
                     <div class="carousel-caption">
                         <h2>Caption 3</h2>
                     </div>
@@ -332,7 +332,7 @@
         <uc:footer ID="Spinner1" runat="server" minvalue="1" maxvalue="10" />
         <!-- footer-section-ends -->
     </form>
-
+    <script src="plugin/JQuery/jquery-1.11.3.min.js"></script>
     <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="plugin/ThemePlugin/nav.js"></script>
