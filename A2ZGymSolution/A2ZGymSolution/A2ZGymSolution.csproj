@@ -190,6 +190,12 @@
     <Content Include="img\about_img5.jpg" />
     <Content Include="img\about_img6.jpg" />
     <Content Include="img\about_img7.jpg" />
+    <Content Include="img\banner-1.jpg" />
+    <Content Include="img\banner-12.jpg" />
+    <Content Include="img\banner-13.jpg" />
+    <Content Include="img\banner-13.png" />
+    <Content Include="img\banner-14.jpg" />
+    <Content Include="img\banner-15.png" />
     <Content Include="img\banner11.jpg" />
     <Content Include="img\bg.jpg" />
     <Content Include="img\blog_img.jpg" />
@@ -1788,6 +1794,7 @@
     <Content Include="plugin\login-signup-popup\js\modernizr.js" />
     <Content Include="plugin\login-signup-popup\setup\index.html" />
     <Content Include="plugin\login-signup-popup\setup\main.js" />
+    <Content Include="plugin\startbootstrap-full-slider-gh-pages\css\full-slider.css" />
     <Content Include="plugin\ThemePlugin\easyResponsiveTabs.js" />
     <Content Include="plugin\ThemePlugin\jquery-ui.js" />
     <Content Include="plugin\ThemePlugin\jquery.easydropdown.js" />
@@ -1989,10 +1996,6 @@
     <Content Include="main.Master" />
     <Content Include="master-all.Master" />
     <Content Include="img\a3.psd" />
-    <Content Include="img\header-arrow.psd" />
-    <Content Include="img\img-sprite.psd" />
-    <Content Include="img\logo.psd" />
-    <Content Include="img\quot.psd" />
     <Content Include="User.Master" />
     <Content Include="plugin\Font-Awesome-master\.gitignore" />
     <Content Include="plugin\Font-Awesome-master\.npmignore" />
