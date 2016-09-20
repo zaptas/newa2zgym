@@ -20,3 +20,8 @@ D:\github\newa2zgym\A2ZGymSolution\CommonUtility\bin\Debug\CommonUtility.dll
 D:\github\newa2zgym\A2ZGymSolution\CommonUtility\bin\Debug\CommonUtility.pdb
 D:\github\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.dll
 D:\github\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.pdb
+E:\sohelkhan\Github\newa2zgym\A2ZGymSolution\CommonUtility\bin\Debug\CommonUtility.dll
+E:\sohelkhan\Github\newa2zgym\A2ZGymSolution\CommonUtility\bin\Debug\CommonUtility.pdb
+E:\sohelkhan\Github\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.csprojResolveAssemblyReference.cache
+E:\sohelkhan\Github\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.dll
+E:\sohelkhan\Github\newa2zgym\A2ZGymSolution\CommonUtility\obj\Debug\CommonUtility.pdb
