@@ -12,7 +12,7 @@
             <div class="services-section-left">
                 <h3>WE VALUE YOUR NEED</h3>
                 <h5></h5>
-                <h3>Change your future now  </h3>
+                <h3>Change your future NOW </h3>
             </div>
             <div class="services-section-right">
                 <div class="services-section-image">
