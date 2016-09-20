@@ -18,6 +18,9 @@
     <%-- Live cdn End --%>
 
 
+   
+
+
     <%-- Local cdn start --%>
     <%--<link href="plugin/bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="plugin/Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet" />--%>
@@ -34,7 +37,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-  <%--  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js" type="text/javascript"></script>
+    <%--  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js" type="text/javascript"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
     <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />--%>
     <script type="text/javascript">
@@ -228,11 +231,13 @@
             <div class="logo-wrapper">
                 <div class="logo-container">
                     <img class="img-responsive" src="img/logo.png" alt="Gym" />
+                    <h3>A2Z GYM</h3>
                 </div>
             </div>
             <div class="small-menu ">
                 <div class="small-menu-logo">
                     <img class="img-responsive" src="img/logo.png" alt="A2Z GYM" />
+                    <h3>AZ GYM</h3>
                 </div>
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
             </div>
@@ -305,7 +310,7 @@
                 </div>
                 <div class="item">
                     <!-- Set the third background image using inline CSS below. -->
-                    <div class="fill" style="background-image: url('img/banner-26.jpg');"></div>
+                    <div class="fill" style="background-image: url('img/banner-23.jpg');"></div>
                     <div class="carousel-caption">
                         <h2>Caption 3</h2>
                     </div>

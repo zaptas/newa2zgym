@@ -8,6 +8,24 @@
 .shade-text {
   color: #ABACB6; }
 
+@font-face {
+  font-family: logofont1;
+  src: url("../fonts/Cedarville.ttf"); }
+@font-face {
+  font-family: logofont2;
+  src: url("../fonts/Jayadhira.ttf"); }
+@font-face {
+  font-family: logofont3;
+  src: url("../fonts/KrugmannBrush.ttf"); }
+@font-face {
+  font-family: logofont4;
+  src: url("../fonts/The Heart Maze Demo.ttf"); }
+@font-face {
+  font-family: logofont5;
+  src: url("../fonts/Vtks Hunt.ttf"); }
+@font-face {
+  font-family: logofont6;
+  src: url("../fonts/TrueLies.ttf"); }
 body {
   padding: 0;
   margin: 0;
@@ -3027,6 +3045,24 @@ p.para {
 .shade-text {
   color: #ABACB6; }
 
+@font-face {
+  font-family: logofont1;
+  src: url("../fonts/Cedarville.ttf"); }
+@font-face {
+  font-family: logofont2;
+  src: url("../fonts/Jayadhira.ttf"); }
+@font-face {
+  font-family: logofont3;
+  src: url("../fonts/KrugmannBrush.ttf"); }
+@font-face {
+  font-family: logofont4;
+  src: url("../fonts/The Heart Maze Demo.ttf"); }
+@font-face {
+  font-family: logofont5;
+  src: url("../fonts/Vtks Hunt.ttf"); }
+@font-face {
+  font-family: logofont6;
+  src: url("../fonts/TrueLies.ttf"); }
 /* Menu start */
 /*do not down main menu height you can up it  cause logo will not align properly */
 #main-manu {
@@ -3052,14 +3088,20 @@ p.para {
       max-width: 280px;
       width: 100%;
       height: 80px;
-      margin: 0px auto; }
+      margin: 0px auto;
+      text-align: center; }
       #main-manu .logo-wrapper .logo-container img {
+        display: none;
         min-width: 0px;
         max-width: inherit;
         width: 100%;
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
+      #main-manu .logo-wrapper .logo-container h3 {
+        font-size: 35px;
+        line-height: 80px;
+        font-family: logofont3; }
   #main-manu .menu-wrapper {
     flex-grow: 1;
     height: 80px;
@@ -3109,12 +3151,17 @@ p.para {
     #main-manu .small-menu .small-menu-logo {
       flex-grow: 1; }
       #main-manu .small-menu .small-menu-logo img {
+        display: none;
         min-width: 50px;
         max-width: 70px;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         margin-left: 10px; }
+      #main-manu .small-menu .small-menu-logo h3 {
+        font-size: 35px;
+        line-height: 50px;
+        font-family: logofont3; }
     #main-manu .small-menu span {
       font-size: 30px;
       line-height: 50px;

@@ -18,7 +18,7 @@ $main-menu-active-color: $shade-1;
 
 $main-menu-background-color: $shade-1;
 $small-menu-background-color: $shade-6;
-
+$logo-font-family:logofont3;
 
 
 #main-manu
@@ -53,9 +53,10 @@ $small-menu-background-color: $shade-6;
             width: 100%;
             height: $main-menu-height;
             margin: 0px auto;
-
+			text-align:center;
             img
             {
+				display:none;
                 min-width: 0px;
                 max-width: inherit;
                 width: 100%;
@@ -63,6 +64,12 @@ $small-menu-background-color: $shade-6;
                 top: 50%;
                 transform: translateY(-50%);
             }
+			h3 {
+				 font-size:35px; 
+				 line-height: $main-menu-height;
+				 font-family:$logo-font-family;
+				
+			}
         }
     }
 
@@ -142,6 +149,7 @@ $small-menu-background-color: $shade-6;
 
             img
             {
+				display:none;
                 min-width: 50px;
                 max-width: 70px;
                 position: relative;
@@ -149,6 +157,12 @@ $small-menu-background-color: $shade-6;
                 transform: translateY(-50%);
                 margin-left: 10px;
             }
+			h3 {
+				 font-size:35px; 
+				 line-height: $small-menu-height;
+				 font-family:$logo-font-family;
+
+			}
         }
 
 

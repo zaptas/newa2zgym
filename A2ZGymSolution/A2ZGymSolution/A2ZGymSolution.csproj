@@ -87,14 +87,15 @@
     <Content Include="contact.aspx" />
     <Content Include="css\app.css" />
     <Content Include="css\jquery-ui.css" />
-    <Content Include="css\menu.css">
-      <DependentUpon>menu.scss</DependentUpon>
+    <Content Include="css\responsive.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
     </Content>
-    <Content Include="css\responsive.scss" />
     <Content Include="css\style.css">
-      <DependentUpon>style.scss</DependentUpon>
-    </Content>
-    <Content Include="css\style.css.map">
       <DependentUpon>style.scss</DependentUpon>
     </Content>
     <Content Include="css\style.scss" />
@@ -3063,10 +3064,21 @@
     <Content Include="plugin\login-signup-popup\partials\_variables.scss" />
     <Content Include="plugin\login-signup-popup\readme.pdf" />
     <Content Include="plugin\login-signup-popup\scss\style.scss" />
-    <Content Include="css\menu.scss" />
-    <Content Include="css\menu.css.map">
-      <DependentUpon>menu.scss</DependentUpon>
+    <Content Include="css\menu.scss">
+      <Compile>False</Compile>
+      <Minify>True</Minify>
+      <IgnoreWarnings>True</IgnoreWarnings>
+      <IgnoreErrors>True</IgnoreErrors>
+      <CompileStyle>Nested</CompileStyle>
+      <DebugInfo>False</DebugInfo>
     </Content>
+    <Content Include="fonts\Cedarville.ttf" />
+    <Content Include="fonts\Jayadhira.ttf" />
+    <Content Include="fonts\KrugmannBrush.ttf" />
+    <Content Include="fonts\The Heart Maze Demo.ttf" />
+    <Content Include="fonts\Vtks Hunt.ttf" />
+    <Content Include="fonts\TrueLies.ttf" />
+    <Content Include="css\style.css.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

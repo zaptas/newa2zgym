@@ -2,12 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Home</title>
-   
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!-- content-section-starts -->
-    <div class="content-section" >
+    <div class="content-section">
         <div class="services-section">
             <div class="services-section-left">
                 <h3>WE VALUE YOUR NEED</h3>
@@ -45,7 +45,7 @@
                 <div class="col-md-3 how-it-works">
                     <div><i class="fa fa-hand-o-up" aria-hidden="true"></i></div>
                     <br />
-                    <h5> Choose your plan</h5>
+                    <h5>Choose your plan</h5>
                 </div>
                 <div class="col-md-3 how-it-works">
                     <div><i class="fa fa-pencil-square-o" aria-hidden="true"></i></div>
