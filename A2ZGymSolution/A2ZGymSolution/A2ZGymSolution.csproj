@@ -1402,6 +1402,7 @@
     <Content Include="plugin\ioniconsfonts\png\512\woman.png" />
     <Content Include="plugin\ioniconsfonts\png\512\wrench.png" />
     <Content Include="plugin\ioniconsfonts\png\512\xbox.png" />
+    <Content Include="plugin\jQuery-Plugin-To-Hide-Sticky-Navbar-When-Scrolling-Down-Scroll-Up-Menu\jquery.scrollupformenu.js" />
     <Content Include="plugin\jqueryUI\AUTHORS.txt" />
     <Content Include="plugin\jqueryUI\images\ui-icons_444444_256x240.png" />
     <Content Include="plugin\jqueryUI\images\ui-icons_555555_256x240.png" />

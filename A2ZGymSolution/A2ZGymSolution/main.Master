@@ -344,9 +344,16 @@
     <script src="plugin/ThemePlugin/jquery.easydropdown.js"></script>
     <script src="plugin/ThemePlugin/easyResponsiveTabs.js" type="text/javascript"></script>
     <script src="../plugin/login-signup-popup/js/modernizr.js"></script>
+    <script src="plugin/jQuery-Plugin-To-Hide-Sticky-Navbar-When-Scrolling-Down-Scroll-Up-Menu/jquery.scrollupformenu.js"></script>
     <script src="js/menu.js"></script>
     <script src="../plugin/login-signup-popup/js/main.js"></script>
 
+    <%-- Script to hide sticky menu --%>
+     <script>
+         $(function () {
+             $('#main-manu').scrollUpMenu({ 'transitionTime': 200 });
+         });
+    </script>
 
     <!-- Script to Activate the Carousel -->
 
