@@ -76,14 +76,6 @@
     <Content Include="assets\js\jquery.metisMenu.js" />
     <Content Include="assets\js\morris\morris.js" />
     <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
-    <Content Include="bin\A2ZGymSolution.dll" />
-    <Content Include="bin\A2ZGymSolution.pdb" />
-    <Content Include="bin\BLL.dll" />
-    <Content Include="bin\BLL.pdb" />
-    <Content Include="bin\DAL.dll" />
-    <Content Include="bin\DAL.pdb" />
-    <Content Include="bin\DTO.dll" />
-    <Content Include="bin\DTO.pdb" />
     <Content Include="contact.aspx" />
     <Content Include="css\app.css" />
     <Content Include="css\jquery-ui.css" />
@@ -1939,9 +1931,6 @@
     <Compile Include="master-all.Master.designer.cs">
       <DependentUpon>master-all.Master</DependentUpon>
     </Compile>
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Privacy_Policy.aspx.cs">
       <DependentUpon>Privacy_Policy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
