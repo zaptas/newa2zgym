@@ -1,24 +1,24 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="A2ZGymSolution.main" %>
 
 <%@ Register TagPrefix="uc" TagName="footer" Src="~/htmlparts/footer.ascx" %>
-
+<%@ Register TagPrefix="Gym" TagName="Slider" Src="~/htmlparts/Slider.ascx" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
     <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <%-- Live cdn start --%>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300,300italic,100italic,100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300,300italic,100italic,100' rel='stylesheet' type='text/css' />
     <%-- Live cdn End --%>
 
 
-   
+
 
 
     <%-- Local cdn start --%>
@@ -111,19 +111,19 @@
                     <div class="cd-form">
                         <p class="fieldset">
                             <label class="image-replace cd-email" for="signin-email">E-mail</label>
-                            <input class="full-width has-padding has-border" id="signinemail" type="text" placeholder="E-mail" runat="server">
+                            <input class="full-width has-padding has-border" id="signinemail" type="text" placeholder="E-mail" runat="server" />
                             <%--<span class="cd-error-message">Error message here!</span>--%>
                         </p>
 
                         <p class="fieldset">
                             <label class="image-replace cd-password" for="signin-password">Password</label>
-                            <input class="full-width has-padding has-border" id="signinpassword" type="password" placeholder="Password" autocomplete="off" runat="server">
+                            <input class="full-width has-padding has-border" id="signinpassword" type="password" placeholder="Password" autocomplete="off" runat="server" />
                             <a href="#0" class="hide-password">Hide</a>
                             <span class="cd-error-message">Error message here!</span>
                         </p>
 
                         <p class="fieldset">
-                            <input type="checkbox" id="remember-me" checked>
+                            <input type="checkbox" id="remember-me" checked />
                             <label for="remember-me">Remember me</label>
                         </p>
 
@@ -230,7 +230,7 @@
 
             <div class="logo-wrapper">
                 <div class="logo-container">
-                    <img class="img-responsive" src="img/logo.png" alt="Gym" />
+                    <img class="img-responsive" src="img/logo2.png" alt="Gym" />
                     <h3>A2Z GYM</h3>
                 </div>
             </div>
@@ -245,7 +245,7 @@
 
             <div class="menu-wrapper">
                 <div class="menu-container">
-                    <div class="Li"><a href="index.aspx" class="menu-active">Home</a></div>
+                    <div class="Li"><a href="Home" >Home</a></div>
                     <div class="Li"><a href="#">GYM</a></div>
                     <div class="Li"><a href="#">Gallery</a></div>
                     <div class="Li"><a href="Aboutus.aspx">About</a></div>
@@ -259,75 +259,6 @@
 
         <%-- Top menu start  --%>
 
-
-        <!-- header-starts -->
-        <%--    <div class="header">
-            <div class="container">
-                <div class="header-info">
-                    <div class="header-info-head text-center">
-                        <a href="index.aspx">
-                            <h1 class="shade-1">A2Z GYM</h1>
-                        </a>
-                        <h2 class="shade-1">Plan your Perfect Fitness</h2>
-                    </div>
-                    <div class="top-search">
-                        <input type="text" class="text autosuggest" id="txtautocomplete" runat="server" value="City or GYM name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" />
-                    </div>
-                    <div class="dropdown-button">
-                        <asp:Button ID="Button1" CssClass="btn btn-primary dropdown" runat="server" Text="Search" OnClick="Button1_Click" />
-                    </div>
-                    <div class="clearfix"></div>
-                   
-                    <i class="flow"></i>
-                </div>
-            </div>
-        </div>--%>
-
-        <!-- Full Page Image Background Carousel Header -->
-        <header id="myCarousel" class="carousel slide">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Wrapper for Slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <!-- Set the first background image using inline CSS below. -->
-                    <div class="fill" style="background-image: url('img/banner-18.jpg');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 1</h2>
-                    </div>
-                </div>
-                <div class="item">
-                    <!-- Set the second background image using inline CSS below. -->
-                    <div class="fill" style="background-image: url('img/banner-20.jpg');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 2</h2>
-                    </div>
-                </div>
-                <div class="item">
-                    <!-- Set the third background image using inline CSS below. -->
-                    <div class="fill" style="background-image: url('img/banner-23.jpg');"></div>
-                    <div class="carousel-caption">
-                        <h2>Caption 3</h2>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="icon-prev"></span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="icon-next"></span>
-            </a>
-
-        </header>
-
-        <!-- header-ends -->
 
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
@@ -349,10 +280,10 @@
     <script src="../plugin/login-signup-popup/js/main.js"></script>
 
     <%-- Script to hide sticky menu --%>
-     <script>
-         $(function () {
-             $('#main-manu').scrollUpMenu({ 'transitionTime': 200 });
-         });
+    <script>
+        $(function () {
+            $('#main-manu').scrollUpMenu({ 'transitionTime': 200 });
+        });
     </script>
 
     <!-- Script to Activate the Carousel -->

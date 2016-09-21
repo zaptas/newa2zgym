@@ -1,15 +1,20 @@
 
 
-@media only screen and (max-width: 768px)
-{
-	.footer 
-	{
-		.footer-box
-		{
-			&:nth-child(3) 
-			{
-				text-align:center;
-			}
-		}
-	}
+@media  (max-width: 768px) {
+    .footer {
+        .footer-box {
+            &:nth-child(3) {
+                text-align: center;
+            }
+        }
+    }
+
+    #contact {
+        .contact_left {
+            /*float: initial;
+            margin-right: 0px;
+            width: 100%;
+            background-color:red;*/
+        }
+    }
 }

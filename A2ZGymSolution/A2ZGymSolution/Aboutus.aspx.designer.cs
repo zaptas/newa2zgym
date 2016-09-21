@@ -11,7 +11,7 @@ namespace A2ZGymSolution
 {
 
 
-    public partial class Aboutus
+    public partial class aboutus
     {
     }
 }

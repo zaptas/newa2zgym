@@ -40,4 +40,20 @@ $(document).ready(function () {
 
         }
     });
+    if ($("#Home").length) {
+        $("#main-manu a").removeClass(" menu-active");
+        $("#main-manu a[href='Home']").addClass("menu-active");
+    }
+    else
+        if ($("#About").length) {
+            $("#main-manu a").removeClass(" menu-active");
+            $("#main-manu a[href='Aboutus.aspx']").addClass("menu-active");
+        }
+        else if ($("#Contact").length)
+        {
+            $("#main-manu a").removeClass(" menu-active");
+            $("#main-manu a[href='contact.aspx']").addClass("menu-active");
+        }
+
+
 });

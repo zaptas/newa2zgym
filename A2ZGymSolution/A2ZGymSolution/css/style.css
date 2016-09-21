@@ -1,4 +1,6 @@
-/* https://listify-demos.astoundify.com/classic/ */
+﻿/* https://listify-demos.astoundify.com/classic/ */
+@import url("http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,700italic,700,500&subset=latin,latin-ext");
 .shade-heading {
   color: #717A8F; }
 
@@ -11,21 +13,27 @@
 @font-face {
   font-family: logofont1;
   src: url("../fonts/Cedarville.ttf"); }
+
 @font-face {
   font-family: logofont2;
   src: url("../fonts/Jayadhira.ttf"); }
+
 @font-face {
   font-family: logofont3;
   src: url("../fonts/KrugmannBrush.ttf"); }
+
 @font-face {
   font-family: logofont4;
   src: url("../fonts/The Heart Maze Demo.ttf"); }
+
 @font-face {
   font-family: logofont5;
   src: url("../fonts/Vtks Hunt.ttf"); }
+
 @font-face {
   font-family: logofont6;
   src: url("../fonts/TrueLies.ttf"); }
+
 body {
   padding: 0;
   margin: 0;
@@ -38,7 +46,7 @@ body {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all; }
 
- /* .news-search-box form input[type="text"]   {
+/* .news-search-box form input[type="text"]   {
 	border: none;
 	outline: none;
 	padding: 8px 8px;
@@ -95,8 +103,10 @@ label {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-weight: 700; }
+
 .header-info-head h2 {
   color: #BC2323; }
+
 .header-info-head a {
   text-decoration: none; }
 
@@ -221,21 +231,166 @@ label {
     z-index: 9999;
     background: #444444; }
 
+/* COMMON PRICING STYLES */
+.panel.price,
+.panel.price > .panel-heading {
+  border-radius: 0px;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transition: all .3s ease; }
+
+.panel.price:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); }
+
+.panel.price:hover > .panel-heading {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2) inset; }
+
+.panel.price > .panel-heading {
+  box-shadow: 0px 5px 0px rgba(50, 50, 50, 0.2) inset;
+  text-shadow: 0px 3px 0px rgba(50, 50, 50, 0.6); }
+
+.price .list-group-item {
+  border-bottom-: 1px solid rgba(250, 250, 250, 0.5); }
+
+.panel.price .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px; }
+
+.panel.price .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px; }
+
+.price .panel-footer {
+  color: #fff;
+  border-bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3); }
+
+.panel.price .btn {
+  box-shadow: 0 -1px 0px rgba(50, 50, 50, 0.2) inset;
+  border: 0px; }
+
+/* green panel */
+.price.panel-green > .panel-heading {
+  color: #fff;
+  background-color: #57AC57;
+  border-color: #71DF71;
+  border-bottom: 1px solid #71DF71; }
+
+.price.panel-green > .panel-body {
+  color: #fff;
+  background-color: #65C965; }
+
+.price.panel-green > .panel-body .lead {
+  text-shadow: 0px 3px 0px rgba(50, 50, 50, 0.3); }
+
+.price.panel-green .list-group-item {
+  color: #333;
+  background-color: rgba(50, 50, 50, 0.01);
+  font-weight: 600;
+  text-shadow: 0px 1px 0px rgba(250, 250, 250, 0.75); }
+
+/* blue panel */
+.price.panel-blue > .panel-heading {
+  color: #fff;
+  background-color: #608BB4;
+  border-color: #78AEE1;
+  border-bottom: 1px solid #78AEE1; }
+
+.price.panel-blue > .panel-body {
+  color: #fff;
+  background-color: #73A3D4; }
+
+.price.panel-blue > .panel-body .lead {
+  text-shadow: 0px 3px 0px rgba(50, 50, 50, 0.3); }
+
+.price.panel-blue .list-group-item {
+  color: #333;
+  background-color: rgba(50, 50, 50, 0.01);
+  font-weight: 600;
+  text-shadow: 0px 1px 0px rgba(250, 250, 250, 0.75); }
+
+/* red price */
+.price.panel-red > .panel-heading {
+  color: #fff;
+  background-color: #D04E50;
+  border-color: #FF6062;
+  border-bottom: 1px solid #FF6062; }
+
+.price.panel-red > .panel-body {
+  color: #fff;
+  background-color: #EF5A5C; }
+
+.price.panel-red > .panel-body .lead {
+  text-shadow: 0px 3px 0px rgba(50, 50, 50, 0.3); }
+
+.price.panel-red .list-group-item {
+  color: #333;
+  background-color: rgba(50, 50, 50, 0.01);
+  font-weight: 600;
+  text-shadow: 0px 1px 0px rgba(250, 250, 250, 0.75); }
+
+/* grey price */
+.price.panel-grey > .panel-heading {
+  color: #fff;
+  background-color: #6D6D6D;
+  border-color: #B7B7B7;
+  border-bottom: 1px solid #B7B7B7; }
+
+.price.panel-grey > .panel-body {
+  color: #fff;
+  background-color: #808080; }
+
+.price.panel-grey > .panel-body .lead {
+  text-shadow: 0px 3px 0px rgba(50, 50, 50, 0.3); }
+
+.price.panel-grey .list-group-item {
+  color: #333;
+  background-color: rgba(50, 50, 50, 0.01);
+  font-weight: 600;
+  text-shadow: 0px 1px 0px rgba(250, 250, 250, 0.75); }
+
+/* white price */
+.price.panel-white > .panel-heading {
+  color: #333;
+  background-color: #f9f9f9;
+  border-color: #ccc;
+  border-bottom: 1px solid #ccc;
+  text-shadow: 0px 2px 0px rgba(250, 250, 250, 0.7); }
+
+.panel.panel-white.price:hover > .panel-heading {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05) inset; }
+
+.price.panel-white > .panel-body {
+  color: #fff;
+  background-color: #dfdfdf; }
+
+.price.panel-white > .panel-body .lead {
+  text-shadow: 0px 2px 0px rgba(250, 250, 250, 0.8);
+  color: #666; }
+
+.price:hover.panel-white > .panel-body .lead {
+  text-shadow: 0px 2px 0px rgba(250, 250, 250, 0.9);
+  color: #333; }
+
+.price.panel-white .list-group-item {
+  color: #333;
+  background-color: rgba(50, 50, 50, 0.01);
+  font-weight: 600;
+  text-shadow: 0px 1px 0px rgba(250, 250, 250, 0.75); }
+
 /***** Media Quries *****/
 @media screen and (max-width: 800px) {
   .h_logo4 {
     text-align: center;
     float: none;
     margin: 4% 0; }
-
   .h_menu4 {
     float: none; }
-
   .toggleMenu {
     padding: 5px 23px;
     width: 100%;
     display: block; }
-
   a.toggleMenu {
     padding: 5px 23px;
     color: #fff;
@@ -243,15 +398,12 @@ label {
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase; }
-
   .nav {
     margin-top: 0; }
     .nav li a {
       padding: 10px 15px; }
-
   .active {
     display: block; }
-
   .nav > li {
     float: none; }
     .nav > li > .parent {
@@ -261,25 +413,27 @@ label {
     width: 100%; }
   .nav > li.hover > ul, .nav li li.hover ul {
     position: static; }
-
   .header_bottom_right {
     float: right;
     width: 77%;
     text-align: center; }
-
   .h_menu4 {
     width: 45%;
     text-align: center;
     margin: 0 auto; } }
+
 @media screen and (max-width: 640px) {
   .toggleMenu {
     width: 100%; } }
+
 @media screen and (max-width: 480px) {
   .toggleMenu {
     width: 100%; } }
+
 @media screen and (max-width: 320px) {
   .toggleMenu {
     width: 100%; } }
+
 i.flow {
   width: 25px;
   height: 25px;
@@ -288,6 +442,7 @@ i.flow {
   position: absolute;
   bottom: -23.7em;
   left: 41em; }
+
 i.flow1 {
   width: 25px;
   height: 25px;
@@ -296,6 +451,7 @@ i.flow1 {
   position: absolute;
   bottom: 43.4em;
   left: 42.9em; }
+
 i.flow2 {
   width: 25px;
   height: 25px;
@@ -304,6 +460,7 @@ i.flow2 {
   position: absolute;
   bottom: 43.4em;
   left: 51em; }
+
 i.flow3 {
   width: 25px;
   height: 25px;
@@ -312,6 +469,7 @@ i.flow3 {
   position: absolute;
   bottom: 43.4em;
   left: 61em; }
+
 i.flow4 {
   width: 25px;
   height: 25px;
@@ -370,6 +528,7 @@ p.end-q img {
   color: #ff7b3d;
   font-size: 19px;
   font-weight: 500; }
+
 .services-section-right-text span {
   color: #ffa27f;
   font-size: 20px;
@@ -383,6 +542,7 @@ i.phone {
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px; }
+
 i.msg {
   width: 40px;
   height: 38px;
@@ -426,6 +586,38 @@ i.location {
   display: inline-block;
   vertical-align: middle;
   margin-right: 8px; }
+
+#Contact {
+  background-color: #F9F9F9; }
+  #Contact .contact_left {
+    /*float: left;
+    margin-right: 3.3333%;
+    width: 32.3333%;*/ }
+  #Contact .contact_right {
+    /*float: left;
+    width: 63.3333%;*/
+    margin-bottom: 50px; }
+  #Contact .company_address {
+    padding-top: 5px; }
+    #Contact .company_address .heading {
+      font-weight: bolder;
+      font-size: 25px; }
+    #Contact .company_address p {
+      color: #242424;
+      text-shadow: 0 1px 0 #ffffff;
+      line-height: 1.8em;
+      font-size: 1em;
+      font-weight: 600; }
+      #Contact .company_address p a {
+        color: #ff7b3d;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        text-shadow: 0 1px 0 #ffffff; }
+        #Contact .company_address p a:hover {
+          color: #242424; }
 
 .contact-section {
   padding: 5em 0;
@@ -475,9 +667,9 @@ i.location {
     padding: 30px;
     text-align: center; }
     .footer .footer-box:nth-child(2) {
-      		/*=========================
-        Icons
-       ================= */
+      /*=========================
+  Icons
+ ================= */
       /* footer social icons */
       /* footer social icons */ }
       .footer .footer-box:nth-child(2) ul.social-network {
@@ -562,6 +754,7 @@ i.location {
   color: #fff;
   font-size: 17px;
   font-weight: 400; }
+
 .copy-rights a {
   color: #ff7b3d;
   font-size: 18px;
@@ -572,6 +765,7 @@ i.location {
   font-size: 2.3em;
   text-transform: uppercase;
   font-weight: 700; }
+
 .planning-section-left h4 {
   color: #ff7b3d;
   font-size: 1.9em;
@@ -653,19 +847,15 @@ h2.resp-accordion {
 @media only screen and (max-width: 480px) {
   .sap_tabs {
     padding-top: 0; }
-
   .resp-tabs-container {
     padding: 0px; }
-
   ul.resp-tabs-list {
     display: none; }
-
   h2.resp-accordion {
     display: block;
     font-size: 16px;
     text-transform: uppercase;
     padding: 8px; }
-
   .resp-vtabs .resp-tab-content {
     border: 1px solid #C1C1C1; }
   .resp-vtabs .resp-tabs-container {
@@ -674,9 +864,9 @@ h2.resp-accordion {
     width: 100%;
     min-height: initial;
     clear: none; }
-
   .resp-accordion-closed {
     display: none !important; } }
+
 ul.tab_img {
   padding: 0;
   list-style: none;
@@ -1003,6 +1193,7 @@ ul.tab_img li.last {
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 2px dashed #e6e6e6; }
+
 .booking-item-passengers label {
   font-weight: 400;
   font-size: 13px; }
@@ -1055,17 +1246,22 @@ ul.tab_img li.last {
 
 .booking-item-payment-flight .booking-item-flight-details .booking-item-departure .fa-plane, .booking-item-payment-flight .booking-item-flight-details .booking-item-arrival .fa-plane {
   font-size: 20px; }
+
 .booking-item-payment-flight .booking-item-flight-details .booking-item-departure h5, .booking-item-payment-flight .booking-item-flight-details .booking-item-arrival h5 {
   font-size: 14px; }
+
 .booking-item-payment-flight .booking-item-flight-details .booking-item-departure .booking-item-date, .booking-item-payment-flight .booking-item-flight-details .booking-item-arrival .booking-item-date {
   padding-left: 23px;
   font-size: 11px; }
+
 .booking-item-payment-flight .booking-item-flight-details .booking-item-destination {
   font-size: 12px; }
+
 .booking-item-payment-flight .booking-item-flight-duration > p {
   margin-bottom: 5px;
   line-height: 1em;
   font-size: 13px; }
+
 .booking-item-payment-flight .booking-item-flight-duration > h5 {
   font-weight: 400; }
 
@@ -1163,8 +1359,10 @@ img.pp-img {
 .cc-form .form-group.form-group-cc-number, .cc-form .form-group.form-group-cc-name {
   width: 60%;
   margin-right: 5%; }
+
 .cc-form .form-group.form-group-cc-date, .cc-form .form-group.form-group-cc-cvc {
   width: 25%; }
+
 .cc-form .form-group.form-group-cc-number .cc-card-icon {
   display: block;
   width: 41px;
@@ -1186,6 +1384,7 @@ img.pp-img {
   -o-transform: translate3d(0, -10px, 0);
   -ms-transform: translate3d(0, -10px, 0);
   transform: translate3d(0, -10px, 0); }
+
 .cc-form .form-group.form-group-cc-number input.identified + .cc-card-icon {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -1200,14 +1399,19 @@ img.pp-img {
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s; }
+
 .cc-form .form-group.form-group-cc-number input.visa + .cc-card-icon {
   background-image: url("../img/payment/visa-curved-32px.png"); }
+
 .cc-form .form-group.form-group-cc-number input.mastercard + .cc-card-icon {
   background-image: url("../img/payment/mastercard-curved-32px.png"); }
+
 .cc-form .form-group.form-group-cc-number input.amex + .cc-card-icon {
   background-image: url("../img/payment/american-express-curved-32px.png"); }
+
 .cc-form .form-group.form-group-cc-number input.discover + .cc-card-icon {
   background-image: url("../img/payment/discover-curved-32px.png"); }
+
 .cc-form .form-group.form-group-cc-number input.maestro + .cc-card-icon {
   background-image: url("../img/payment/maestro-curved-32px.png"); }
 
@@ -1218,15 +1422,19 @@ img.pp-img {
   margin-right: 5px;
   position: relative;
   top: 4px; }
+
 .booking-item-flight-details .booking-item-departure h5, .booking-item-flight-details .booking-item-arrival h5 {
   margin-bottom: 0; }
+
 .booking-item-flight-details .booking-item-departure .booking-item-date, .booking-item-flight-details .booking-item-arrival .booking-item-date {
   margin-bottom: 7px;
   font-size: 12px;
   line-height: 1em;
   padding-left: 32px; }
+
 .booking-item-flight-details .booking-item-departure {
   margin-right: 6%; }
+
 .booking-item-flight-details .booking-item-destination {
   font-size: 12px;
   line-height: 1.3em; }
@@ -1236,6 +1444,7 @@ img.pp-img {
   font-size: 12px;
   margin-top: 5px;
   line-height: 1.3em; }
+
 .booking-item-airline-logo > img {
   width: 40px; }
 
@@ -1302,8 +1511,10 @@ img.pp-img {
   .datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
     background: #eee;
     cursor: pointer; }
+
 .datepicker table tr td.old, .datepicker table tr td.new {
   color: #999; }
+
 .datepicker table tr td.disabled {
   background: none;
   color: #999;
@@ -1312,6 +1523,7 @@ img.pp-img {
     background: none;
     color: #999;
     cursor: default; }
+
 .datepicker table tr td.today {
   color: #000;
   position: relative; }
@@ -1367,12 +1579,15 @@ img.pp-img {
 .datepicker table tr td.today.disabled, .datepicker table tr td.today:hover.disabled {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today.disabled.disabled, .datepicker table tr td.today.disabled:hover.disabled {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today[disabled], .datepicker table tr td.today:hover[disabled] {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today.disabled[disabled], .datepicker table tr td.today.disabled:hover[disabled] {
   background-color: #ffdb99;
   border-color: #ffb733; }
@@ -1401,12 +1616,15 @@ fieldset[disabled] .datepicker table tr td.today:hover, fieldset[disabled] .date
 .datepicker table tr td.today.disabled:focus, .datepicker table tr td.today:hover.disabled:focus {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today.disabled.disabled:focus, .datepicker table tr td.today.disabled:hover.disabled:focus {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today[disabled]:focus, .datepicker table tr td.today:hover[disabled]:focus {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today.disabled[disabled]:focus, .datepicker table tr td.today.disabled:hover[disabled]:focus {
   background-color: #ffdb99;
   border-color: #ffb733; }
@@ -1414,6 +1632,7 @@ fieldset[disabled] .datepicker table tr td.today:hover, fieldset[disabled] .date
 fieldset[disabled] .datepicker table tr td.today:focus, fieldset[disabled] .datepicker table tr td.today:hover:focus {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 fieldset[disabled] .datepicker table tr td.today.disabled:focus, fieldset[disabled] .datepicker table tr td.today.disabled:hover:focus {
   background-color: #ffdb99;
   border-color: #ffb733; }
@@ -1421,12 +1640,15 @@ fieldset[disabled] .datepicker table tr td.today.disabled:focus, fieldset[disabl
 .datepicker table tr td.today.disabled:active, .datepicker table tr td.today:hover.disabled:active {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today.disabled.disabled:active, .datepicker table tr td.today.disabled:hover.disabled:active {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today[disabled]:active, .datepicker table tr td.today:hover[disabled]:active {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today.disabled[disabled]:active, .datepicker table tr td.today.disabled:hover[disabled]:active {
   background-color: #ffdb99;
   border-color: #ffb733; }
@@ -1434,6 +1656,7 @@ fieldset[disabled] .datepicker table tr td.today.disabled:focus, fieldset[disabl
 fieldset[disabled] .datepicker table tr td.today:active, fieldset[disabled] .datepicker table tr td.today:hover:active {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 fieldset[disabled] .datepicker table tr td.today.disabled:active, fieldset[disabled] .datepicker table tr td.today.disabled:hover:active {
   background-color: #ffdb99;
   border-color: #ffb733; }
@@ -1441,12 +1664,15 @@ fieldset[disabled] .datepicker table tr td.today.disabled:active, fieldset[disab
 .datepicker table tr td.today.disabled.active, .datepicker table tr td.today:hover.disabled.active {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today.disabled.disabled.active, .datepicker table tr td.today.disabled:hover.disabled.active {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today[disabled].active, .datepicker table tr td.today:hover[disabled].active {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 .datepicker table tr td.today.disabled[disabled].active, .datepicker table tr td.today.disabled:hover[disabled].active {
   background-color: #ffdb99;
   border-color: #ffb733; }
@@ -1454,14 +1680,17 @@ fieldset[disabled] .datepicker table tr td.today.disabled:active, fieldset[disab
 fieldset[disabled] .datepicker table tr td.today.active, fieldset[disabled] .datepicker table tr td.today:hover.active {
   background-color: #ffdb99;
   border-color: #ffb733; }
+
 fieldset[disabled] .datepicker table tr td.today.disabled.active, fieldset[disabled] .datepicker table tr td.today.disabled:hover.active {
   background-color: #ffdb99;
   border-color: #ffb733; }
 
 .datepicker table tr td.today:hover:hover {
   color: #000; }
+
 .datepicker table tr td.today.active:hover {
   color: #fff; }
+
 .datepicker table tr td.range {
   background: #eee;
   -webkit-border-radius: 0;
@@ -1546,10 +1775,13 @@ fieldset[disabled] .datepicker table tr td.today.disabled.active, fieldset[disab
 
 .datepicker table tr td.range.today:active, .datepicker table tr td.range.today:hover:active {
   background-image: none; }
+
 .datepicker table tr td.range.today.disabled:active, .datepicker table tr td.range.today.disabled:hover:active {
   background-image: none; }
+
 .datepicker table tr td.range.today.active, .datepicker table tr td.range.today:hover.active {
   background-image: none; }
+
 .datepicker table tr td.range.today.disabled.active, .datepicker table tr td.range.today.disabled:hover.active {
   background-image: none; }
 
@@ -1565,12 +1797,15 @@ fieldset[disabled] .datepicker table tr td.today.disabled.active, fieldset[disab
 .datepicker table tr td.range.today.disabled, .datepicker table tr td.range.today:hover.disabled {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today.disabled.disabled, .datepicker table tr td.range.today.disabled:hover.disabled {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today[disabled], .datepicker table tr td.range.today:hover[disabled] {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today.disabled[disabled], .datepicker table tr td.range.today.disabled:hover[disabled] {
   background-color: #f7ca77;
   border-color: #f1a417; }
@@ -1599,12 +1834,15 @@ fieldset[disabled] .datepicker table tr td.range.today:hover, fieldset[disabled]
 .datepicker table tr td.range.today.disabled:focus, .datepicker table tr td.range.today:hover.disabled:focus {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today.disabled.disabled:focus, .datepicker table tr td.range.today.disabled:hover.disabled:focus {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today[disabled]:focus, .datepicker table tr td.range.today:hover[disabled]:focus {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today.disabled[disabled]:focus, .datepicker table tr td.range.today.disabled:hover[disabled]:focus {
   background-color: #f7ca77;
   border-color: #f1a417; }
@@ -1612,6 +1850,7 @@ fieldset[disabled] .datepicker table tr td.range.today:hover, fieldset[disabled]
 fieldset[disabled] .datepicker table tr td.range.today:focus, fieldset[disabled] .datepicker table tr td.range.today:hover:focus {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 fieldset[disabled] .datepicker table tr td.range.today.disabled:focus, fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:focus {
   background-color: #f7ca77;
   border-color: #f1a417; }
@@ -1619,12 +1858,15 @@ fieldset[disabled] .datepicker table tr td.range.today.disabled:focus, fieldset[
 .datepicker table tr td.range.today.disabled:active, .datepicker table tr td.range.today:hover.disabled:active {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today.disabled.disabled:active, .datepicker table tr td.range.today.disabled:hover.disabled:active {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today[disabled]:active, .datepicker table tr td.range.today:hover[disabled]:active {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today.disabled[disabled]:active, .datepicker table tr td.range.today.disabled:hover[disabled]:active {
   background-color: #f7ca77;
   border-color: #f1a417; }
@@ -1632,6 +1874,7 @@ fieldset[disabled] .datepicker table tr td.range.today.disabled:focus, fieldset[
 fieldset[disabled] .datepicker table tr td.range.today:active, fieldset[disabled] .datepicker table tr td.range.today:hover:active {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 fieldset[disabled] .datepicker table tr td.range.today.disabled:active, fieldset[disabled] .datepicker table tr td.range.today.disabled:hover:active {
   background-color: #f7ca77;
   border-color: #f1a417; }
@@ -1639,12 +1882,15 @@ fieldset[disabled] .datepicker table tr td.range.today.disabled:active, fieldset
 .datepicker table tr td.range.today.disabled.active, .datepicker table tr td.range.today:hover.disabled.active {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today.disabled.disabled.active, .datepicker table tr td.range.today.disabled:hover.disabled.active {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today[disabled].active, .datepicker table tr td.range.today:hover[disabled].active {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 .datepicker table tr td.range.today.disabled[disabled].active, .datepicker table tr td.range.today.disabled:hover[disabled].active {
   background-color: #f7ca77;
   border-color: #f1a417; }
@@ -1652,6 +1898,7 @@ fieldset[disabled] .datepicker table tr td.range.today.disabled:active, fieldset
 fieldset[disabled] .datepicker table tr td.range.today.active, fieldset[disabled] .datepicker table tr td.range.today:hover.active {
   background-color: #f7ca77;
   border-color: #f1a417; }
+
 fieldset[disabled] .datepicker table tr td.range.today.disabled.active, fieldset[disabled] .datepicker table tr td.range.today.disabled:hover.active {
   background-color: #f7ca77;
   border-color: #f1a417; }
@@ -1700,14 +1947,19 @@ fieldset[disabled] .datepicker table tr td.range.today.disabled.active, fieldset
 
 .datepicker table tr td.selected:hover, .datepicker table tr td.selected.disabled:hover, .datepicker table tr td.selected:focus, .datepicker table tr td.selected:hover:focus {
   background-color: #858585; }
+
 .datepicker table tr td.selected.disabled:focus, .datepicker table tr td.selected.disabled:hover:focus {
   background-color: #858585; }
+
 .datepicker table tr td.selected:active, .datepicker table tr td.selected:hover:active {
   background-color: #858585; }
+
 .datepicker table tr td.selected.disabled:active, .datepicker table tr td.selected.disabled:hover:active {
   background-color: #858585; }
+
 .datepicker table tr td.selected.active, .datepicker table tr td.selected:hover.active {
   background-color: #858585; }
+
 .datepicker table tr td.selected.disabled.active, .datepicker table tr td.selected.disabled:hover.active {
   background-color: #858585; }
 
@@ -1722,10 +1974,13 @@ fieldset[disabled] .datepicker table tr td.range.today.disabled.active, fieldset
 
 .datepicker table tr td.selected:active, .datepicker table tr td.selected:hover:active {
   background-image: none; }
+
 .datepicker table tr td.selected.disabled:active, .datepicker table tr td.selected.disabled:hover:active {
   background-image: none; }
+
 .datepicker table tr td.selected.active, .datepicker table tr td.selected:hover.active {
   background-image: none; }
+
 .datepicker table tr td.selected.disabled.active, .datepicker table tr td.selected.disabled:hover.active {
   background-image: none; }
 
@@ -1741,12 +1996,15 @@ fieldset[disabled] .datepicker table tr td.range.today.disabled.active, fieldset
 .datepicker table tr td.selected.disabled, .datepicker table tr td.selected:hover.disabled {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected.disabled.disabled, .datepicker table tr td.selected.disabled:hover.disabled {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected[disabled], .datepicker table tr td.selected:hover[disabled] {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected.disabled[disabled], .datepicker table tr td.selected.disabled:hover[disabled] {
   background-color: #999;
   border-color: #555; }
@@ -1775,12 +2033,15 @@ fieldset[disabled] .datepicker table tr td.selected:hover, fieldset[disabled] .d
 .datepicker table tr td.selected.disabled:focus, .datepicker table tr td.selected:hover.disabled:focus {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected.disabled.disabled:focus, .datepicker table tr td.selected.disabled:hover.disabled:focus {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected[disabled]:focus, .datepicker table tr td.selected:hover[disabled]:focus {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected.disabled[disabled]:focus, .datepicker table tr td.selected.disabled:hover[disabled]:focus {
   background-color: #999;
   border-color: #555; }
@@ -1788,6 +2049,7 @@ fieldset[disabled] .datepicker table tr td.selected:hover, fieldset[disabled] .d
 fieldset[disabled] .datepicker table tr td.selected:focus, fieldset[disabled] .datepicker table tr td.selected:hover:focus {
   background-color: #999;
   border-color: #555; }
+
 fieldset[disabled] .datepicker table tr td.selected.disabled:focus, fieldset[disabled] .datepicker table tr td.selected.disabled:hover:focus {
   background-color: #999;
   border-color: #555; }
@@ -1795,12 +2057,15 @@ fieldset[disabled] .datepicker table tr td.selected.disabled:focus, fieldset[dis
 .datepicker table tr td.selected.disabled:active, .datepicker table tr td.selected:hover.disabled:active {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected.disabled.disabled:active, .datepicker table tr td.selected.disabled:hover.disabled:active {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected[disabled]:active, .datepicker table tr td.selected:hover[disabled]:active {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected.disabled[disabled]:active, .datepicker table tr td.selected.disabled:hover[disabled]:active {
   background-color: #999;
   border-color: #555; }
@@ -1808,6 +2073,7 @@ fieldset[disabled] .datepicker table tr td.selected.disabled:focus, fieldset[dis
 fieldset[disabled] .datepicker table tr td.selected:active, fieldset[disabled] .datepicker table tr td.selected:hover:active {
   background-color: #999;
   border-color: #555; }
+
 fieldset[disabled] .datepicker table tr td.selected.disabled:active, fieldset[disabled] .datepicker table tr td.selected.disabled:hover:active {
   background-color: #999;
   border-color: #555; }
@@ -1815,12 +2081,15 @@ fieldset[disabled] .datepicker table tr td.selected.disabled:active, fieldset[di
 .datepicker table tr td.selected.disabled.active, .datepicker table tr td.selected:hover.disabled.active {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected.disabled.disabled.active, .datepicker table tr td.selected.disabled:hover.disabled.active {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected[disabled].active, .datepicker table tr td.selected:hover[disabled].active {
   background-color: #999;
   border-color: #555; }
+
 .datepicker table tr td.selected.disabled[disabled].active, .datepicker table tr td.selected.disabled:hover[disabled].active {
   background-color: #999;
   border-color: #555; }
@@ -1828,6 +2097,7 @@ fieldset[disabled] .datepicker table tr td.selected.disabled:active, fieldset[di
 fieldset[disabled] .datepicker table tr td.selected.active, fieldset[disabled] .datepicker table tr td.selected:hover.active {
   background-color: #999;
   border-color: #555; }
+
 fieldset[disabled] .datepicker table tr td.selected.disabled.active, fieldset[disabled] .datepicker table tr td.selected.disabled:hover.active {
   background-color: #999;
   border-color: #555; }
@@ -1896,10 +2166,13 @@ fieldset[disabled] .datepicker table tr td.selected.disabled.active, fieldset[di
 
 .datepicker table tr td.active:active, .datepicker table tr td.active:hover:active {
   background-image: none; }
+
 .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover:active {
   background-image: none; }
+
 .datepicker table tr td.active.active, .datepicker table tr td.active:hover.active {
   background-image: none; }
+
 .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled:hover.active {
   background-image: none; }
 
@@ -1915,12 +2188,15 @@ fieldset[disabled] .datepicker table tr td.selected.disabled.active, fieldset[di
 .datepicker table tr td.active.disabled, .datepicker table tr td.active:hover.disabled {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:hover.disabled {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active[disabled], .datepicker table tr td.active:hover[disabled] {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active.disabled:hover[disabled] {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -1949,12 +2225,15 @@ fieldset[disabled] .datepicker table tr td.active:hover, fieldset[disabled] .dat
 .datepicker table tr td.active.disabled:focus, .datepicker table tr td.active:hover.disabled:focus {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active.disabled.disabled:focus, .datepicker table tr td.active.disabled:hover.disabled:focus {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active[disabled]:focus, .datepicker table tr td.active:hover[disabled]:focus {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active.disabled[disabled]:focus, .datepicker table tr td.active.disabled:hover[disabled]:focus {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -1962,6 +2241,7 @@ fieldset[disabled] .datepicker table tr td.active:hover, fieldset[disabled] .dat
 fieldset[disabled] .datepicker table tr td.active:focus, fieldset[disabled] .datepicker table tr td.active:hover:focus {
   background-color: #428bca;
   border-color: #357ebd; }
+
 fieldset[disabled] .datepicker table tr td.active.disabled:focus, fieldset[disabled] .datepicker table tr td.active.disabled:hover:focus {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -1969,12 +2249,15 @@ fieldset[disabled] .datepicker table tr td.active.disabled:focus, fieldset[disab
 .datepicker table tr td.active.disabled:active, .datepicker table tr td.active:hover.disabled:active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active.disabled.disabled:active, .datepicker table tr td.active.disabled:hover.disabled:active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active[disabled]:active, .datepicker table tr td.active:hover[disabled]:active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active.disabled[disabled]:active, .datepicker table tr td.active.disabled:hover[disabled]:active {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -1982,6 +2265,7 @@ fieldset[disabled] .datepicker table tr td.active.disabled:focus, fieldset[disab
 fieldset[disabled] .datepicker table tr td.active:active, fieldset[disabled] .datepicker table tr td.active:hover:active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 fieldset[disabled] .datepicker table tr td.active.disabled:active, fieldset[disabled] .datepicker table tr td.active.disabled:hover:active {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -1989,12 +2273,15 @@ fieldset[disabled] .datepicker table tr td.active.disabled:active, fieldset[disa
 .datepicker table tr td.active.disabled.active, .datepicker table tr td.active:hover.disabled.active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active.disabled.disabled.active, .datepicker table tr td.active.disabled:hover.disabled.active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active[disabled].active, .datepicker table tr td.active:hover[disabled].active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td.active.disabled[disabled].active, .datepicker table tr td.active.disabled:hover[disabled].active {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -2002,6 +2289,7 @@ fieldset[disabled] .datepicker table tr td.active.disabled:active, fieldset[disa
 fieldset[disabled] .datepicker table tr td.active.active, fieldset[disabled] .datepicker table tr td.active:hover.active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 fieldset[disabled] .datepicker table tr td.active.disabled.active, fieldset[disabled] .datepicker table tr td.active.disabled:hover.active {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -2088,10 +2376,13 @@ fieldset[disabled] .datepicker table tr td.active.disabled.active, fieldset[disa
 
 .datepicker table tr td span.active:active, .datepicker table tr td span.active:hover:active {
   background-image: none; }
+
 .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover:active {
   background-image: none; }
+
 .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active {
   background-image: none; }
+
 .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover.active {
   background-image: none; }
 
@@ -2107,12 +2398,15 @@ fieldset[disabled] .datepicker table tr td.active.disabled.active, fieldset[disa
 .datepicker table tr td span.active.disabled, .datepicker table tr td span.active:hover.disabled {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active.disabled.disabled, .datepicker table tr td span.active.disabled:hover.disabled {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active[disabled], .datepicker table tr td span.active:hover[disabled] {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active.disabled[disabled], .datepicker table tr td span.active.disabled:hover[disabled] {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -2141,12 +2435,15 @@ fieldset[disabled] .datepicker table tr td span.active:hover, fieldset[disabled]
 .datepicker table tr td span.active.disabled:focus, .datepicker table tr td span.active:hover.disabled:focus {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active.disabled.disabled:focus, .datepicker table tr td span.active.disabled:hover.disabled:focus {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active[disabled]:focus, .datepicker table tr td span.active:hover[disabled]:focus {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active.disabled[disabled]:focus, .datepicker table tr td span.active.disabled:hover[disabled]:focus {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -2154,6 +2451,7 @@ fieldset[disabled] .datepicker table tr td span.active:hover, fieldset[disabled]
 fieldset[disabled] .datepicker table tr td span.active:focus, fieldset[disabled] .datepicker table tr td span.active:hover:focus {
   background-color: #428bca;
   border-color: #357ebd; }
+
 fieldset[disabled] .datepicker table tr td span.active.disabled:focus, fieldset[disabled] .datepicker table tr td span.active.disabled:hover:focus {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -2161,12 +2459,15 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:focus, fieldset[
 .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active:hover.disabled:active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active.disabled.disabled:active, .datepicker table tr td span.active.disabled:hover.disabled:active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active[disabled]:active, .datepicker table tr td span.active:hover[disabled]:active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active.disabled[disabled]:active, .datepicker table tr td span.active.disabled:hover[disabled]:active {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -2174,6 +2475,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:focus, fieldset[
 fieldset[disabled] .datepicker table tr td span.active:active, fieldset[disabled] .datepicker table tr td span.active:hover:active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 fieldset[disabled] .datepicker table tr td span.active.disabled:active, fieldset[disabled] .datepicker table tr td span.active.disabled:hover:active {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -2181,12 +2483,15 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:active, fieldset
 .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active:hover.disabled.active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active.disabled.disabled.active, .datepicker table tr td span.active.disabled:hover.disabled.active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active[disabled].active, .datepicker table tr td span.active:hover[disabled].active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 .datepicker table tr td span.active.disabled[disabled].active, .datepicker table tr td span.active.disabled:hover[disabled].active {
   background-color: #428bca;
   border-color: #357ebd; }
@@ -2194,14 +2499,17 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:active, fieldset
 fieldset[disabled] .datepicker table tr td span.active.active, fieldset[disabled] .datepicker table tr td span.active:hover.active {
   background-color: #428bca;
   border-color: #357ebd; }
+
 fieldset[disabled] .datepicker table tr td span.active.disabled.active, fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   background-color: #428bca;
   border-color: #357ebd; }
 
 .datepicker table tr td span.old, .datepicker table tr td span.new {
   color: #999; }
+
 .datepicker th.datepicker-switch {
   width: 145px; }
+
 .datepicker thead tr:first-child th, .datepicker tfoot tr th {
   cursor: pointer; }
 
@@ -2862,40 +3170,12 @@ p.para {
   display: block;
   margin: 4em 0 5em 0; }
 
-.contact_left {
-  float: left;
-  margin-right: 3.3333%;
-  width: 32.3333%; }
-
-.contact_right {
-  float: left;
-  width: 63.3333%; }
-
 .contact_left h3 {
   margin-bottom: 2%;
   text-transform: capitalize;
   font-size: 2em;
   color: #000000;
   font-weight: 600; }
-
-.company_address {
-  padding-top: 5px; }
-  .company_address p {
-    color: #242424;
-    text-shadow: 0 1px 0 #ffffff;
-    line-height: 1.8em;
-    font-size: 1em;
-    font-weight: 600; }
-    .company_address p a {
-      color: #ff7b3d;
-      cursor: pointer;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      text-shadow: 0 1px 0 #ffffff; }
-      .company_address p a:hover {
-        color: #242424; }
 
 .map {
   margin: 6% 0 4%; }
@@ -3022,13 +3302,16 @@ p.para {
 
 #slider3-pager a {
   display: inline-block; }
+
 #slider3-pager img {
   float: left;
   display: block;
   width: 100%; }
+
 #slider3-pager .rslides_here a {
   background: transparent;
   border: 1px solid #000; }
+
 #slider3-pager a {
   padding: 0.2em; }
 
@@ -3048,21 +3331,27 @@ p.para {
 @font-face {
   font-family: logofont1;
   src: url("../fonts/Cedarville.ttf"); }
+
 @font-face {
   font-family: logofont2;
   src: url("../fonts/Jayadhira.ttf"); }
+
 @font-face {
   font-family: logofont3;
   src: url("../fonts/KrugmannBrush.ttf"); }
+
 @font-face {
   font-family: logofont4;
   src: url("../fonts/The Heart Maze Demo.ttf"); }
+
 @font-face {
   font-family: logofont5;
   src: url("../fonts/Vtks Hunt.ttf"); }
+
 @font-face {
   font-family: logofont6;
   src: url("../fonts/TrueLies.ttf"); }
+
 /* Menu start */
 /*do not down main menu height you can up it  cause logo will not align properly */
 #main-manu {
@@ -3091,14 +3380,15 @@ p.para {
       margin: 0px auto;
       text-align: center; }
       #main-manu .logo-wrapper .logo-container img {
-        display: none;
         min-width: 0px;
         max-width: inherit;
         width: 100%;
         position: relative;
         top: 50%;
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        display: none; }
       #main-manu .logo-wrapper .logo-container h3 {
+        /*display: none;*/
         font-size: 35px;
         line-height: 80px;
         font-family: logofont3; }
@@ -3184,6 +3474,7 @@ p.para {
           border: none; }
           #main-manu .menu-wrapper .menu-container .Li:last-child {
             display: none; } }
+
 @media (max-width: 768px) {
   #main-manu {
     height: 50px;
@@ -3209,10 +3500,14 @@ p.para {
             border: none; }
     #main-manu .small-menu {
       display: flex; }
-
   /* Logo */ }
-@media only screen and (max-width: 768px) {
-  .footer .footer-box:nth-child(3) {
-    text-align: center; } }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 768px) {
+  .footer .footer-box:nth-child(3) {
+    text-align: center; }
+  #contact .contact_left {
+    /*float: initial;
+            margin-right: 0px;
+            width: 100%;
+            background-color:red;*/ } }
+

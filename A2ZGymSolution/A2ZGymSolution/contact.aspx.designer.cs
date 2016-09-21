@@ -10,7 +10,7 @@
 namespace A2ZGymSolution {
     
     
-    public partial class contact {
+    public partial class Contact {
         
         /// <summary>
         /// RequiredFieldValidator1 control.

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace A2ZGymSolution
 {
-    public partial class Aboutus : System.Web.UI.Page
+    public partial class aboutus : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

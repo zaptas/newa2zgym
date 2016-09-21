@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <IsCompassProject>True</IsCompassProject>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,7 +59,20 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Aboutus.aspx" />
+    <Content Include="aboutus.aspx" />
+    <Content Include="admin\assets\css\main-style.css" />
+    <Content Include="admin\assets\css\style.css" />
+    <Content Include="admin\assets\font-awesome\css\font-awesome.css" />
+    <Content Include="admin\assets\font-awesome\css\font-awesome.min.css" />
+    <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="admin\assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="admin\assets\img\logo.png" />
+    <Content Include="admin\assets\img\user.jpg" />
+    <Content Include="admin\assets\scripts\dashboard-demo.js" />
+    <Content Include="admin\assets\scripts\flot-demo.js" />
+    <Content Include="admin\assets\scripts\morris-demo.js" />
+    <Content Include="admin\assets\scripts\siminta.js" />
+    <Content Include="admin\index.aspx" />
     <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\custom.css" />
     <Content Include="assets\css\font-awesome.css" />
@@ -76,7 +90,7 @@
     <Content Include="assets\js\jquery.metisMenu.js" />
     <Content Include="assets\js\morris\morris.js" />
     <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
-    <Content Include="contact.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="css\app.css" />
     <Content Include="css\jquery-ui.css" />
     <Content Include="css\responsive.scss">
@@ -89,6 +103,9 @@
     </Content>
     <Content Include="css\style.css">
       <DependentUpon>style.scss</DependentUpon>
+    </Content>
+    <Content Include="css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
     </Content>
     <Content Include="css\style.scss" />
     <Content Include="css\user.css" />
@@ -114,8 +131,8 @@
     <Content Include="GymSchedule.aspx" />
     <Content Include="gym_profile.aspx" />
     <Content Include="htmlparts\footer.ascx" />
-    <Content Include="htmlparts\footer.html" />
     <Content Include="htmlparts\LoginPop.ascx" />
+    <Content Include="htmlparts\Slider.ascx" />
     <Content Include="images\1.jpg" />
     <Content Include="images\10.jpg" />
     <Content Include="images\11.jpg" />
@@ -232,6 +249,7 @@
     <Content Include="img\img-sprite.png" />
     <Content Include="img\list_arrow.png" />
     <Content Include="img\logo.png" />
+    <Content Include="img\logo2.png" />
     <Content Include="img\magnify-alt.png" />
     <Content Include="img\nav_arrow.png" />
     <Content Include="img\ownerimage.png" />
@@ -284,6 +302,14 @@
     <Content Include="plugin\bootstrap\js\bootstrap.js" />
     <Content Include="plugin\bootstrap\js\bootstrap.min.js" />
     <Content Include="plugin\bootstrap\js\npm.js" />
+    <Content Include="plugin\dataTables\dataTables.bootstrap.css" />
+    <Content Include="plugin\dataTables\dataTables.bootstrap.js" />
+    <Content Include="plugin\dataTables\jquery.dataTables.js" />
+    <Content Include="plugin\flot\excanvas.min.js" />
+    <Content Include="plugin\flot\jquery.flot.js" />
+    <Content Include="plugin\flot\jquery.flot.pie.js" />
+    <Content Include="plugin\flot\jquery.flot.resize.js" />
+    <Content Include="plugin\flot\jquery.flot.tooltip.min.js" />
     <Content Include="plugin\Font-Awesome-master\css\font-awesome.css" />
     <Content Include="plugin\Font-Awesome-master\css\font-awesome.min.css" />
     <Content Include="plugin\Font-Awesome-master\HELP-US-OUT.txt" />
@@ -1803,6 +1829,13 @@
     <Content Include="plugin\login-signup-popup\js\modernizr.js" />
     <Content Include="plugin\login-signup-popup\setup\index.html" />
     <Content Include="plugin\login-signup-popup\setup\main.js" />
+    <Content Include="plugin\metisMenu\jquery.metisMenu.js" />
+    <Content Include="plugin\morris\morris-0.4.3.min.css" />
+    <Content Include="plugin\morris\morris.js" />
+    <Content Include="plugin\morris\raphael-2.1.0.min.js" />
+    <Content Include="plugin\pace\pace-theme-big-counter.css" />
+    <Content Include="plugin\pace\pace.js" />
+    <Content Include="plugin\social-buttons\social-buttons.css" />
     <Content Include="plugin\startbootstrap-full-slider-gh-pages\css\full-slider.css" />
     <Content Include="plugin\ThemePlugin\easyResponsiveTabs.js" />
     <Content Include="plugin\ThemePlugin\jquery-ui.js" />
@@ -1810,6 +1843,7 @@
     <Content Include="plugin\ThemePlugin\jquery.min.js" />
     <Content Include="plugin\ThemePlugin\nav.js" />
     <Content Include="plugin\ThemePlugin\responsiveslides.min.js" />
+    <Content Include="plugin\timeline\timeline.css" />
     <Content Include="Privacy_Policy.aspx" />
     <Content Include="profile\profile.png" />
     <Content Include="search.aspx" />
@@ -1823,12 +1857,12 @@
     <Content Include="GYM.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Aboutus.aspx.cs">
-      <DependentUpon>Aboutus.aspx</DependentUpon>
+    <Compile Include="aboutus.aspx.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Aboutus.aspx.designer.cs">
-      <DependentUpon>Aboutus.aspx</DependentUpon>
+    <Compile Include="aboutus.aspx.designer.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin.Master.cs">
       <DependentUpon>Admin.Master</DependentUpon>
@@ -1837,12 +1871,26 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
-    <Compile Include="contact.aspx.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
+    <Compile Include="admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="contact.aspx.designer.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
+    <Compile Include="admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="data.aspx.cs">
       <DependentUpon>data.aspx</DependentUpon>
@@ -1909,6 +1957,13 @@
     </Compile>
     <Compile Include="htmlparts\LoginPop.ascx.designer.cs">
       <DependentUpon>LoginPop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="htmlparts\Slider.ascx.cs">
+      <DependentUpon>Slider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="htmlparts\Slider.ascx.designer.cs">
+      <DependentUpon>Slider.ascx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -3069,6 +3124,20 @@
     <Content Include="fonts\Vtks Hunt.ttf" />
     <Content Include="fonts\TrueLies.ttf" />
     <Content Include="css\style.css.map" />
+    <Content Include="admin\admin.Master" />
+    <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="admin\assets\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="admin\assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="admin\assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="admin\assets\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="img\banner-30.png" />
+    <Content Include="img\favicon" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

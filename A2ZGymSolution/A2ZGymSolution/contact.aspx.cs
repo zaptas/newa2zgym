@@ -9,13 +9,13 @@ using System.Web.UI.WebControls;
 
 namespace A2ZGymSolution
 {
-    public partial class contact : System.Web.UI.Page
+    public partial class Contact : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-
         }
+
         protected void btnsubmit_Click(object sender, EventArgs e)
         {
             try
@@ -41,7 +41,5 @@ namespace A2ZGymSolution
             }
             //Page.ClientScript.RegisterStartupScript(this.GetType(), "", "<script>alert('Email Send Successfully')</script>");
         }
-          
-
     }
 }
