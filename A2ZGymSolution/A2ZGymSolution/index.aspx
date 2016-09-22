@@ -45,7 +45,7 @@
             </div>
 
             <div class="call-us text-center">
-                <h3>HOW IT WORKS</h3>
+                <h3>HOW IT WORKS   </h3>
             </div>
 
             <div class="container-fluid">

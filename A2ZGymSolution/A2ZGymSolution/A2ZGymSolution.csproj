@@ -60,6 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aboutus.aspx" />
+    <Content Include="admin\activity.aspx" />
+    <Content Include="admin\assets\css\custom-style.css">
+      <DependentUpon>custom-style.scss</DependentUpon>
+    </Content>
+    <Content Include="admin\assets\css\custom-style.min.css">
+      <DependentUpon>custom-style.css</DependentUpon>
+    </Content>
     <Content Include="admin\assets\css\main-style.css" />
     <Content Include="admin\assets\css\style.css" />
     <Content Include="admin\assets\font-awesome\css\font-awesome.css" />
@@ -72,7 +79,9 @@
     <Content Include="admin\assets\scripts\flot-demo.js" />
     <Content Include="admin\assets\scripts\morris-demo.js" />
     <Content Include="admin\assets\scripts\siminta.js" />
+    <Content Include="admin\GymSchedule.aspx" />
     <Content Include="admin\index.aspx" />
+    <Content Include="admin\login.aspx" />
     <Content Include="assets\css\bootstrap.css" />
     <Content Include="assets\css\custom.css" />
     <Content Include="assets\css\font-awesome.css" />
@@ -294,6 +303,11 @@
     <Content Include="img\trine_img.jpg" />
     <Content Include="index.aspx" />
     <Content Include="js\menu.js" />
+    <Content Include="plugin\bootstrap-checkbox-1.4.0\js\bootstrap-checkbox.js" />
+    <Content Include="plugin\bootstrap-checkbox-1.4.0\js\i18n\es.js" />
+    <Content Include="plugin\bootstrap-checkbox-1.4.0\js\i18n\pt.js" />
+    <Content Include="plugin\bootstrap-checkbox-1.4.0\js\i18n\ru.js" />
+    <Content Include="plugin\bootstrap-checkbox-1.4.0\js\i18n\tr.js" />
     <Content Include="plugin\bootstrap\css\bootstrap-theme.css" />
     <Content Include="plugin\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="plugin\bootstrap\css\bootstrap.css" />
@@ -305,6 +319,10 @@
     <Content Include="plugin\dataTables\dataTables.bootstrap.css" />
     <Content Include="plugin\dataTables\dataTables.bootstrap.js" />
     <Content Include="plugin\dataTables\jquery.dataTables.js" />
+    <Content Include="plugin\date-and-timepicker\css\bootstrap-datepicker.css" />
+    <Content Include="plugin\date-and-timepicker\css\jqueryTimepicker.css" />
+    <Content Include="plugin\date-and-timepicker\js\bootstrap-datepicker.js" />
+    <Content Include="plugin\date-and-timepicker\js\jqueryTimepicker.min.js" />
     <Content Include="plugin\flot\excanvas.min.js" />
     <Content Include="plugin\flot\jquery.flot.js" />
     <Content Include="plugin\flot\jquery.flot.pie.js" />
@@ -1871,6 +1889,13 @@
     <Compile Include="Admin.Master.designer.cs">
       <DependentUpon>Admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="admin\activity.aspx.cs">
+      <DependentUpon>activity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\activity.aspx.designer.cs">
+      <DependentUpon>activity.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\admin.Master.cs">
       <DependentUpon>admin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1878,12 +1903,26 @@
     <Compile Include="admin\admin.Master.designer.cs">
       <DependentUpon>admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="admin\GymSchedule.aspx.cs">
+      <DependentUpon>GymSchedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\GymSchedule.aspx.designer.cs">
+      <DependentUpon>GymSchedule.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -3134,6 +3173,7 @@
     <Content Include="admin\assets\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="admin\assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="admin\assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="admin\assets\css\custom-style.scss" />
     <None Include="compilerconfig.json" />
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>

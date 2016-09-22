@@ -1,0 +1,8 @@
+﻿.index .custom-colomn {
+  line-height: 40px; }
+  .index .custom-colomn input[type="text"] {
+    width: 300px; }
+
+.GymSchedule input[type="text"], .GymSchedule button, .GymSchedule ul {
+  width: 300px; }
+

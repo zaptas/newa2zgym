@@ -8,9 +8,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--<link href="../plugin/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />--%>
     <link href="../plugin/Font-Awesome-master/css/font-awesome.css" rel="stylesheet" />
     <link href="../plugin/pace/pace-theme-big-counter.css" rel="stylesheet" />
-
+    
 
 
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -291,13 +292,13 @@
                             <!--end search section-->
                         </li>
                         <li class="selected">
-                            <a href="#">Additinal Infromation</a>
+                            <a href="index.aspx">Additinal Infromation</a>
                         </li>
                         <li>
-                            <a href="#">Activities</a>
+                            <a href="activity.aspx">Activities</a>
                         </li>
                         <li>
-                            <a href="#">Time Schedule</a>
+                            <a href="GymSchedule.aspx">Time Schedule</a>
                         </li>
                       
                         <li>

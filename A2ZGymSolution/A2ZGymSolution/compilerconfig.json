@@ -2,5 +2,9 @@
   {
     "outputFile": "css/style.css",
     "inputFile": "css/style.scss"
+  },
+  {
+    "outputFile": "admin/assets/css/custom-style.css",
+    "inputFile": "admin/assets/css/custom-style.scss"
   }
 ]

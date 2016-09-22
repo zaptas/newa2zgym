@@ -247,7 +247,7 @@
                 <div class="menu-container">
                     <div class="Li"><a href="Home" >Home</a></div>
                     <div class="Li"><a href="#">GYM</a></div>
-                    <div class="Li"><a href="#">Gallery</a></div>
+                    
                     <div class="Li"><a href="Aboutus.aspx">About</a></div>
                     <div class="Li"><a href="contact.aspx">Contact</a></div>
                     <div class=" main-nav Li"><a class="cd-signin">Login</a></div>
