@@ -3123,7 +3123,9 @@
     <Content Include="fonts\The Heart Maze Demo.ttf" />
     <Content Include="fonts\Vtks Hunt.ttf" />
     <Content Include="fonts\TrueLies.ttf" />
-    <Content Include="css\style.css.map" />
+    <Content Include="css\style.css.map">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
     <Content Include="admin\admin.Master" />
     <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="admin\assets\font-awesome\fonts\fontawesome-webfont.ttf" />

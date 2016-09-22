@@ -36,7 +36,7 @@
                        <div class="col-md-12 col-lg-12"></div>
                         <div class="col-md-12 col-lg-12">
                              <label class="btn btn-default " for="my-file-selector">
-                        <input id="my" type="file" >
+                        <input id="my" type="file" />
                        
                     </label>
                         </div>
