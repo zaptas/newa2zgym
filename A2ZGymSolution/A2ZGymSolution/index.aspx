@@ -14,9 +14,75 @@
 
     <%-- Slider end --%>
     <div id="Home">
-        <!-- content-section-starts -->
+
+
+
+
+        <%-- Team section start here... --%>
+
+     
+        <div class="container-fluid team">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12">
+                    <h1 >FIND YOUR FITNESS SOLUTION</h1>
+                </div>
+            </div>
+            <div class="row text-center">
+                
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="img/team-1.png" alt="">
+                        <div class="caption">
+                         
+                            <p class="shade-text">Improve cardiovascular fitness and endurance,  strengthen muscles.</p>
+
+                          
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="img/team-2.png" alt="">
+                        <div class="caption">
+                    
+                            <p class="shade-text">Gain lean, toned muscles, strength and increased muscle mass.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="img/team-3.png" alt="">
+                        <div class="caption">
+                           
+                            <p class="shade-text">Reduce body fat, drop clothes sizes and look great in the mirror.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 hero-feature">
+                    <div class="thumbnail">
+                        <img src="img/team-4.png" alt="">
+                        <div class="caption">
+                       
+                            <p class="shade-text">Reduce stress, increase energy and feel happy and healthy.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+           
+            <!-- /.row -->
+        </div>
+
+        
         <div class="content-section">
-            <div class="services-section">
+            <%-- <div class="services-section">
                 <div class="services-section-left">
                     <h3>WE VALUE YOUR NEED</h3>
                     <h5></h5>
@@ -42,8 +108,22 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="clearfix"></div>
-            </div>
+            </div>--%>
 
+              <div class="row team-bootom">
+                <div class="col-xs-12 col-lg-12">
+                    <h2 >GET IN GET FIT WITH A2Z GYM</h2>
+                    <p>Try Us for Free Today !</p>
+                  
+                     <div class=" main-nav"><a class="cd-signin btn-block">Get Your One Day Free Pass</a></div>
+                </div>
+                  <br />
+                  <br />
+                  <br />
+            </div>
+         
+
+           
             <div class="call-us text-center">
                 <h3>HOW IT WORKS   </h3>
             </div>
@@ -200,20 +280,26 @@
 
             </div>
         </div>
+
+
+
         <div class="call-us text-center">
 
             <h3><i class="phone"></i>Call Us : +91 120 437 0324 , +91 982 1699 242</h3>
 
         </div>
 
+
         <div class="mail text-center">
-            <h3><i class="msg"></i>Email : Enquiry@zaptas.com</h3>
+            <h3><i class="msg"></i>Email : enquiry@a2zgym.com</h3>
         </div>
 
 
+        <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.7320491047412!2d77.37096131419253!3d28.66774068923935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa9c06424a9f%3A0x26592d248336f83d!2sZaptas+Technologies+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1474614648743" width="100%" height="600" frameborder="0" style="border: 0" allowfullscreen></iframe>
+        </div>
+    </div>
 
-    </div>
-    </div>
     <!-- content-section-ends -->
 </asp:Content>
 

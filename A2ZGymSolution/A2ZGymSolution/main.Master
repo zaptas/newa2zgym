@@ -27,6 +27,8 @@
     <%-- Local cdn end --%>
 
     <link href="plugin/startbootstrap-full-slider-gh-pages/css/full-slider.css" rel="stylesheet" />
+    <link href="plugin/social-links/css/contact-buttons.css" rel="stylesheet" />
+    <link href="plugin/social-links/css/demo.css" rel="stylesheet" />
     <link href="../plugin/login-signup-popup/css/reset.css" rel="stylesheet" />
     <link href="../plugin/login-signup-popup/css/style.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -242,12 +244,36 @@
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
             </div>
 
+            <div class="search-wrapper">
 
+                <div class="input-group">
+                    <div class="input-group-btn search-panel">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">Filter by</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#contains">Contains</a></li>
+                            <li><a href="#its_equal">It's equal</a></li>
+                            <li><a href="#greather_than">Greather than ></a></li>
+                            <li><a href="#less_than">Less than < </a></li>
+                            <li class="divider"></li>
+                            <li><a href="#all">Anything</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Search term...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+
+
+
+            </div>
             <div class="menu-wrapper">
                 <div class="menu-container">
-                    <div class="Li"><a href="Home" >Home</a></div>
+                    <div class="Li"><a href="Home">Home</a></div>
                     <div class="Li"><a href="#">GYM</a></div>
-                    
                     <div class="Li"><a href="Aboutus.aspx">About</a></div>
                     <div class="Li"><a href="contact.aspx">Contact</a></div>
                     <div class=" main-nav Li"><a class="cd-signin">Login</a></div>
@@ -275,7 +301,11 @@
     <script src="plugin/ThemePlugin/jquery.easydropdown.js"></script>
     <script src="plugin/ThemePlugin/easyResponsiveTabs.js" type="text/javascript"></script>
     <script src="../plugin/login-signup-popup/js/modernizr.js"></script>
+   
+
     <script src="plugin/jQuery-Plugin-To-Hide-Sticky-Navbar-When-Scrolling-Down-Scroll-Up-Menu/jquery.scrollupformenu.js"></script>
+    <script src="plugin/social-links/js/jquery.contact-buttons.js"></script>
+    <script src="plugin/social-links/js/demo.js"></script>
     <script src="js/menu.js"></script>
     <script src="../plugin/login-signup-popup/js/main.js"></script>
 
@@ -294,6 +324,26 @@
         });
     </script>
     <script type="application/x-javascript">addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+
+    <%-- Search box --%>
+
+    <script>
+
+        $(document).ready(function (e) {
+            $('.search-panel .dropdown-menu').find('a').click(function (e) {
+                e.preventDefault();
+                var param = $(this).attr("href").replace("#", "");
+                var concept = $(this).text();
+                $('.search-panel span#search_concept').text(concept);
+                $('.input-group #search_param').val(param);
+            });
+        });
+    </script>
+
+
+    
 
     <asp:ContentPlaceHolder runat="server" ID="ScriptSection"></asp:ContentPlaceHolder>
 </body>

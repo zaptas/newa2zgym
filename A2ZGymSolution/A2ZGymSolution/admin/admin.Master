@@ -11,7 +11,7 @@
     <%--<link href="../plugin/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />--%>
     <link href="../plugin/Font-Awesome-master/css/font-awesome.css" rel="stylesheet" />
     <link href="../plugin/pace/pace-theme-big-counter.css" rel="stylesheet" />
-    
+
 
 
     <link href="assets/css/style.css" rel="stylesheet" />
@@ -291,23 +291,23 @@
                             </div>
                             <!--end search section-->
                         </li>
-                        <li class="selected">
+                        <li >
                             <a href="index.aspx">Additinal Infromation</a>
                         </li>
-                        <li>
+                        <li >
                             <a href="activity.aspx">Activities</a>
                         </li>
                         <li>
                             <a href="GymSchedule.aspx">Time Schedule</a>
                         </li>
-                      
+
                         <li>
                             <a href="#"><i class="fa fa-flask fa-fw"></i>Trainer</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-table fa-fw"></i>Gallery</a>
                         </li>
-                          <li>
+                        <li>
                             <a href="#"><i class="fa fa-table fa-fw"></i>Discription</a>
                         </li>
 
@@ -337,6 +337,29 @@
 
     <script src="assets/scripts/siminta.js"></script>
 
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            if ($(".index").length) {
+                $("#side-menu li").removeClass("selected");
+                $("#side-menu li a[href='index.aspx']").parent('li').addClass('selected');
+            }
+            else
+                if ($(".activity").length) {
+                    $("#side-menu li").removeClass("selected");
+                    $("#side-menu li a[href='activity.aspx']").parent('li').addClass('selected');
+                }
+                else if ($(".GymSchedule").length) {
+                    $("#side-menu li").removeClass("selected");
+                    $("#side-menu li a[href='GymSchedule.aspx']").parent('li').addClass('selected');
+                }
+        });
+
+
+    </script>
     <asp:ContentPlaceHolder ID="ScriptSection" runat="server"></asp:ContentPlaceHolder>
 
 

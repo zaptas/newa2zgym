@@ -136,6 +136,7 @@
     <Content Include="gympics\90C2D2_Lighthouse.jpg" />
     <Content Include="gympics\FE4FB4_Penguins.jpg" />
     <Content Include="GymDetail.aspx" />
+    <Content Include="GymProfile.aspx" />
     <Content Include="GymRegister.aspx" />
     <Content Include="GymSchedule.aspx" />
     <Content Include="gym_profile.aspx" />
@@ -202,20 +203,12 @@
     <Content Include="img\a3.png" />
     <Content Include="img\a4.png" />
     <Content Include="img\about_img.jpg" />
-    <Content Include="img\about_img1.jpg" />
-    <Content Include="img\about_img2.jpg" />
-    <Content Include="img\about_img3.jpg" />
-    <Content Include="img\about_img4.jpg" />
-    <Content Include="img\about_img5.jpg" />
-    <Content Include="img\about_img6.jpg" />
     <Content Include="img\about_img7.jpg" />
     <Content Include="img\banner-1.jpg" />
     <Content Include="img\banner-12.jpg" />
     <Content Include="img\banner-13.jpg" />
     <Content Include="img\banner-13.png" />
     <Content Include="img\banner-14.jpg" />
-    <Content Include="img\banner-15.jpg" />
-    <Content Include="img\banner-15.png" />
     <Content Include="img\banner-16.jpg" />
     <Content Include="img\banner-17.jpg" />
     <Content Include="img\banner-18.jpg" />
@@ -225,8 +218,6 @@
     <Content Include="img\banner-22.jpg" />
     <Content Include="img\banner-23.jpg" />
     <Content Include="img\banner-24.jpg" />
-    <Content Include="img\banner-25.jpg" />
-    <Content Include="img\banner-26.jpg" />
     <Content Include="img\banner-27.jpg" />
     <Content Include="img\banner-28.png" />
     <Content Include="img\banner-29.jpg" />
@@ -254,8 +245,6 @@
     <Content Include="img\class_img.jpg" />
     <Content Include="img\CrossSign.png" />
     <Content Include="img\GreenTick.png" />
-    <Content Include="img\header_postlogin.jpg" />
-    <Content Include="img\img-sprite.png" />
     <Content Include="img\list_arrow.png" />
     <Content Include="img\logo.png" />
     <Content Include="img\logo2.png" />
@@ -268,39 +257,19 @@
     <Content Include="img\p4.png" />
     <Content Include="img\p5.png" />
     <Content Include="img\p6.png" />
-    <Content Include="img\pic.jpg" />
-    <Content Include="img\pic.png" />
-    <Content Include="img\pic1.jpg" />
-    <Content Include="img\pic10.jpg" />
-    <Content Include="img\pic11.jpg" />
-    <Content Include="img\pic12.jpg" />
-    <Content Include="img\pic13.jpg" />
-    <Content Include="img\pic14.jpg" />
-    <Content Include="img\pic15.jpg" />
-    <Content Include="img\pic16.jpg" />
-    <Content Include="img\pic17.jpg" />
-    <Content Include="img\pic18.jpg" />
-    <Content Include="img\pic2.jpg" />
-    <Content Include="img\pic3.jpg" />
-    <Content Include="img\pic4.jpg" />
-    <Content Include="img\pic5.jpg" />
-    <Content Include="img\pic6.jpg" />
-    <Content Include="img\pic7.jpg" />
-    <Content Include="img\pic8.jpg" />
-    <Content Include="img\pic9.jpg" />
-    <Content Include="img\PlusSign.png" />
-    <Content Include="img\price.jpg" />
+    <Content Include="img\quot.png" />
     <Content Include="img\quotation.png" />
+    <Content Include="img\quotes.png" />
     <Content Include="img\RedMinus.png" />
     <Content Include="img\RedWrongSign.png" />
     <Content Include="img\RightSign.jpg" />
-    <Content Include="img\s1.jpg" />
-    <Content Include="img\s2.jpg" />
-    <Content Include="img\single_class.jpg" />
     <Content Include="img\submit_arrow.png" />
+    <Content Include="img\team-1.png" />
+    <Content Include="img\team-2.png" />
+    <Content Include="img\team-3.png" />
+    <Content Include="img\team-4.png" />
     <Content Include="img\tick.png" />
     <Content Include="img\tick1.png" />
-    <Content Include="img\trine_img.jpg" />
     <Content Include="index.aspx" />
     <Content Include="js\menu.js" />
     <Content Include="plugin\bootstrap-checkbox-1.4.0\js\bootstrap-checkbox.js" />
@@ -1854,6 +1823,9 @@
     <Content Include="plugin\pace\pace-theme-big-counter.css" />
     <Content Include="plugin\pace\pace.js" />
     <Content Include="plugin\social-buttons\social-buttons.css" />
+    <Content Include="plugin\social-links\css\contact-buttons.css" />
+    <Content Include="plugin\social-links\js\demo.js" />
+    <Content Include="plugin\social-links\js\jquery.contact-buttons.js" />
     <Content Include="plugin\startbootstrap-full-slider-gh-pages\css\full-slider.css" />
     <Content Include="plugin\ThemePlugin\easyResponsiveTabs.js" />
     <Content Include="plugin\ThemePlugin\jquery-ui.js" />
@@ -1961,6 +1933,13 @@
     </Compile>
     <Compile Include="GymDetail.aspx.designer.cs">
       <DependentUpon>GymDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GymProfile.aspx.cs">
+      <DependentUpon>GymProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GymProfile.aspx.designer.cs">
+      <DependentUpon>GymProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="GymRegister.aspx.cs">
       <DependentUpon>GymRegister.aspx</DependentUpon>
@@ -3187,7 +3166,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="admin\user\assets\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
       <Project>{d2c576cc-cfb5-45a5-b5dd-bd40a164ff2f}</Project>

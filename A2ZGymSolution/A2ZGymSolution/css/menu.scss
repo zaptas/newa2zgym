@@ -40,15 +40,16 @@ $logo-font-family: logofont3;
 
     .logo-wrapper {
         padding: 0px;
-        width: 400px;
+        min-width: 200px;
+        width: 285px;
         height: $main-menu-height;
         box-sizing: border-box;
+
 
         .logo-container {
             max-width: $main-logo-size;
             width: 100%;
             height: $main-menu-height;
-            margin: 0px auto;
             text-align: center;
 
             img {
@@ -58,7 +59,7 @@ $logo-font-family: logofont3;
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
-                display:none;
+                display: none;
             }
 
             h3 {
@@ -76,16 +77,17 @@ $logo-font-family: logofont3;
         width: auto;
         text-align: center;
         box-sizing: border-box;
+        
 
         .menu-container {
-            min-width: 600px;
-            max-width: 700px;
+            min-width: 400px;
+            max-width: 400px;
             width: 100%;
             height: $main-menu-height;
             background-color: $shade-1;
             display: flex;
             box-sizing: border-box;
-            margin: 0 auto;
+            float: right;
 
 
             .Li {
@@ -120,6 +122,11 @@ $logo-font-family: logofont3;
                 }
             }
         }
+    }
+
+    .search-wrapper {
+        width: 100%;
+        padding: 25px;
     }
 
     .small-menu {
@@ -177,12 +184,20 @@ $logo-font-family: logofont3;
             clear: both;
         }
 
+        .search-wrapper {
+            width: 100%;
+            padding: 25px;
+            display: none;
+        }
+
         .menu-wrapper {
             clear: both;
 
             .menu-container {
                 width: 100%;
-
+                margin: 0 auto;
+                float: none;
+                max-width: 600px;
                 .Li {
                     border: none;
 
