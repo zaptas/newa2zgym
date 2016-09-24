@@ -20,7 +20,8 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <img src="http://placehold.it/1200x400/F34336/F34336&text=WORDPRESS THEME DEVELOPER">
+                                       <%--   <img src="http://placehold.it/1200x400/F34336/F34336&text=WORDPRESS THEME DEVELOPER">--%>
+                                     <img src="../<%= gymcover %>" />
                                     </div>
                                   <%--  <div class="item">
                                         <img src="http://placehold.it/1200x400/20BFA9/ffffff&text=CLEAN %26 SMART">
@@ -50,9 +51,11 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <a class="navbar-brand" href="#">
-                                    <img class="img-responsive" src="http://rolyart.ro/wp-content/uploads/2016/07/roland-maruntelu-freelancer-romania.jpg"></a>
-                                <span class="site-name"><b>Roland</b> Maruntelu</span>
-                                <span class="site-description">worpress theme developer</span>
+                                   <%--<img class="img-responsive" src="http://rolyart.ro/wp-content/uploads/2016/07/roland-maruntelu-freelancer-romania.jpg">--%>
+                                   <img class="img-responsive" src="../<%= gymlogo %>" /></a>
+                               
+                             <span class="site-name"><b><%= gymname %></b></span>
+                                <span class="site-description"></span>
                             </div>
 
                             <!-- Collect the nav links, forms, and other content for toggling -->
