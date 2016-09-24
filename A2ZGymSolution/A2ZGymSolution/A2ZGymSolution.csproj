@@ -139,6 +139,7 @@
     <Content Include="GymProfile.aspx" />
     <Content Include="GymRegister.aspx" />
     <Content Include="GymSchedule.aspx" />
+    <Content Include="GymTemp.aspx" />
     <Content Include="gym_profile.aspx" />
     <Content Include="htmlparts\footer.ascx" />
     <Content Include="htmlparts\LoginPop.ascx" />
@@ -1963,6 +1964,13 @@
     </Compile>
     <Compile Include="GymSchedule.aspx.designer.cs">
       <DependentUpon>GymSchedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GymTemp.aspx.cs">
+      <DependentUpon>GymTemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GymTemp.aspx.designer.cs">
+      <DependentUpon>GymTemp.aspx</DependentUpon>
     </Compile>
     <Compile Include="gym_profile.aspx.cs">
       <DependentUpon>gym_profile.aspx</DependentUpon>

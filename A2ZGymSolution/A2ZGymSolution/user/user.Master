@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user.master.cs" Inherits="A2ZGymSolution.user.user" %>
-
+<%@ Register TagPrefix="Gym" TagName="footer" Src="~/htmlparts/footer.ascx" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -18,7 +18,8 @@
 
     </form>
 
-
+        <Gym:footer ID="Spinner1" runat="server" minvalue="1" maxvalue="10" />
+        <!-- footer-section-ends -->
 
     <script src="../plugin/JQuery/jquery-1.11.3.min.js"></script>
     <script src="../plugin/bootstrap/js/bootstrap.min.js"></script>

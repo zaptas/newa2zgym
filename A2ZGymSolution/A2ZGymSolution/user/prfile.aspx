@@ -20,44 +20,19 @@
                         <span class="card-title">Pamela Anderson</span>
                     </div>
                 </div>
-                <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
-                    <div class="btn-group" role="group">
-                        <button type="button" id="stars" class="btn btn-primary" href="#tab1" data-toggle="tab">
-                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-                            <div class="hidden-xs">Stars</div>
-                        </button>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab">
-                            <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-                            <div class="hidden-xs">Favorites</div>
-                        </button>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab">
-                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                            <div class="hidden-xs">Following</div>
-                        </button>
-                    </div>
-                </div>
+                
 
                 <div class="well">
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="tab1">
                             <h3>This is tab 1</h3>
                         </div>
-                        <div class="tab-pane fade in" id="tab2">
-                            <h3>This is tab 2</h3>
-                        </div>
-                        <div class="tab-pane fade in" id="tab3">
-                            <h3>This is tab 3</h3>
-                        </div>
                     </div>
                 </div>
 
             </div>
         </div>
-        <div class="container-fluid ">
+        <div class="container ">
             <div class="row">
                 <div class="col-md-3 col-lg-3">
                     <div class="sidemenu">
@@ -75,19 +50,19 @@
                         <br />
                         <br />
 
-                        <h5>0</h5>
+                        <h4>0</h4>
                         <p>Upcomming Workout</p>
                         <br />
                         <br />
-                        <h5>0</h5>
+                        <h4>0</h4>
                         <p>Completed</p>
                         <br />
                         <br />
-                        <h5>0</h5>
+                        <h4>0</h4>
                         <p>Credits</p>
                         <br />
                         <br />
-                        <h5>0</h5>
+                        <h4>0</h4>
                         <p>Cycles End</p>
                         <br />
                         <br />
@@ -95,24 +70,61 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-lg-9">
+
+
+                    <div>
+                        <h1>Bootstrap  tab panel example (using nav-pills)  </h1>
+                    </div>
+                    <div id="exTab1">
+                        <ul class="nav nav-pills">
+                            <li class="active">
+                                <a href="#1a" data-toggle="tab">Up Coming</a>
+                            </li>
+                            <li><a href="#2a" data-toggle="tab">Past</a>
+                            </li>
+                            <li><a href="#3a" data-toggle="tab">Favorits</a>
+                            </li>
+                            <li><a href="#4a" data-toggle="tab">Friends</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content clearfix">
+                            <div class="tab-pane active" id="1a">
+                                <h3>Content's background color is the same for the tab</h3>
+                            </div>
+                            <div class="tab-pane" id="2a">
+                                <h3>We use the class nav-pills instead of nav-tabs which automatically creates a background color for the tab</h3>
+                            </div>
+                            <div class="tab-pane" id="3a">
+                                <h3>We applied clearfix to the tab-content to rid of the gap between the tab and the content</h3>
+                            </div>
+                            <div class="tab-pane" id="4a">
+                                <h3>We use css to change the background color of the content to be equal to the tab</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
 
     </div>
     <%-- End page --%>
-
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ScriptSection" runat="server">
 
     <script>
-        $(document).ready(function () {
-            $(".btn-pref .btn").click(function () {
-                $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
-                // $(".tab").addClass("active"); // instead of this do the below 
-                $(this).removeClass("btn-default").addClass("btn-primary");
-            });
+        //$(document).ready(function () {
+        //    $(".btn-pref .btn").click(function () {
+        //        $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+        //        // $(".tab").addClass("active"); // instead of this do the below 
+        //        $(this).removeClass("btn-default").addClass("btn-primary");
+        //    });
 
-        });
+        //});
     </script>
 </asp:Content>
