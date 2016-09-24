@@ -1965,13 +1965,6 @@
     <Compile Include="GymSchedule.aspx.designer.cs">
       <DependentUpon>GymSchedule.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GymTemp.aspx.cs">
-      <DependentUpon>GymTemp.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GymTemp.aspx.designer.cs">
-      <DependentUpon>GymTemp.aspx</DependentUpon>
-    </Compile>
     <Compile Include="gym_profile.aspx.cs">
       <DependentUpon>gym_profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

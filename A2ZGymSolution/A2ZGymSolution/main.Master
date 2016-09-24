@@ -195,7 +195,7 @@
                             <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="#FF66FF" Target="_blank" ToolTip="Read">terms &amp; Conditions</asp:HyperLink>
                         </p>
                         <p class="fieldset">
-                            <asp:Button runat="server" CssClass="btn full-width has-padding" Text="Create Account" ID="btnNewUser" UseSubmitBehavior="False"></asp:Button>
+                            <asp:Button runat="server" CssClass="btn full-width has-padding" Text="Create Account" ID="btnNewUser" ></asp:Button>
                         </p>
 
 
