@@ -12,7 +12,7 @@ namespace A2ZGymSolution
 {
     public partial class GymProfile1 : System.Web.UI.Page
     {
-        public string gymname ="";
+        public string gymname = "";
         public string gymlogo = "";
         public string gymcover = "";
 
@@ -22,19 +22,19 @@ namespace A2ZGymSolution
         DataTable record = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
-      
-           string name = this.Page.RouteData.Values["name"].ToString();
 
-            gymname = name.Replace("-", " ");
+            //string name = this.Page.RouteData.Values["name"].ToString();
 
-            string getPicPath = "select * from gymregistration where gymname ='" + gymname + "'";
-            da = new SqlDataAdapter(getPicPath, connection);
-            da.Fill(record);
-            if (record.Rows.Count > 0)
-            {
-                gymlogo = record.Rows[0]["companylogo"].ToString();
-                gymcover = record.Rows[0]["coverimage"].ToString();
-            }
+            //gymname = name.Replace("-", " ");
+
+            //string getPicPath = "select * from gymregistration where gymname ='" + gymname + "'";
+            //da = new SqlDataAdapter(getPicPath, connection);
+            //da.Fill(record);
+            //if (record.Rows.Count > 0)
+            //{
+            //    gymlogo = record.Rows[0]["companylogo"].ToString();
+            //    gymcover = record.Rows[0]["coverimage"].ToString();
+            //}
         }
     }
  }
