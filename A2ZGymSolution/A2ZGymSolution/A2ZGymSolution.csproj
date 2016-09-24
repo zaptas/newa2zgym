@@ -272,6 +272,7 @@
     <Content Include="img\tick1.png" />
     <Content Include="index.aspx" />
     <Content Include="js\menu.js" />
+    <Content Include="login.aspx" />
     <Content Include="plugin\bootstrap-checkbox-1.4.0\js\bootstrap-checkbox.js" />
     <Content Include="plugin\bootstrap-checkbox-1.4.0\js\i18n\es.js" />
     <Content Include="plugin\bootstrap-checkbox-1.4.0\js\i18n\pt.js" />
@@ -1841,6 +1842,13 @@
     <Content Include="Term_Condition.aspx" />
     <Content Include="userdashboard.aspx" />
     <Content Include="UserProfile.aspx" />
+    <Content Include="user\assets\css\style.css">
+      <DependentUpon>style.scss</DependentUpon>
+    </Content>
+    <Content Include="user\assets\css\style.min.css">
+      <DependentUpon>style.css</DependentUpon>
+    </Content>
+    <Content Include="user\prfile.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1990,6 +1998,13 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2053,6 +2068,20 @@
     </Compile>
     <Compile Include="UserProfile.aspx.designer.cs">
       <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\prfile.aspx.cs">
+      <DependentUpon>prfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\prfile.aspx.designer.cs">
+      <DependentUpon>prfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user\user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user\user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -3159,6 +3188,8 @@
     </None>
     <Content Include="img\banner-30.png" />
     <Content Include="img\favicon" />
+    <Content Include="user\user.Master" />
+    <Content Include="user\assets\css\style.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3168,6 +3199,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="admin\user\assets\" />
+    <Folder Include="user\assets\img\" />
+    <Folder Include="user\assets\js\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
