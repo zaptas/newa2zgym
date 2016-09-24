@@ -23,17 +23,17 @@
                                        <%--   <img src="http://placehold.it/1200x400/F34336/F34336&text=WORDPRESS THEME DEVELOPER">--%>
                                      <img src="../<%= gymcover %>" />
                                     </div>
-                                  <%--  <div class="item">
+                                    <%--  <div class="item">
                                         <img src="http://placehold.it/1200x400/20BFA9/ffffff&text=CLEAN %26 SMART">
                                     </div>--%>
                                 </div>
 
                                 <!-- Controls -->
-                                <a style="display:none;" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <a style="display: none;" class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                                     <span class="fa fa-angle-left" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                 </a>
-                                <a style="display:none;" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <a style="display: none;" class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                                     <span class="fa fa-angle-right" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                 </a>
@@ -120,8 +120,37 @@
                 <div class="col-md-3">
                     <div class="map-wraapper">
 
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.7320491047412!2d77.37096131419253!3d28.66774068923935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa9c06424a9f%3A0x26592d248336f83d!2sZaptas+Technologies+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1474614648743" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.7320491047412!2d77.37096131419253!3d28.66774068923935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfa9c06424a9f%3A0x26592d248336f83d!2sZaptas+Technologies+Pvt.+Ltd.!5e0!3m2!1sen!2sin!4v1474614648743" width="100%" height="300" frameborder="0" style="border: 0" allowfullscreen></iframe>
 
+                    </div>
+                    <div class="address-wrapper">
+                        <div>
+                            <br />
+                            <h1 class="">Contact</h1>
+                            <br />
+                            <ul>
+                                <li>
+                                    <h2>Zaptas Technologies Pvt. Ltd.</h2>
+                                </li>
+                                <li>
+                                    <p>
+                                        Address: 504, Sec-2C, First Floor,
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Vasundhara, Ghaziabad,</p>
+                                </li>
+                                <li>
+                                    <p>U.P, India, 201012</p>
+                                </li>
+                                <li>
+                                    <p>enquiry@zaptas.com</p>
+                                </li>
+                                <li>
+                                    <p>Phone:+91-120-4370324</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
