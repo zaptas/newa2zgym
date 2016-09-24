@@ -1837,6 +1837,7 @@
     <Content Include="Privacy_Policy.aspx" />
     <Content Include="profile\profile.png" />
     <Content Include="search.aspx" />
+    <Content Include="temp.html" />
     <Content Include="Templete\Mail.html" />
     <Content Include="Term_Condition.aspx" />
     <Content Include="userdashboard.aspx" />
