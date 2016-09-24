@@ -10,6 +10,9 @@
 .shade-text {
   color: #ABACB6; }
 
+.text-center {
+  text-align: center; }
+
 @font-face {
   font-family: logofont1;
   src: url("../fonts/Cedarville.ttf"); }
@@ -3420,7 +3423,7 @@ p.para {
   margin-top: -130px;
   overflow: hidden;
   border: 3px solid #eee;
-  margin-left: 15px;
+  margin-left: 60px;
   background: #333;
   text-align: center;
   line-height: 160px;
@@ -3448,7 +3451,7 @@ p.para {
 
 #GymProfile .main-menu {
   position: absolute;
-  left: 190px; }
+  left: 240px; }
 
 #GymProfile .slider, #GymProfile .carousel {
   max-height: 360px;
@@ -3475,6 +3478,17 @@ p.para {
   background-color: transparent !important;
   background-image: none !important;
   outline: 0; }
+
+#GymProfile .address-wrapper {
+  margin-top: 50px; }
+  #GymProfile .address-wrapper h1 {
+    font-size: 30px; }
+  #GymProfile .address-wrapper h2 {
+    font-size: 20px; }
+  #GymProfile .address-wrapper p {
+    font-size: 15px; }
+  #GymProfile .address-wrapper ul li {
+    padding-top: 10px; }
 
 @media (max-width: 768px) {
   #GymProfile .navbar-brand {
@@ -3603,6 +3617,9 @@ p.para {
 
 .shade-text {
   color: #ABACB6; }
+
+.text-center {
+  text-align: center; }
 
 @font-face {
   font-family: logofont1;
