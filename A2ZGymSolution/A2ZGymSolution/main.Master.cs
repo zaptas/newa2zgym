@@ -31,7 +31,7 @@ namespace A2ZGymSolution
             
             if (Session["UserId"] != null )
             {
-              string  URL = "UserDashboard";
+                string  URL = "UserDashboard";
                 Response.Redirect(URL);
             }
             try
@@ -220,9 +220,10 @@ namespace A2ZGymSolution
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //string city = txtautocomplete.Value;
+            string city = txtautocomplete.Value;
 
-            //Response.Redirect("Search/" + city);
+            Response.Redirect("Search/" + city);
+
         }
 
       

@@ -28,7 +28,7 @@
 
     <link href="plugin/startbootstrap-full-slider-gh-pages/css/full-slider.css" rel="stylesheet" />
     <link href="plugin/social-links/css/contact-buttons.css" rel="stylesheet" />
-    <link href="plugin/social-links/css/demo.css" rel="stylesheet" />
+    <%--<link href="plugin/social-links/css/demo.css" rel="stylesheet" />--%>
     <link href="../plugin/login-signup-popup/css/reset.css" rel="stylesheet" />
     <link href="../plugin/login-signup-popup/css/style.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -39,20 +39,26 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-    <%--  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js" type="text/javascript"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js" type="text/javascript"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
-    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />--%>
+    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />
     <script type="text/javascript">
         $(document).ready(function () {
-            SearchText();
+           SearchText();
+           // $("#txtautocomplete").click(function () {
+                //alert($(this).val());
+           // });
+
         });
         function SearchText() {
-
+            
             $("#txtautocomplete").autocomplete({
 
                 source: function (request, response) {
+
                     var name = $("#txtautocomplete").val();
                     //alert(name);
+                    
                     $.ajax({
                         type: "POST",
                         contentType: "application/json; charset=utf-8",
@@ -87,7 +93,6 @@
             });
         }
     </script>
-
 </head>
 <body>
     <form id="form1" runat="server">
@@ -244,6 +249,9 @@
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
             </div>
 
+
+
+
             <div class="search-wrapper">
 
                 <div class="input-group">
@@ -252,6 +260,7 @@
                             <span id="search_concept">Filter by</span> <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" role="menu">
+                         
                             <li><a href="#contains">Contains</a></li>
                             <li><a href="#its_equal">It's equal</a></li>
                             <li><a href="#greather_than">Greather than ></a></li>
@@ -260,16 +269,27 @@
                             <li><a href="#all">Anything</a></li>
                         </ul>
                     </div>
-                    <input type="hidden" name="search_param" value="all" id="search_param">
-                    <input type="text" class="form-control" name="x" placeholder="Search term...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    <input type="hidden" name="search_param" value="all" id="search_param" />
+
+                   <%-- <input type="text" class="form-control" name="x" placeholder="Search term...">--%>
+                 <input type="text" class="form-control"   name="x" id="txtautocomplete" runat="server" value="City or GYM name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'City';}" placeholder="Search term..." />
+                   
+                     <span class="input-group-btn">
+                     <asp:Button ID="Button1" CssClass="btn btn-default" runat="server" Text="Search" OnClick="Button1_Click" ></asp:Button>
                     </span>
                 </div>
 
 
 
             </div>
+
+
+
+
+
+
+
+
             <div class="menu-wrapper">
                 <div class="menu-container">
                     <div class="Li"><a href="Home">Home</a></div>
@@ -294,7 +314,7 @@
         <uc:footer ID="Spinner1" runat="server" minvalue="1" maxvalue="10" />
         <!-- footer-section-ends -->
     </form>
-    <script src="plugin/JQuery/jquery-1.11.3.min.js"></script>
+    <%--<script src="plugin/JQuery/jquery-1.11.3.min.js"></script>--%>
     <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="plugin/ThemePlugin/nav.js"></script>
