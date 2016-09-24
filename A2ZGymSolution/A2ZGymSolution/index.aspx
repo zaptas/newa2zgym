@@ -14,10 +14,6 @@
 
     <%-- Slider end --%>
     <div id="Home">
-
-
-
-
         <%-- Team section start here... --%>
 
      
