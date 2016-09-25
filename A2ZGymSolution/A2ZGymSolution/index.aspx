@@ -16,23 +16,23 @@
     <div id="Home">
         <%-- Team section start here... --%>
 
-     
+
         <div class="container-fluid team">
             <div class="row">
                 <div class="col-xs-12 col-lg-12">
-                    <h1 >FIND YOUR FITNESS SOLUTION</h1>
+                    <h1>FIND YOUR FITNESS SOLUTION</h1>
                 </div>
             </div>
             <div class="row text-center">
-                
+
                 <div class="col-md-3 col-sm-6 hero-feature">
                     <div class="thumbnail">
                         <img src="img/team-1.png" alt="">
                         <div class="caption">
-                         
+
                             <p class="shade-text">Improve cardiovascular fitness and endurance,  strengthen muscles.</p>
 
-                          
+
                         </div>
                     </div>
                 </div>
@@ -41,9 +41,9 @@
                     <div class="thumbnail">
                         <img src="img/team-2.png" alt="">
                         <div class="caption">
-                    
+
                             <p class="shade-text">Gain lean, toned muscles, strength and increased muscle mass.</p>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -52,9 +52,9 @@
                     <div class="thumbnail">
                         <img src="img/team-3.png" alt="">
                         <div class="caption">
-                           
+
                             <p class="shade-text">Reduce body fat, drop clothes sizes and look great in the mirror.</p>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -63,20 +63,20 @@
                     <div class="thumbnail">
                         <img src="img/team-4.png" alt="">
                         <div class="caption">
-                       
+
                             <p class="shade-text">Reduce stress, increase energy and feel happy and healthy.</p>
-                          
+
                         </div>
                     </div>
                 </div>
 
             </div>
 
-           
+
             <!-- /.row -->
         </div>
 
-        
+
         <div class="content-section">
             <%-- <div class="services-section">
                 <div class="services-section-left">
@@ -106,20 +106,20 @@
                 <div class="clearfix"></div>
             </div>--%>
 
-              <div class="row team-bootom">
+            <div class="row team-bootom">
                 <div class="col-xs-12 col-lg-12">
-                    <h2 >GET IN GET FIT WITH A2Z GYM</h2>
+                    <h2>GET IN GET FIT WITH A2Z GYM</h2>
                     <p>Try Us for Free Today !</p>
-                  
-                     <div class=" main-nav"><a class="cd-signin btn-block">Get Your One Day Free Pass</a></div>
-                </div>
-                  <br />
-                  <br />
-                  <br />
-            </div>
-         
 
-           
+                    <div class=" main-nav"><a class="cd-signin btn-block">Get Your One Day Free Pass</a></div>
+                </div>
+                <br />
+                <br />
+                <br />
+            </div>
+
+
+
             <div class="call-us text-center">
                 <h3>HOW IT WORKS   </h3>
             </div>

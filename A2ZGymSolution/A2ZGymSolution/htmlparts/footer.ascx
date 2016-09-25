@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="footer.ascx.cs" Inherits="A2ZGymSolution.htmlparts.footer" %>
 
-
+<link href="../css/footer.css" rel="stylesheet" />
 <div class="footer container-fluid ">
     <div class="row">
         <div class="col-md-4 footer-box">
@@ -13,16 +13,16 @@
                 <li><a href="../contact.aspx">Contact Us</a></li>
             </ul>
         </div>
-         <div class="col-md-4 footer-box">
+        <div class="col-md-4 footer-box">
             <h4>Connect</h4>
             <br />
             <ul class="social-network social-circle">
-                       
-                        <li><a href="https://www.facebook.com/A2z-gym-1068431056574267" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/a2z_gym" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/a2zgym/" class="icoGoogle" title="Instagram"><i class="fa fa-instagram"></i></a></li>
-                        
-                    </ul>
+
+                <li><a href="https://www.facebook.com/A2z-gym-1068431056574267" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/a2z_gym" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/a2zgym/" class="icoGoogle" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+
+            </ul>
         </div>
         <div class="col-md-4 footer-box">
             <h4>Contact</h4>
