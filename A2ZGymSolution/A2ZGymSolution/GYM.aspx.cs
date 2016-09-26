@@ -18,8 +18,8 @@ namespace A2ZGymSolution
         DataTable record = new DataTable();
         protected void Page_Load(object sender, EventArgs e)
         {
-            string loc = this.Page.RouteData.Values["loc"].ToString();
-            bindGrid(loc);
+            //string loc = this.Page.RouteData.Values["loc"].ToString();
+            //bindGrid(loc);
         }
 
         public void bindGrid(string loc)

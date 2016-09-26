@@ -1,61 +1,84 @@
 
 /* https://listify-demos.astoundify.com/classic/ */
 
-$shade-1:#ffffff;  ///sohelk kha///
-$shade-2:#000000;
-$shade-3:#2854A1;
-$shade-4:#F9F9F9;
-$shade-5:#444444;
-$shade-6:#717A8F;
-$shade-7:#ABACB6;
-$shade-8:#FF7B3D; 
+$shade-1: #ffffff; ///sohelk kha///
+$shade-2: #000000;
+$shade-3: #2854A1;
+$shade-4: #F9F9F9;
+$shade-5: #444444;
+$shade-6: #717A8F;
+$shade-7: #ABACB6;
+$shade-8: #FF7B3D;
+$shade-9: #F5F5F5;
 
+.clrWhite
+{
+    color: $shade-1;
+}
 
 .shade-heading
 {
-	 color:$shade-6;
+    color: $shade-6;
 }
+
 .shade-small-heading
 {
-	 color:$shade-7;
+    color: $shade-7;
 }
 
 .shade-text
 {
-	 color:$shade-7;
+    color: $shade-7;
 }
 
 
 .text-center
 {
-    text-align:center;
+    text-align: center;
 }
 
-@font-face {
+
+
+.setfix
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face
+{
     font-family: logofont1;
     src: url('../fonts/Cedarville.ttf');
 }
-@font-face {
+
+@font-face
+{
     font-family: logofont2;
     src: url('../fonts/Jayadhira.ttf');
 }
 
-@font-face {
+@font-face
+{
     font-family: logofont3;
     src: url('../fonts/KrugmannBrush.ttf');
 }
-@font-face {
+
+@font-face
+{
     font-family: logofont4;
     src: url('../fonts/The Heart Maze Demo.ttf');
 }
-@font-face {
+
+@font-face
+{
     font-family: logofont5;
     src: url('../fonts/Vtks Hunt.ttf');
 }
 
 
 
-@font-face {
+@font-face
+{
     font-family: logofont6;
     src: url('../fonts/TrueLies.ttf');
 }

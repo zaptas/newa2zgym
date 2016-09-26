@@ -14,16 +14,16 @@ namespace A2ZGymSolution
         public string userid = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["UserName"].ToString() == "")
-            {
+            //if (Session["UserName"].ToString() == "")
+            //{
                
-            }
-            else
-            {
-                username = Session["UserName"].ToString();
-                picpath = Session["pic"].ToString();
-                userid = Session["UserId"].ToString();
-            }
+            //}
+            //else
+            //{
+            //    username = Session["UserName"].ToString();
+            //    picpath = Session["pic"].ToString();
+            //    userid = Session["UserId"].ToString();
+            //}
         }
     }
 }
