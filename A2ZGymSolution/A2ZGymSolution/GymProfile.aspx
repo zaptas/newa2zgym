@@ -97,8 +97,8 @@
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <%--   <img src="http://placehold.it/1200x400/F34336/F34336&text=WORDPRESS THEME DEVELOPER">--%>
-                                        <img src="../<%= gymcover %>" />
+                                       <%--   <img src="http://placehold.it/1200x400/F34336/F34336&text=WORDPRESS THEME DEVELOPER">--%>
+                                     <img src="../<%= gymcover %>" />
                                     </div>
                                     <%--  <div class="item">
                                         <img src="http://placehold.it/1200x400/20BFA9/ffffff&text=CLEAN %26 SMART">
@@ -128,10 +128,10 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <a class="navbar-brand" href="#">
-                                    <%--<img class="img-responsive" src="http://rolyart.ro/wp-content/uploads/2016/07/roland-maruntelu-freelancer-romania.jpg">--%>
-                                    <img class="img-responsive" src="../<%= gymlogo %>" /></a>
-
-                                <span class="site-name"><b><%= gymname %></b></span>
+                                   <%--<img class="img-responsive" src="http://rolyart.ro/wp-content/uploads/2016/07/roland-maruntelu-freelancer-romania.jpg">--%>
+                                   <img class="img-responsive" src="../<%= gymlogo %>" /></a>
+                               
+                             <span class="site-name"><b><%= gymname %></b></span>
                                 <span class="site-description"></span>
                             </div>
 
@@ -211,19 +211,22 @@
 
                                       <asp:TemplateField HeaderText="" HeaderStyle-Width="150px" >
                                        <ItemTemplate>
-                                        <asp:Button runat="server" Text="Reserve"></asp:Button>
+                                        <asp:Button ID="Button1" runat="server" Text="Reserve"></asp:Button>
                                        </ItemTemplate>
                                        </asp:TemplateField>
                                   </Columns>
                                 </asp:GridView>
                                  </div>
+
+
+
                                 <div class="tab-pane fade" id="tab2default">
                                      <div class="container-fluid">
                                          <div class="row">
-                                             <asp:DataList ID="gymData" runat="server" RepeatColumns="5">
+                                             <asp:DataList ID="gymData" runat="server" RepeatColumns="3">
                                                  <ItemTemplate>
                                                      <div style="padding: 10px 10px 10px 20px">
-                                                         <img src="../Gallery/<%#Eval("pic") %>" style="width: 200px; height: 200px;" />
+                                                         <img src="../Gallery/<%#Eval("pic") %>" style="width: 100px; height: 100px;" />
                                                      </div>
 
                                                  </ItemTemplate>
