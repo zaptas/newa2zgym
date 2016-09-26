@@ -1547,7 +1547,6 @@
     </Compile>
     <Compile Include="term-condition.aspx.cs">
       <DependentUpon>term-condition.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="term-condition.aspx.designer.cs">
       <DependentUpon>term-condition.aspx</DependentUpon>
@@ -1575,7 +1574,6 @@
     </Compile>
     <Compile Include="user\Dashboard.Master.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="user\Dashboard.Master.designer.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
