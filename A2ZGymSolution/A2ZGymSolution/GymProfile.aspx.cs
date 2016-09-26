@@ -24,11 +24,14 @@ namespace A2ZGymSolution
 
         SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["GYM"].ConnectionString);
         SqlDataAdapter da;
+        SqlDataAdapter galleryda;
         DataTable record = new DataTable();
+        DataTable gallerydt = new DataTable();
         string path = "";
+        string id = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            string id = "";
+           
             string name = this.Page.RouteData.Values["name"].ToString();
 
             gymname = name.Replace("-", " ");
@@ -49,6 +52,10 @@ namespace A2ZGymSolution
             }
 
             bindGrid();
+
+          
+                bindGrid1();
+          
         }
 
         public void bindGrid()
@@ -69,34 +76,29 @@ namespace A2ZGymSolution
 
         }
 
+      
         public void bindGrid1()
         {
-            SqlCommand cmd = new SqlCommand("select * from gymgallery where gymid ='Akhada_1004'", connection);
-            da = new SqlDataAdapter(cmd);
-            da.Fill(record);
+            SqlCommand cmdgallery = new SqlCommand("select * from gymgallery where gymid ='"+ id +"'", connection);
+            galleryda = new SqlDataAdapter(cmdgallery);
+            galleryda.Fill(gallerydt);
             if (record.Rows.Count > 0)
             {
-                path = record.Rows[0][1].ToString();
+                path = gallerydt.Rows[0][1].ToString();
 
             }
             string[] newa = path.Split(',');
-            DataTable dt = new DataTable();
-            dt.Columns.Add("pic", typeof(string));
+
+            gallerydt.Columns.Add("pic", typeof(string));
 
             foreach (var p in newa)
             {
-                dt.Rows.Add(p);
+                gallerydt.Rows.Add(p);
             }
 
-            gymData.DataSource = dt;
+            gymData.DataSource = gallerydt;
             gymData.DataBind();
 
         }
-
-
-
-
-
-
     }
  }
