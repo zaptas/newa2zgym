@@ -277,7 +277,31 @@
             </div>
         </div>
 
-
+        <section class="how-it-works clearfix">
+            <div class="container content">
+                <h2>HOW IT WORKS<br>
+                </h2>
+                <hr />
+                <br clear="all">
+                <section class="get-set-sweat clearfix">
+                    <div class="get">
+                        <span class="circle"></span>
+                        <h4><strong>1.</strong><br>
+                            DOWNLOAD THE FITPASS APP</h4>
+                    </div>
+                    <div class="set">
+                        <span class="circle"></span>
+                        <h4><strong>2.</strong><br>
+                            RESERVE YOUR WORKOUTS</h4>
+                    </div>
+                    <div class="sweat">
+                        <span class="circle"></span>
+                        <h4><strong>3.</strong><br>
+                            GO GET FIT</h4>
+                    </div>
+                </section>
+            </div>
+        </section>
 
         <div class="call-us text-center">
 
