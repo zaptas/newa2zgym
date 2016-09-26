@@ -31,6 +31,7 @@
     <%--<link href="plugin/social-links/css/demo.css" rel="stylesheet" />--%>
     <link href="../plugin/login-signup-popup/css/reset.css" rel="stylesheet" />
     <link href="../plugin/login-signup-popup/css/style.css" rel="stylesheet" />
+
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
 

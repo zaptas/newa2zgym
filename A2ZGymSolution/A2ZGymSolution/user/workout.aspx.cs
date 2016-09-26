@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace A2ZGymSolution.user
 {
-    public partial class user : System.Web.UI.MasterPage
+    public partial class workout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

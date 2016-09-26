@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
+      <div>
             <div style="width: 1200px; margin-left: 80px; margin-right: 50px">
                 <div style="margin-left: 20px; margin-right: 20px">
                     <h3 style="text-align: center; font-size: 30px; color: #000;">Privacy Policy</h3>

@@ -1338,7 +1338,7 @@
     <Content Include="search.aspx" />
     <Content Include="temp.html" />
     <Content Include="Templete\Mail.html" />
-    <Content Include="term-condition.aspx" />
+    <Content Include="terms-condition.aspx" />
     <Content Include="userdashboard.aspx" />
     <Content Include="UserProfile.aspx" />
     <Content Include="user\assets\css\style.css">
@@ -1349,6 +1349,7 @@
     </Content>
     <Content Include="user\assets\css\Dashboard.css" />
     <Content Include="user\assets\img\logo.png" />
+    <Content Include="user\assets\img\ownerimage.png" />
     <Content Include="user\assets\plugin\chart-data.js" />
     <Content Include="user\assets\plugin\chart.min.js" />
     <Content Include="user\assets\plugin\easypiechart-data.js" />
@@ -1357,13 +1358,12 @@
     <Content Include="user\assets\plugin\lumino.glyphs.js" />
     <Content Include="user\assets\plugin\respond.min.js" />
     <Content Include="user\index.aspx" />
-    <Content Include="user\profile.aspx" />
     <Content Include="user\setting.aspx" />
+    <Content Include="user\workout.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="GYM.aspx" />
-    <Content Include="workout.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="aboutus.aspx.cs">
@@ -1545,11 +1545,12 @@
     <Compile Include="GYM.aspx.designer.cs">
       <DependentUpon>GYM.aspx</DependentUpon>
     </Compile>
-    <Compile Include="term-condition.aspx.cs">
-      <DependentUpon>term-condition.aspx</DependentUpon>
+    <Compile Include="terms-condition.aspx.cs">
+      <DependentUpon>terms-condition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="term-condition.aspx.designer.cs">
-      <DependentUpon>term-condition.aspx</DependentUpon>
+    <Compile Include="terms-condition.aspx.designer.cs">
+      <DependentUpon>terms-condition.aspx</DependentUpon>
     </Compile>
     <Compile Include="User.Master.cs">
       <DependentUpon>User.Master</DependentUpon>
@@ -1574,6 +1575,7 @@
     </Compile>
     <Compile Include="user\Dashboard.Master.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="user\Dashboard.Master.designer.cs">
       <DependentUpon>Dashboard.Master</DependentUpon>
@@ -1585,20 +1587,6 @@
     <Compile Include="user\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="user\profile.aspx.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="user\profile.aspx.designer.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="user\profile.Master.cs">
-      <DependentUpon>profile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="user\profile.Master.designer.cs">
-      <DependentUpon>profile.Master</DependentUpon>
-    </Compile>
     <Compile Include="user\setting.aspx.cs">
       <DependentUpon>setting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1606,11 +1594,11 @@
     <Compile Include="user\setting.aspx.designer.cs">
       <DependentUpon>setting.aspx</DependentUpon>
     </Compile>
-    <Compile Include="workout.aspx.cs">
+    <Compile Include="user\workout.aspx.cs">
       <DependentUpon>workout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="workout.aspx.designer.cs">
+    <Compile Include="user\workout.aspx.designer.cs">
       <DependentUpon>workout.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -1683,7 +1671,6 @@
     </None>
     <Content Include="img\banner-30.png" />
     <Content Include="img\favicon" />
-    <Content Include="user\profile.Master" />
     <Content Include="user\assets\css\style.scss" />
     <Content Include="css\footer.scss" />
     <Content Include="css\footer.css.map">

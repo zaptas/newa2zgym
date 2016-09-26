@@ -11,7 +11,7 @@ namespace A2ZGymSolution.user
 {
 
 
-    public partial class prfile
+    public partial class index
     {
     }
 }
