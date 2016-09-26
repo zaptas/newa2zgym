@@ -2,48 +2,53 @@
 
 @import "../../../css/theme.scss";
 
-.setfix {
-    margin: 0px;
-    padding: 0px;
-}
 
 
 
 
-#profile {
+
+#profile
+{
     /* USER PROFILE PAGE */
-    .sidemenu {
+    .sidemenu
+    {
         width: 100%;
         height: auto;
         background-color: $shade-9;
         text-align: center;
 
-        h4 {
+        h4
+        {
             color: $shade-8;
         }
     }
 
-    #exTab1 .tab-content {
+    #exTab1 .tab-content
+    {
         color: white;
         background-color: #428bca;
         padding: 5px 15px;
     }
 
-    #exTab2 h3 {
+    #exTab2 h3
+    {
         color: white;
         background-color: #428bca;
         padding: 5px 15px;
     }
     /* remove border radius for the tab */
-    #exTab1 .nav-pills > li > a {
+    #exTab1 .nav-pills > li > a
+    {
         border-radius: 0;
     }
     /* change border radius for the tab , apply corners on top*/
-    #exTab3 .nav-pills > li > a {
+    #exTab3 .nav-pills > li > a
+    {
         border-radius: 4px 4px 0 0;
     }
 
-    #exTab3 .tab-content {
+    #exTab3 .tab-content
+    {
         color: white;
         background-color: #428bca;
         padding: 5px 15px;
@@ -55,7 +60,8 @@
 
 
 
-    .card {
+    .card
+    {
         margin-top: 20px;
         padding: 30px;
         background-color: rgba(214, 224, 226, 0.2);
@@ -69,7 +75,8 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
 
-        &.hovercard {
+        &.hovercard
+        {
             position: relative;
             padding-top: 0;
             overflow: hidden;
@@ -77,13 +84,15 @@
             background-color: #fff;
             background-color: rgba(255, 255, 255, 1);
 
-            .card-background {
+            .card-background
+            {
                 height: 130px;
             }
         }
     }
 
-    .card-background img {
+    .card-background img
+    {
         -webkit-filter: blur(25px);
         -moz-filter: blur(25px);
         -o-filter: blur(25px);
@@ -94,14 +103,17 @@
         min-width: 130%;
     }
 
-    .card.hovercard {
-        .useravatar {
+    .card.hovercard
+    {
+        .useravatar
+        {
             position: absolute;
             top: 15px;
             left: 0;
             right: 0;
 
-            img {
+            img
+            {
                 width: 100px;
                 height: 100px;
                 max-width: 100px;
@@ -113,13 +125,15 @@
             }
         }
 
-        .card-info {
+        .card-info
+        {
             position: absolute;
             bottom: 14px;
             left: 0;
             right: 0;
 
-            .card-title {
+            .card-title
+            {
                 padding: 0 5px;
                 font-size: 20px;
                 line-height: 1;
@@ -137,13 +151,17 @@
             text-overflow: ellipsis;
         }
 
-        .bottom {
+        .bottom
+        {
             padding: 0 20px;
             margin-bottom: 17px;
         }
     }
 
-    .btn-pref .btn {
+    .btn-pref .btn
+    {
         -webkit-border-radius: 0 !important;
     }
+
+   
 }
