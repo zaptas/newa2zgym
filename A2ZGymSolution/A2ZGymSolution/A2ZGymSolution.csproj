@@ -101,6 +101,7 @@
     <Content Include="assets\js\morris\raphael-2.1.0.min.js" />
     <Content Include="Contact.aspx" />
     <Content Include="css\app.css" />
+    <Content Include="css\GridStyle.css" />
     <Content Include="css\jquery-ui.css" />
     <Content Include="css\responsive.scss">
       <Compile>False</Compile>
@@ -205,8 +206,6 @@
     <Content Include="img\about_img7.jpg" />
     <Content Include="img\banner-1.jpg" />
     <Content Include="img\banner-12.jpg" />
-    <Content Include="img\banner-13.jpg" />
-    <Content Include="img\banner-13.png" />
     <Content Include="img\banner-14.jpg" />
     <Content Include="img\banner-16.jpg" />
     <Content Include="img\banner-17.jpg" />
@@ -1949,6 +1948,13 @@
     <Compile Include="GymProfile.aspx.designer.cs">
       <DependentUpon>GymProfile.aspx</DependentUpon>
     </Compile>
+    <Compile Include="GymProfileMaster.Master.cs">
+      <DependentUpon>GymProfileMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GymProfileMaster.Master.designer.cs">
+      <DependentUpon>GymProfileMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="GymRegister.aspx.cs">
       <DependentUpon>GymRegister.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -3183,6 +3189,7 @@
     <Content Include="img\favicon" />
     <Content Include="user\user.Master" />
     <Content Include="user\assets\css\style.scss" />
+    <Content Include="GymProfileMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

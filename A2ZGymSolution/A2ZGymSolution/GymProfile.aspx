@@ -1,9 +1,86 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/main.Master" AutoEventWireup="true" CodeBehind="GymProfile.aspx.cs" Inherits="A2ZGymSolution.GymProfile1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="/GymProfileMaster.Master" AutoEventWireup="true" CodeBehind="GymProfile.aspx.cs" Inherits="A2ZGymSolution.GymProfile1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="css/style.min.css" rel="stylesheet" />
+    <link href="../css/style.min.css" rel="stylesheet" />
+    <link href="../css/GridStyle.css" rel="stylesheet" />
+      <%-- Live cdn start --%>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300,300italic,100italic,100' rel='stylesheet' type='text/css' />
+    <%-- Live cdn End --%>
+   
+
+
+
+
+    <%-- Local cdn start --%>
+    <%--<link href="plugin/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="plugin/Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet" />--%>
+    <%-- Local cdn end --%>
+
+    <link href="../plugin/startbootstrap-full-slider-gh-pages/css/full-slider.css" rel="stylesheet" />
+    <link href="../plugin/social-links/css/contact-buttons.css" rel="stylesheet" />
+    <%--<link href="plugin/social-links/css/demo.css" rel="stylesheet" />--%>
+    <link href="../plugin/login-signup-popup/css/reset.css" rel="stylesheet" />
+    <link href="../plugin/login-signup-popup/css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    
+    <link href="../plugin/startbootstrap-full-slider-gh-pages/css/full-slider.css" rel="stylesheet" />
+    <link href="../plugin/social-links/css/contact-buttons.css" rel="stylesheet" />
+    <%--<link href="plugin/social-links/css/demo.css" rel="stylesheet" />--%>
+    <link href="../plugin/login-signup-popup/css/reset.css" rel="stylesheet" />
+    <link href="../plugin/login-signup-popup/css/style.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+      <script src="../plugin/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="plugin/ThemePlugin/nav.js"></script>
+    <script src="../plugin/ThemePlugin/jquery.easydropdown.js"></script>
+    <script src="../plugin/ThemePlugin/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script src="../plugin/login-signup-popup/js/modernizr.js"></script>
+   
+
+    <script src="../plugin/jQuery-Plugin-To-Hide-Sticky-Navbar-When-Scrolling-Down-Scroll-Up-Menu/jquery.scrollupformenu.js"></script>
+    <script src="../plugin/social-links/js/jquery.contact-buttons.js"></script>
+    <script src="../plugin/social-links/js/demo.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../plugin/login-signup-popup/js/main.js"></script>
+
+    <%-- Script to hide sticky menu --%>
+    <script>
+        $(function () {
+            $('#main-manu').scrollUpMenu({ 'transitionTime': 200 });
+        });
+    </script>
+
+    <!-- Script to Activate the Carousel -->
+
+    <script>
+        $('.carousel').carousel({
+            interval: 5000 //changes the speed
+        });
+    </script>
+    <script type="application/x-javascript">addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+
+    <%-- Search box --%>
+
+    <script>
+
+        $(document).ready(function (e) {
+            $('.search-panel .dropdown-menu').find('a').click(function (e) {
+                e.preventDefault();
+                var param = $(this).attr("href").replace("#", "");
+                var concept = $(this).text();
+                $('.search-panel span#search_concept').text(concept);
+                $('.input-group #search_param').val(param);
+            });
+        });
+    </script>
+    
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
     <br />
     <br />
@@ -67,9 +144,9 @@
                                 </ul>
 
                                 <ul class="nav  navbar-nav navbar-right">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="<%=facebook %>"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="<%=twitter%>"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="<%=instagram %>">"<i class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                             <!-- /.navbar-collapse -->
@@ -108,8 +185,54 @@
                         </div>
                         <div class="panel-body">
                             <div class="tab-content">
-                                <div class="tab-pane fade in active" id="tab1default">Default 1</div>
-                                <div class="tab-pane fade" id="tab2default">Default 2</div>
+                                <div class="tab-pane fade in active" id="tab1default">
+                                <asp:GridView ID="datagrid" runat="server" AutoGenerateColumns="false" CssClass="mydatagrid" HeaderStyle-CssClass="headergrid" RowStyle-CssClass="rows" >
+                                  <Columns>
+                                       <asp:TemplateField HeaderText="Activity Name" HeaderStyle-Width="150px" >
+                                       <ItemTemplate>
+                                          <asp:Label ID="activityname" Text='<%# Eval("activityname") %>' width="100%" runat="server"></asp:Label>
+
+                                       </ItemTemplate>
+                                       </asp:TemplateField>
+
+                                       <asp:TemplateField HeaderText="Time From" HeaderStyle-Width="120px" >
+                                       <ItemTemplate>
+                                         <asp:Label ID="timefrom" Text='<%# Eval("timefrom") %>' width="100%" runat="server"></asp:Label>
+
+                                       </ItemTemplate>
+                                       </asp:TemplateField>
+
+                                       <asp:TemplateField HeaderText="Time TO" HeaderStyle-Width="120px" >
+                                       <ItemTemplate>
+                                        <asp:Label ID="timeto" Text='<%# Eval("timeto") %>' width="100%" runat="server"></asp:Label>
+
+                                       </ItemTemplate>
+                                       </asp:TemplateField>
+
+                                      <asp:TemplateField HeaderText="" HeaderStyle-Width="150px" >
+                                       <ItemTemplate>
+                                        <asp:Button runat="server" Text="Reserve"></asp:Button>
+                                       </ItemTemplate>
+                                       </asp:TemplateField>
+                                  </Columns>
+                                </asp:GridView>
+                                 </div>
+                                <div class="tab-pane fade" id="tab2default">
+                                     <div class="container-fluid">
+                                         <div class="row">
+                                             <asp:DataList ID="gymData" runat="server" RepeatColumns="5">
+                                                 <ItemTemplate>
+                                                     <div style="padding: 10px 10px 10px 20px">
+                                                         <img src="../Gallery/<%#Eval("pic") %>" style="width: 200px; height: 200px;" />
+                                                     </div>
+
+                                                 </ItemTemplate>
+                                             </asp:DataList>
+                                         </div>
+                                     </div>
+
+
+                                 </div>
                                 <div class="tab-pane fade" id="tab3default">Default 3</div>
                                 <div class="tab-pane fade" id="tab4default">Default 4</div>
                                 <div class="tab-pane fade" id="tab5default">Default 5</div>
@@ -125,30 +248,21 @@
                     </div>
                     <div class="address-wrapper">
                         <div>
-                            <br />
                             <h1 class="">Contact</h1>
                             <br />
                             <ul>
                                 <li>
-                                    <h2>Zaptas Technologies Pvt. Ltd.</h2>
+                                    <h2><%= gymname %></h2>
                                 </li>
                                 <li>
                                     <p>
-                                        Address: 504, Sec-2C, First Floor,
+                                        <%= address %>
                                     </p>
                                 </li>
                                 <li>
-                                    <p>Vasundhara, Ghaziabad,</p>
+                                    <p><%= pincode %></p>
                                 </li>
-                                <li>
-                                    <p>U.P, India, 201012</p>
-                                </li>
-                                <li>
-                                    <p>enquiry@zaptas.com</p>
-                                </li>
-                                <li>
-                                    <p>Phone:+91-120-4370324</p>
-                                </li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -162,6 +276,20 @@
     <br />
     <br />
     <br />
+
+     <script src="../plugin/bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="../plugin/ThemePlugin/nav.js"></script>
+    <script src="../plugin/ThemePlugin/jquery.easydropdown.js"></script>
+    <script src="../plugin/ThemePlugin/easyResponsiveTabs.js" type="text/javascript"></script>
+    <script src="../plugin/login-signup-popup/js/modernizr.js"></script>
+   
+
+    <script src="../plugin/jQuery-Plugin-To-Hide-Sticky-Navbar-When-Scrolling-Down-Scroll-Up-Menu/jquery.scrollupformenu.js"></script>
+    <script src="../plugin/social-links/js/jquery.contact-buttons.js"></script>
+    <script src="../plugin/social-links/js/demo.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../plugin/login-signup-popup/js/main.js"></script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ScriptSection" runat="server">
 </asp:Content>

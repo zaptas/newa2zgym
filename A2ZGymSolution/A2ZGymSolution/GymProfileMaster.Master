@@ -1,68 +1,51 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="A2ZGymSolution.main" %>
-
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="GymProfileMaster.master.cs" Inherits="A2ZGymSolution.GymProfileMaster" %>
 <%@ Register TagPrefix="uc" TagName="footer" Src="~/htmlparts/footer.ascx" %>
 <%@ Register TagPrefix="Gym" TagName="Slider" Src="~/htmlparts/Slider.ascx" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-
-    <title>Home</title>
+     <title>Gym Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <%-- Live cdn start --%>
+  <%--  <%-- Live cdn start --%>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300,300italic,100italic,100' rel='stylesheet' type='text/css' />
-    <%-- Live cdn End --%>
+    <%-- Live cdn End --%>--%>
 
 
-
-
-
-    <%-- Local cdn start --%>
-    <%--<link href="plugin/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="plugin/Font-Awesome-master/css/font-awesome.min.css" rel="stylesheet" />--%>
-    <%-- Local cdn end --%>
-
-    <link href="plugin/startbootstrap-full-slider-gh-pages/css/full-slider.css" rel="stylesheet" />
-    <link href="plugin/social-links/css/contact-buttons.css" rel="stylesheet" />
-    <%--<link href="plugin/social-links/css/demo.css" rel="stylesheet" />--%>
-    <link href="plugin/login-signup-popup/css/reset.css" rel="stylesheet" />
-    <link href="plugin/login-signup-popup/css/style.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    
-
-
-
+  
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
-  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js" type="text/javascript"></script>
+    
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.0.min.js" type="text/javascript"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/jquery-ui.min.js" type="text/javascript"></script>
     <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.9.2/themes/blitzer/jquery-ui.css" rel="Stylesheet" type="text/css" />
     <script type="text/javascript">
         $(document).ready(function () {
-           SearchText();
-           // $("#txtautocomplete").click(function () {
-                //alert($(this).val());
-           // });
+            SearchText();
+            // $("#txtautocomplete").click(function () {
+            //alert($(this).val());
+            // });
 
         });
         function SearchText() {
-            
+
             $("#txtautocomplete").autocomplete({
 
                 source: function (request, response) {
 
                     var name = $("#txtautocomplete").val();
                     //alert(name);
-                    
+
                     $.ajax({
                         type: "POST",
                         contentType: "application/json; charset=utf-8",
-                        url: "data.aspx/GetAutoCompleteData",
+                        url: "../data.aspx/GetAutoCompleteData",
                         data: "{'username':'" + name + "'}",
                         dataType: "json",
                         success: function (data) {
@@ -96,8 +79,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <%-- pop up start  --%>
+    <div>
+
+          <%-- pop up start  --%>
         <%--<uc:LoginPopup ID="Popup1" runat="server" MinValue="1" MaxValue="10" />--%>
+
+
+
         <%-- pop up end --%>
 
         <div class="cd-user-modal">
@@ -234,13 +222,13 @@
 
             <div class="logo-wrapper">
                 <div class="logo-container">
-                    <img class="img-responsive" src="img/logo2.png" alt="Gym" />
+                    <img class="img-responsive" src="../img/logo2.png" alt="Gym" />
                     <h3>A2Z GYM</h3>
                 </div>
             </div>
             <div class="small-menu ">
                 <div class="small-menu-logo">
-                    <img class="img-responsive" src="img/logo.png" alt="A2Z GYM" />
+                    <img class="img-responsive" src="../img/logo.png" alt="A2Z GYM" />
                     <h3>AZ GYM</h3>
                 </div>
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -280,13 +268,6 @@
 
             </div>
 
-
-
-
-
-
-
-
             <div class="menu-wrapper">
                 <div class="menu-container">
                     <div class="Li"><a href="Home">Home</a></div>
@@ -303,7 +284,7 @@
         <%-- Top menu start  --%>
 
 
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
         </asp:ContentPlaceHolder>
 
 
@@ -312,7 +293,7 @@
         <!-- footer-section-ends -->
     </form>
     <%--<script src="plugin/JQuery/jquery-1.11.3.min.js"></script>--%>
-    <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
+   <%-- <script src="plugin/bootstrap/js/bootstrap.min.js"></script>
 
     <script type="text/javascript" src="plugin/ThemePlugin/nav.js"></script>
     <script src="plugin/ThemePlugin/jquery.easydropdown.js"></script>
@@ -324,7 +305,7 @@
     <script src="plugin/social-links/js/jquery.contact-buttons.js"></script>
     <script src="plugin/social-links/js/demo.js"></script>
     <script src="js/menu.js"></script>
-    <script src="plugin/login-signup-popup/js/main.js"></script>
+    <script src="plugin/login-signup-popup/js/main.js"></script>--%>
 
     <%-- Script to hide sticky menu --%>
     <script>
@@ -358,10 +339,6 @@
             });
         });
     </script>
-
-
-    
-
-    <asp:ContentPlaceHolder runat="server" ID="ScriptSection"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ScriptSection" runat="server"> </asp:ContentPlaceHolder>  
 </body>
 </html>
